@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259.27 183.39">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .5;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #9ca841;
+      }
+
+      .cls-2 {
+        opacity: .2;
+      }
+
+      .cls-4 {
+        fill: #f7eae2;
+      }
+
+      .cls-5 {
+        fill: #e18770;
+      }
+
+      .cls-6 {
+        fill: #34553d;
+        font-family: SourceHanSansCN-Heavy-GBpc-EUC-H, 'Source Han Sans CN';
+        font-size: 34px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="Layer_9" data-name="Layer 9">
+    <g>
+      <rect class="cls-4" width="259.27" height="174.99" rx="53.96" ry="53.96"/>
+      <g>
+        <g>
+          <circle class="cls-2" cx="121.91" cy="39.85" r="27.81"/>
+          <circle class="cls-1" cx="121.91" cy="39.85" r="17.97"/>
+          <circle class="cls-3" cx="121.91" cy="39.85" r="11.92"/>
+        </g>
+        <path class="cls-5" d="M150.46,68.72h-.17c-1.25,0-2.27.36-3.25.97-.86-2.52-3.06-4.33-5.88-4.33-1.25,0-2.44.36-3.42.97-.86-2.52-3.06-4.33-5.88-4.33-1.1,0-2.13.28-3.03.76v-18.19c0-3.53-2.67-6.38-6.22-6.38s-6.43,2.86-6.43,6.38v36.49l-3.9-3.89c-2.51-2.49-6.95-2.14-9.09,0-2.14,2.14-3.54,6.44-.48,9.5l17.96,17.84c.37.37.78.67,1.21.93,3.27,2.67,7.03,4.25,14.96,4.25,18.12,0,19.8-9.78,19.8-21.83v-12.77c0-3.53-2.6-6.38-6.15-6.38"/>
+      </g>
+      <text class="cls-6" transform="translate(42.36 147.87)"><tspan x="0" y="0">试着点点我</tspan></text>
+      <path class="cls-4" d="M24.62,162.7s-8.71,19.91-21.45,18.85c0,0,32.05,7.12,48.59-7.53"/>
+    </g>
+  </g>
+</svg>

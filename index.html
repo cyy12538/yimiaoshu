@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>three-app</title>
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+    
+    <div id="main-scene" class="scene active">
+      <div class="bg-wrapper">
+        <div class="bg-image"></div>
+        <div class="svg-container">
+          <img src="/SVG/1.svg" class="svg-item" data-page="page1" data-alt-src="/SVG package/Asset 6.svg" alt="Item 1">
+          <img src="/SVG/2.svg" class="svg-item" data-page="page2" data-alt-src="/SVG package/Asset 7.svg" alt="Item 2">
+          <img src="/SVG/3.svg" class="svg-item" data-page="page3" data-alt-src="/SVG package/Asset 5.svg" alt="Item 3">
+          <img src="/SVG/4.svg" class="svg-item" data-page="page4" data-alt-src="/SVG package/Asset 8.svg" alt="Item 4">
+          <img src="/SVG package/Asset 6 copy.svg" class="svg-item hint-item" alt="Hint">
+        </div>
+      </div>
+    </div>
+    
+    <div id="detail-scene" class="scene">
+      <div class="bg-wrapper">
+        <div class="bg-image"></div>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
