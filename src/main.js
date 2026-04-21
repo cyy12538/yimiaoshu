@@ -16,21 +16,21 @@ const animationConfigs = [
   {
     id: 'kid',
     containerId: 'lottie-kid',
-    path: '/json/人物/kid.json',
+    path: '/kid.json',
     width: '268px',  // 原始宽度
     height: '455px'  // 原始高度
   },
   {
     id: 'adult',
     containerId: 'lottie-adult',
-    path: '/json/人物/adult.json',
+    path: '/adult.json',
     width: '268px',  // 原始宽度
     height: '770px'  // 原始高度
   },
   {
     id: 'old',
     containerId: 'lottie-old',
-    path: '/json/人物/old.json',
+    path: '/old.json',
     width: '256px',  // 原始宽度
     height: '575px'  // 原始高度
   }
@@ -56,7 +56,7 @@ bubbleConfigs.forEach(config => {
     console.log(`正在加载 bubble ui 动画: ${config.id}`);
     const animation = new LottieAnimation({
       container: container,
-      path: '/json/bubble ui.json',
+      path: '/bubble ui.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -74,7 +74,7 @@ if (leavesContainer) {
   console.log('正在加载 leaves 全局动画');
   const leavesAnimation = new LottieAnimation({
     container: leavesContainer,
-    path: '/json/leaves鍏ㄥ眬.json',
+    path: '/leaves鍏ㄥ眬.json',
     renderer: 'svg',
     loop: true,
     autoplay: true,
