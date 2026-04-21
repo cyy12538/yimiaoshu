@@ -9,28 +9,28 @@ const animationConfigs = [
   {
     id: 'baby',
     containerId: 'lottie-baby',
-    path: '/baby.json',
+    path: '人物/baby.json',
     width: '283px',  // 原始宽度
     height: '306px'  // 原始高度
   },
   {
     id: 'kid',
     containerId: 'lottie-kid',
-    path: '/kid.json',
+    path: '人物/kid.json',
     width: '268px',  // 原始宽度
     height: '455px'  // 原始高度
   },
   {
     id: 'adult',
     containerId: 'lottie-adult',
-    path: '/adult.json',
+    path: '人物/adult.json',
     width: '268px',  // 原始宽度
     height: '770px'  // 原始高度
   },
   {
     id: 'old',
     containerId: 'lottie-old',
-    path: '/old.json',
+    path: '人物/old.json',
     width: '256px',  // 原始宽度
     height: '575px'  // 原始高度
   }
