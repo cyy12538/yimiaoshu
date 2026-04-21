@@ -30,7 +30,7 @@ const animationConfigs = [
   {
     id: 'old',
     containerId: 'lottie-old',
-    path: '人物/old.json',
+    path: 'old(1).json',
     width: '256px',  // 原始宽度
     height: '575px'  // 原始高度
   }
