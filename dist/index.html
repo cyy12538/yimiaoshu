@@ -4,20 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>three-app</title>
-    <script type="module" crossorigin src="/assets/index-DQo3UXPP.js"></script>
+    <script type="module" crossorigin src="/assets/index-D0ey8qhL.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-o7CBuhRN.css">
   </head>
   <body>
     <canvas id="webgl"></canvas>
     
+    <!-- Lottie 动画 - leaves 全局 -->
+    <div id="lottie-leaves" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9998;
+      pointer-events: none;
+    "></div>
+    
+
+    
     <div id="main-scene" class="scene active">
       <div class="bg-wrapper">
         <div class="bg-image"></div>
         <div class="svg-container">
-          <img src="/人物1/1-1.svg" class="svg-item" data-page="page1" data-scroll="7360" data-alt-src="/人物2/1.svg" alt="Item 1">
-          <img src="/人物1/2-2.svg" class="svg-item" data-page="page2" data-scroll="5800" data-alt-src="/人物2/2.svg" alt="Item 2">
-          <img src="/人物1/3-3.svg" class="svg-item" data-page="page3" data-scroll="4600" data-alt-src="/人物2/3.svg" alt="Item 3">
-          <img src="/人物1/4-4.svg" class="svg-item" data-page="page4" data-scroll="4000" data-alt-src="/人物2/4.svg" alt="Item 4">
+          <!-- Lottie 动画 - bubble ui 配套动画（使用原始尺寸 1080x1920） -->
+          <div id="lottie-bubble-baby" class="lottie-bubble" style="
+            position: absolute;
+            left: 56%;
+            top: 58%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-bubble-kid" class="lottie-bubble" style="
+            position: absolute;
+            left: 49%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-bubble-adult" class="lottie-bubble" style="
+            position: absolute;
+            left: 66%;
+            top: 33%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-bubble-old" class="lottie-bubble" style="
+            position: absolute;
+            left: 47%;
+            top: 27%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          
+          <!-- Lottie 动画容器 - 四个人物动画 -->
+          <div id="lottie-baby" class="lottie-character" style="
+            position: absolute;
+            left: 51%;
+            top: 63%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-kid" class="lottie-character" style="
+            position: absolute;
+            left: 41%;
+            top: 51%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-adult" class="lottie-character" style="
+            position: absolute;
+            left: 60%;
+            top: 39%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-old" class="lottie-character" style="
+            position: absolute;
+            left: 40%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <!-- 提示图标保留 -->
           <img src="/SVG package/Asset 6 copy.svg" class="svg-item hint-item" alt="Hint">
         </div>
       </div>

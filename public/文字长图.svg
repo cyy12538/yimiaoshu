@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2389.66 5940.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #192e35;
+        font-size: 42.86px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: SourceHanSansSCVF-Bold, 'Source Han Sans SC VF';
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        opacity: .5;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: #9ca841;
+      }
+
+      .cls-5 {
+        opacity: .2;
+      }
+
+      .cls-2 {
+        fill: #2b5843;
+        font-size: 34px;
+      }
+
+      .cls-7 {
+        fill: #f7eae2;
+      }
+
+      .cls-8 {
+        letter-spacing: -.36em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.5em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.6em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.46em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.46em;
+      }
+
+      .cls-13 {
+        fill: none;
+        stroke: url(#linear-gradient);
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-14 {
+        letter-spacing: -.14em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-16 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: #607a55;
+        font-size: 26px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="918.54" y1="5121.53" x2="918.54" y2="472.99" gradientTransform="translate(0 -79.21) scale(1 1.17)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9ca841" stop-opacity="0"/>
+      <stop offset=".52" stop-color="#94aa57" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#94aa57" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_7" data-name="Layer 7">
+    <g>
+      <rect class="cls-7" width="2389.66" height="5899.96"/>
+      <line class="cls-13" x1="918.54" y1="472.99" x2="918.54" y2="5899.96"/>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="2413.29" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="2413.29" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="2413.29" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 2426.57)"><tspan x="0" y="0">2 岁</tspan></text>
+        <text class="cls-2" transform="translate(1188.9 2420.57)"><tspan x="0" y="0">乙脑减毒疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1527.62 2408.03)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">甲肝疫</tspan><tspan class="cls-14" x="247" y="0">苗</tspan><tspan class="cls-8" x="269.36" y="0">，</tspan><tspan x="286" y="0">b型流感</tspan><tspan x="-6.97" y="33">嗜血杆菌疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">流感疫</tspan><tspan class="cls-14" x="240.03" y="33">苗</tspan><tspan class="cls-8" x="262.39" y="33">，</tspan><tspan x="279.03" y="33">13价肺炎</tspan><tspan x="-.47" y="66">疫</tspan><tspan class="cls-14" x="25.53" y="66">苗</tspan><tspan class="cls-8" x="47.89" y="66">，</tspan><tspan x="64.53" y="66">23价肺炎疫</tspan><tspan class="cls-14" x="199.21" y="66">苗</tspan><tspan class="cls-8" x="221.57" y="66">，</tspan><tspan x="238.21" y="66">水痘疫</tspan><tspan class="cls-14" x="316.21" y="66">苗</tspan><tspan class="cls-8" x="338.57" y="66">，</tspan><tspan x="355.21" y="66">肠</tspan><tspan x="-6.97" y="99">道病毒71型灭活疫</tspan><tspan class="cls-14" x="205.71" y="99">苗</tspan><tspan class="cls-8" x="228.07" y="99">，</tspan><tspan x="244.71" y="99">流脑疫</tspan><tspan class="cls-14" x="322.71" y="99">苗</tspan><tspan class="cls-8" x="345.07" y="99">，</tspan><tspan x="361.71" y="99">霍</tspan><tspan x="86.37" y="132">乱疫</tspan><tspan class="cls-14" x="138.37" y="132">苗</tspan><tspan class="cls-8" x="160.73" y="132">，</tspan><tspan x="177.37" y="132">乙脑疫</tspan><tspan class="cls-14" x="255.37" y="132">苗</tspan><tspan class="cls-8" x="277.73" y="132">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="2194.75" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="2194.75" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="2194.75" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 2208.03)"><tspan x="0" y="0">3 岁</tspan></text>
+        <text class="cls-2" transform="translate(1132.85 2202.03)"><tspan x="0" y="0">A群C群流脑多糖疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1527.62 2189.5)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">甲肝疫</tspan><tspan class="cls-14" x="247" y="0">苗</tspan><tspan class="cls-8" x="269.36" y="0">，</tspan><tspan x="286" y="0">b型流感</tspan><tspan x="-6.97" y="33">嗜血杆菌疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">流感疫</tspan><tspan class="cls-14" x="240.03" y="33">苗</tspan><tspan class="cls-8" x="262.39" y="33">，</tspan><tspan x="279.03" y="33">13价肺炎</tspan><tspan x="-.47" y="66">疫</tspan><tspan class="cls-14" x="25.53" y="66">苗</tspan><tspan class="cls-8" x="47.89" y="66">，</tspan><tspan x="64.53" y="66">23价肺炎疫</tspan><tspan class="cls-14" x="199.21" y="66">苗</tspan><tspan class="cls-8" x="221.57" y="66">，</tspan><tspan x="238.21" y="66">水痘疫</tspan><tspan class="cls-14" x="316.21" y="66">苗</tspan><tspan class="cls-8" x="338.57" y="66">，</tspan><tspan x="355.21" y="66">肠</tspan><tspan x="-6.97" y="99">道病毒71型灭活疫</tspan><tspan class="cls-14" x="205.71" y="99">苗</tspan><tspan class="cls-8" x="228.07" y="99">，</tspan><tspan x="244.71" y="99">流脑疫</tspan><tspan class="cls-14" x="322.71" y="99">苗</tspan><tspan class="cls-8" x="345.07" y="99">，</tspan><tspan x="361.71" y="99">霍</tspan><tspan x="86.37" y="132">乱疫</tspan><tspan class="cls-14" x="138.37" y="132">苗</tspan><tspan class="cls-8" x="160.73" y="132">，</tspan><tspan x="177.37" y="132">乙脑疫</tspan><tspan class="cls-14" x="255.37" y="132">苗</tspan><tspan class="cls-8" x="277.73" y="132">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="1976.22" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="1976.22" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="1976.22" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 1989.5)"><tspan x="0" y="0">4 岁</tspan></text>
+        <text class="cls-2" transform="translate(1188.9 1983.5)"><tspan x="0" y="0">脊灰减毒疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1527.62 1970.97)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="341.74" y="0">苗</tspan><tspan class="cls-8" x="364.1" y="0">，</tspan><tspan x="3.69" y="33">流感疫</tspan><tspan class="cls-14" x="81.69" y="33">苗</tspan><tspan class="cls-8" x="104.05" y="33">，</tspan><tspan x="120.69" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="255.37" y="33">苗</tspan><tspan class="cls-8" x="277.73" y="33">，</tspan><tspan x="294.37" y="33">23价肺</tspan><tspan x="-6.97" y="66">炎疫</tspan><tspan class="cls-14" x="45.03" y="66">苗</tspan><tspan class="cls-8" x="67.39" y="66">，</tspan><tspan x="84.03" y="66">水痘疫</tspan><tspan class="cls-14" x="162.03" y="66">苗</tspan><tspan class="cls-8" x="184.39" y="66">，</tspan><tspan x="201.03" y="66">肠道病毒71型灭</tspan><tspan x="1.87" y="99">活疫</tspan><tspan class="cls-14" x="53.87" y="99">苗</tspan><tspan class="cls-8" x="76.23" y="99">，</tspan><tspan x="92.87" y="99">流脑疫</tspan><tspan class="cls-14" x="170.87" y="99">苗</tspan><tspan class="cls-8" x="193.23" y="99">，</tspan><tspan x="209.87" y="99">霍乱疫</tspan><tspan class="cls-14" x="287.87" y="99">苗</tspan><tspan class="cls-8" x="310.23" y="99">，</tspan><tspan x="326.87" y="99">乙脑</tspan><tspan x="157.87" y="132">疫</tspan><tspan class="cls-14" x="183.87" y="132">苗</tspan><tspan class="cls-8" x="206.23" y="132">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="1757.69" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="1757.69" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="1757.69" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 1770.97)"><tspan x="0" y="0">6 岁</tspan></text>
+        <text class="cls-2" transform="translate(1205.9 1764.97)"><tspan x="0" y="0">百白破疫苗</tspan><tspan x="-73.05" y="40.8">A群C群流脑多糖疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1520.65 1752.44)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">流感疫</tspan><tspan class="cls-14" x="195" y="0">苗</tspan><tspan class="cls-8" x="217.36" y="0">，</tspan><tspan x="234" y="0">23价肺炎疫苗</tspan><tspan class="cls-8" x="-1.3" y="33">，</tspan><tspan x="15.34" y="33">水痘疫</tspan><tspan class="cls-14" x="93.34" y="33">苗</tspan><tspan class="cls-8" x="115.7" y="33">，</tspan><tspan x="132.34" y="33">流脑疫</tspan><tspan class="cls-14" x="210.34" y="33">苗</tspan><tspan class="cls-8" x="232.7" y="33">，</tspan><tspan x="249.34" y="33">霍乱疫</tspan><tspan class="cls-14" x="327.34" y="33">苗</tspan><tspan class="cls-8" x="349.7" y="33">，</tspan><tspan x="366.34" y="33">乙</tspan><tspan x="151.84" y="66">脑疫</tspan><tspan class="cls-14" x="203.84" y="66">苗</tspan><tspan class="cls-8" x="226.2" y="66">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="5775.56" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="5775.56" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="5775.56" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 5788.85)"><tspan x="0" y="0">出生时</tspan></text>
+        <text class="cls-2" transform="translate(1214.4 5782.85)"><tspan x="0" y="0">乙肝疫苗</tspan><tspan class="cls-9" x="136" y="0">；</tspan><tspan x="25.5" y="40.8">卡介苗</tspan></text>
+        <text/>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="5557.03" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="5557.03" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="5557.03" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 5570.31)"><tspan x="0" y="0">1 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1222.9 5564.31)"><tspan x="0" y="0">乙肝疫苗</tspan></text>
+        <text/>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="5338.5" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="5338.5" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="5338.5" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 5351.78)"><tspan x="0" y="0">1.5月龄</tspan></text>
+        <text class="cls-3" transform="translate(1546.65 5333.25)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">13价肺炎疫</tspan><tspan class="cls-14" x="303.68" y="0">苗</tspan><tspan class="cls-8" x="326.04" y="0">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="5119.97" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="5119.97" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="5119.97" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 5133.25)"><tspan x="0" y="0">2 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1180.4 5127.25)"><tspan x="0" y="0">脊灰灭活疫苗</tspan><tspan class="cls-9" x="204" y="0">；</tspan><tspan x="25.5" y="40.8">百白破疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 5114.72)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="-.47" y="33">苗</tspan><tspan class="cls-8" x="21.89" y="33">，</tspan><tspan x="38.53" y="33">脊髓灰质炎疫</tspan><tspan class="cls-14" x="194.53" y="33">苗</tspan><tspan class="cls-8" x="216.89" y="33">，</tspan><tspan x="233.53" y="33">13价肺炎疫苗</tspan><tspan class="cls-8" x="-3.64" y="66">，</tspan><tspan x="13" y="66">无细胞百白破灭活脊髓灰质炎和b</tspan><tspan x="8.37" y="99">型流感嗜血杆菌联合疫</tspan><tspan class="cls-12" x="268.37" y="99">苗</tspan><tspan class="cls-16" x="282.52" y="99">（</tspan><tspan x="307.37" y="99">五</tspan><tspan class="cls-15" x="333.37" y="99">联</tspan><tspan class="cls-10" x="358.23" y="99">）</tspan><tspan class="cls-8" x="368.73" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="4922.44" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="4922.44" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="4922.44" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 4935.72)"><tspan x="0" y="0">2.5月龄</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 4917.19)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="90.53" y="33">苗</tspan><tspan class="cls-8" x="112.89" y="33">，</tspan><tspan x="129.53" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="264.21" y="33">苗</tspan><tspan class="cls-8" x="286.57" y="33">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="4682.91" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="4682.91" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="4682.91" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 4696.19)"><tspan x="0" y="0">3 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1188.9 4690.19)"><tspan x="0" y="0">脊灰灭活疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 4677.65)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="-.47" y="33">苗</tspan><tspan class="cls-8" x="21.89" y="33">，</tspan><tspan x="38.53" y="33">脊髓灰质炎疫</tspan><tspan class="cls-14" x="194.53" y="33">苗</tspan><tspan class="cls-8" x="216.89" y="33">，</tspan><tspan x="233.53" y="33">13价肺炎疫苗</tspan><tspan class="cls-8" x="-1.77" y="66">，</tspan><tspan x="14.87" y="66">流脑疫</tspan><tspan class="cls-14" x="92.87" y="66">苗</tspan><tspan class="cls-8" x="115.23" y="66">，</tspan><tspan x="131.87" y="66">无细胞百白破灭活脊髓</tspan><tspan x="6.5" y="99">灰质炎和b型流感嗜血杆菌联合疫</tspan><tspan class="cls-12" x="0" y="132">苗</tspan><tspan class="cls-16" x="14.14" y="132">（</tspan><tspan x="39" y="132">五</tspan><tspan class="cls-15" x="65" y="132">联</tspan><tspan class="cls-10" x="89.86" y="132">）</tspan><tspan class="cls-8" x="100.36" y="132">，</tspan><tspan x="117" y="132">无细胞百白破b型流感嗜</tspan><tspan x="60.37" y="165">血杆菌联合疫</tspan><tspan class="cls-12" x="216.37" y="165">苗</tspan><tspan class="cls-16" x="230.52" y="165">（</tspan><tspan x="255.37" y="165">四</tspan><tspan class="cls-15" x="281.37" y="165">联</tspan><tspan class="cls-10" x="306.23" y="165">）</tspan><tspan class="cls-8" x="316.73" y="165">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="4497.37" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="4497.37" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="4497.37" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 4510.65)"><tspan x="0" y="0">3.5月龄</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 4492.12)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="32.03" y="33">苗</tspan><tspan class="cls-8" x="54.39" y="33">，</tspan><tspan x="71.03" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="205.71" y="33">苗</tspan><tspan class="cls-8" x="228.07" y="33">，</tspan><tspan x="244.71" y="33">流脑疫</tspan><tspan class="cls-14" x="322.71" y="33">苗</tspan><tspan class="cls-8" x="345.07" y="33">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="4245.84" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="4245.84" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="4245.84" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 4259.12)"><tspan x="0" y="0">4 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1180.4 4253.12)"><tspan x="0" y="0">脊灰减毒疫苗</tspan><tspan class="cls-9" x="204" y="0">；</tspan><tspan x="25.5" y="40.8">百白破疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 4240.59)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="-.47" y="33">苗</tspan><tspan class="cls-8" x="21.89" y="33">，</tspan><tspan x="38.53" y="33">脊髓灰质炎疫</tspan><tspan class="cls-14" x="194.53" y="33">苗</tspan><tspan class="cls-8" x="216.89" y="33">，</tspan><tspan x="233.53" y="33">13价肺炎疫苗</tspan><tspan class="cls-8" x="-1.77" y="66">，</tspan><tspan x="14.87" y="66">流脑疫</tspan><tspan class="cls-14" x="92.87" y="66">苗</tspan><tspan class="cls-8" x="115.23" y="66">，</tspan><tspan x="131.87" y="66">无细胞百白破灭活脊髓</tspan><tspan x="6.5" y="99">灰质炎和b型流感嗜血杆菌联合疫</tspan><tspan class="cls-12" x="0" y="132">苗</tspan><tspan class="cls-16" x="14.14" y="132">（</tspan><tspan x="39" y="132">五</tspan><tspan class="cls-15" x="65" y="132">联</tspan><tspan class="cls-10" x="89.86" y="132">）</tspan><tspan class="cls-8" x="100.36" y="132">，</tspan><tspan x="117" y="132">无细胞百白破b型流感嗜</tspan><tspan x="60.37" y="165">血杆菌联合疫</tspan><tspan class="cls-12" x="216.37" y="165">苗</tspan><tspan class="cls-16" x="230.52" y="165">（</tspan><tspan x="255.37" y="165">四</tspan><tspan class="cls-15" x="281.37" y="165">联</tspan><tspan class="cls-10" x="306.23" y="165">）</tspan><tspan class="cls-8" x="316.73" y="165">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="4027.31" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="4027.31" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="4027.31" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 4040.59)"><tspan x="0" y="0">5 月龄</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 4022.06)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="6.03" y="33">苗</tspan><tspan class="cls-8" x="28.39" y="33">，</tspan><tspan x="45.03" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="179.71" y="33">苗</tspan><tspan class="cls-8" x="202.07" y="33">，</tspan><tspan x="218.71" y="33">流脑疫</tspan><tspan class="cls-14" x="296.71" y="33">苗</tspan><tspan class="cls-8" x="319.07" y="33">，</tspan><tspan x="335.71" y="33">无细</tspan><tspan x="6.5" y="66">胞百白破b型流感嗜血杆菌联合疫</tspan><tspan class="cls-12" x="138.37" y="99">苗</tspan><tspan class="cls-16" x="152.52" y="99">（</tspan><tspan x="177.37" y="99">四</tspan><tspan class="cls-15" x="203.37" y="99">联</tspan><tspan class="cls-10" x="228.23" y="99">）</tspan><tspan class="cls-8" x="238.73" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="3808.78" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="3808.78" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="3808.78" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 3822.06)"><tspan x="0" y="0">6 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1214.4 3816.06)"><tspan x="0" y="0">乙肝疫苗</tspan><tspan class="cls-9" x="136" y="0">；</tspan><tspan x="-61.9" y="40.8">A群流脑多糖疫苗</tspan><tspan class="cls-9" x="197.9" y="40.8">；</tspan><tspan x="-8.5" y="81.6">百白破疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 3803.53)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="6.03" y="33">苗</tspan><tspan class="cls-8" x="28.39" y="33">，</tspan><tspan x="45.03" y="33">流感疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="296.71" y="33">苗</tspan><tspan class="cls-8" x="319.07" y="33">，</tspan><tspan x="335.71" y="33">肠道</tspan><tspan x="-.47" y="66">病毒71型灭活疫</tspan><tspan class="cls-14" x="186.21" y="66">苗</tspan><tspan class="cls-8" x="208.57" y="66">，</tspan><tspan x="225.21" y="66">流脑疫</tspan><tspan class="cls-14" x="303.21" y="66">苗</tspan><tspan class="cls-8" x="325.57" y="66">，</tspan><tspan x="342.21" y="66">乙脑</tspan><tspan x="164.37" y="99">疫</tspan><tspan class="cls-14" x="190.37" y="99">苗</tspan><tspan class="cls-8" x="212.73" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="3590.25" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="3590.25" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="3590.25" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 3603.53)"><tspan x="0" y="0">7月龄</tspan></text>
+        <text class="cls-2" transform="translate(1180.4 3597.53)"><tspan x="0" y="0">脊灰灭活疫苗</tspan><tspan class="cls-9" x="204" y="0">；</tspan><tspan x="25.5" y="40.8">百白破疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 3585)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="6.03" y="33">苗</tspan><tspan class="cls-8" x="28.39" y="33">，</tspan><tspan x="45.03" y="33">流感疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="296.71" y="33">苗</tspan><tspan class="cls-8" x="319.07" y="33">，</tspan><tspan x="335.71" y="33">肠道</tspan><tspan x="-.47" y="66">病毒71型灭活疫</tspan><tspan class="cls-14" x="186.21" y="66">苗</tspan><tspan class="cls-8" x="208.57" y="66">，</tspan><tspan x="225.21" y="66">流脑疫</tspan><tspan class="cls-14" x="303.21" y="66">苗</tspan><tspan class="cls-8" x="325.57" y="66">，</tspan><tspan x="342.21" y="66">乙脑</tspan><tspan x="164.37" y="99">疫</tspan><tspan class="cls-14" x="190.37" y="99">苗</tspan><tspan class="cls-8" x="212.73" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="3371.72" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="3371.72" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="3371.72" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 3385)"><tspan x="0" y="0">8 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1197.4 3379)"><tspan x="0" y="0">麻腮风疫苗</tspan><tspan class="cls-9" x="170" y="0">；</tspan><tspan x="-8.5" y="40.8">乙脑减毒疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 3366.47)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="6.03" y="33">苗</tspan><tspan class="cls-8" x="28.39" y="33">，</tspan><tspan x="45.03" y="33">流感疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="296.71" y="33">苗</tspan><tspan class="cls-8" x="319.07" y="33">，</tspan><tspan x="335.71" y="33">肠道</tspan><tspan x="-.47" y="66">病毒71型灭活疫</tspan><tspan class="cls-14" x="186.21" y="66">苗</tspan><tspan class="cls-8" x="208.57" y="66">，</tspan><tspan x="225.21" y="66">流脑疫</tspan><tspan class="cls-14" x="303.21" y="66">苗</tspan><tspan class="cls-8" x="325.57" y="66">，</tspan><tspan x="342.21" y="66">乙脑</tspan><tspan x="164.37" y="99">疫</tspan><tspan class="cls-14" x="190.37" y="99">苗</tspan><tspan class="cls-8" x="212.73" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="3153.18" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="3153.18" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="3153.18" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 3166.47)"><tspan x="0" y="0">9 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1161 3160.47)"><tspan x="0" y="0">A群流脑多糖疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1521.12 3147.93)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">b型流感嗜血杆菌疫</tspan><tspan class="cls-14" x="6.03" y="33">苗</tspan><tspan class="cls-8" x="28.39" y="33">，</tspan><tspan x="45.03" y="33">流感疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">13价肺炎疫</tspan><tspan class="cls-14" x="296.71" y="33">苗</tspan><tspan class="cls-8" x="319.07" y="33">，</tspan><tspan x="335.71" y="33">肠道</tspan><tspan x="-.47" y="66">病毒71型灭活疫</tspan><tspan class="cls-14" x="186.21" y="66">苗</tspan><tspan class="cls-8" x="208.57" y="66">，</tspan><tspan x="225.21" y="66">流脑疫</tspan><tspan class="cls-14" x="303.21" y="66">苗</tspan><tspan class="cls-8" x="325.57" y="66">，</tspan><tspan x="342.21" y="66">乙脑</tspan><tspan x="164.37" y="99">疫</tspan><tspan class="cls-14" x="190.37" y="99">苗</tspan><tspan class="cls-8" x="212.73" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="2934.65" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="2934.65" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="2934.65" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 2947.93)"><tspan x="0" y="0">12 月龄</tspan></text>
+        <text class="cls-3" transform="translate(1527.62 2929.4)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">甲肝疫</tspan><tspan class="cls-14" x="247" y="0">苗</tspan><tspan class="cls-8" x="269.36" y="0">，</tspan><tspan x="286" y="0">b型流感</tspan><tspan x="-6.97" y="33">嗜血杆菌疫</tspan><tspan class="cls-14" x="123.03" y="33">苗</tspan><tspan class="cls-8" x="145.39" y="33">，</tspan><tspan x="162.03" y="33">流感疫</tspan><tspan class="cls-14" x="240.03" y="33">苗</tspan><tspan class="cls-8" x="262.39" y="33">，</tspan><tspan x="279.03" y="33">13价肺炎</tspan><tspan x="-6.97" y="66">疫</tspan><tspan class="cls-14" x="19.03" y="66">苗</tspan><tspan class="cls-8" x="41.39" y="66">，</tspan><tspan x="58.03" y="66">水痘疫</tspan><tspan class="cls-14" x="136.03" y="66">苗</tspan><tspan class="cls-8" x="158.39" y="66">，</tspan><tspan x="175.03" y="66">肠道病毒71型灭活</tspan><tspan x="40.87" y="99">疫</tspan><tspan class="cls-14" x="66.87" y="99">苗</tspan><tspan class="cls-8" x="89.23" y="99">，</tspan><tspan x="105.87" y="99">流脑疫</tspan><tspan class="cls-14" x="183.87" y="99">苗</tspan><tspan class="cls-8" x="206.23" y="99">，</tspan><tspan x="222.87" y="99">乙脑疫</tspan><tspan class="cls-14" x="300.87" y="99">苗</tspan><tspan class="cls-8" x="323.23" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="2633.45" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="2633.45" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="2633.45" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 2646.73)"><tspan x="0" y="0">18 月龄</tspan></text>
+        <text class="cls-2" transform="translate(1197.4 2640.73)"><tspan x="0" y="0">百白破疫苗</tspan><tspan class="cls-9" x="170" y="0">；</tspan><tspan x="0" y="40.8">麻腮风疫苗</tspan><tspan class="cls-9" x="170" y="40.8">；</tspan><tspan x="-8.5" y="81.6">甲肝减毒疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1527.62 2628.2)"><tspan x="0" y="0">轮状病毒疫</tspan><tspan class="cls-14" x="130" y="0">苗</tspan><tspan class="cls-8" x="152.36" y="0">，</tspan><tspan x="169" y="0">甲肝疫</tspan><tspan class="cls-14" x="247" y="0">苗</tspan><tspan class="cls-8" x="269.36" y="0">，</tspan><tspan x="286" y="0">b型流感</tspan><tspan x="-4.63" y="33">嗜血杆菌疫</tspan><tspan class="cls-14" x="125.37" y="33">苗</tspan><tspan class="cls-8" x="147.73" y="33">，</tspan><tspan x="164.37" y="33">脊髓灰质炎疫</tspan><tspan class="cls-14" x="320.37" y="33">苗</tspan><tspan class="cls-8" x="342.73" y="33">，</tspan><tspan x="359.37" y="33">流</tspan><tspan x="-.47" y="66">感疫</tspan><tspan class="cls-14" x="51.53" y="66">苗</tspan><tspan class="cls-8" x="73.89" y="66">，</tspan><tspan x="90.53" y="66">13价肺炎疫</tspan><tspan class="cls-14" x="225.21" y="66">苗</tspan><tspan class="cls-8" x="247.57" y="66">，</tspan><tspan x="264.21" y="66">水痘疫</tspan><tspan class="cls-14" x="342.21" y="66">苗</tspan><tspan class="cls-8" x="364.57" y="66">，</tspan><tspan x="-6.97" y="99">肠道病毒71型灭活疫</tspan><tspan class="cls-14" x="231.71" y="99">苗</tspan><tspan class="cls-8" x="254.07" y="99">，</tspan><tspan x="270.71" y="99">流脑疫</tspan><tspan class="cls-14" x="348.71" y="99">苗</tspan><tspan class="cls-8" x="371.07" y="99">，</tspan><tspan x="0" y="132">无细胞百白破灭活脊髓灰质炎和b</tspan><tspan x="1.87" y="165">型流感嗜血杆菌联合疫</tspan><tspan class="cls-12" x="261.87" y="165">苗</tspan><tspan class="cls-16" x="276.02" y="165">（</tspan><tspan x="300.87" y="165">五</tspan><tspan class="cls-15" x="326.87" y="165">联</tspan><tspan class="cls-10" x="351.73" y="165">）</tspan><tspan class="cls-8" x="362.23" y="165">，</tspan><tspan x="0" y="198">无细胞百白破b型流感嗜血杆菌联</tspan><tspan x="47.37" y="231">合疫</tspan><tspan class="cls-12" x="99.37" y="231">苗</tspan><tspan class="cls-16" x="113.52" y="231">（</tspan><tspan x="138.37" y="231">四</tspan><tspan class="cls-15" x="164.37" y="231">联</tspan><tspan class="cls-10" x="189.23" y="231">）</tspan><tspan class="cls-8" x="199.73" y="231">，</tspan><tspan x="216.37" y="231">乙脑疫</tspan><tspan class="cls-14" x="294.37" y="231">苗</tspan><tspan class="cls-8" x="316.73" y="231">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="1102.1" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="1102.1" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="1102.1" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 1115.38)"><tspan x="0" y="0">16 岁</tspan></text>
+        <text class="cls-3" transform="translate(1520.65 1096.85)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">流感疫</tspan><tspan class="cls-14" x="195" y="0">苗</tspan><tspan class="cls-8" x="217.36" y="0">，</tspan><tspan x="234" y="0">23价肺炎疫苗</tspan><tspan class="cls-8" x="18.2" y="33">，</tspan><tspan x="34.84" y="33">水痘疫</tspan><tspan class="cls-14" x="112.84" y="33">苗</tspan><tspan class="cls-8" x="135.2" y="33">，</tspan><tspan x="151.84" y="33">人乳头瘤病毒疫</tspan><tspan class="cls-12" x="333.84" y="33">苗</tspan><tspan class="cls-16" x="347.98" y="33">（</tspan><tspan x="1.78" y="66">HP</tspan><tspan class="cls-15" x="38.8" y="66">V</tspan><tspan class="cls-11" x="53.75" y="66">）</tspan><tspan x="67.9" y="66">疫</tspan><tspan class="cls-14" x="93.9" y="66">苗</tspan><tspan class="cls-8" x="116.26" y="66">，</tspan><tspan x="132.9" y="66">流脑疫</tspan><tspan class="cls-14" x="210.9" y="66">苗</tspan><tspan class="cls-8" x="233.26" y="66">，</tspan><tspan x="249.9" y="66">戊肝疫</tspan><tspan class="cls-14" x="327.9" y="66">苗</tspan><tspan class="cls-8" x="350.26" y="66">，</tspan><tspan x="366.9" y="66">霍</tspan><tspan x="93.34" y="99">乱疫</tspan><tspan class="cls-14" x="145.34" y="99">苗</tspan><tspan class="cls-8" x="167.7" y="99">，</tspan><tspan x="184.34" y="99">乙脑疫</tspan><tspan class="cls-14" x="262.34" y="99">苗</tspan><tspan class="cls-8" x="284.7" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="883.56" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="883.56" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="883.56" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 896.85)"><tspan x="0" y="0">≥40岁</tspan></text>
+        <text class="cls-3" transform="translate(1520.65 878.31)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">流感疫</tspan><tspan class="cls-14" x="195" y="0">苗</tspan><tspan class="cls-8" x="217.36" y="0">，</tspan><tspan x="234" y="0">23价肺炎疫苗</tspan><tspan class="cls-8" x="18.2" y="33">，</tspan><tspan x="34.84" y="33">水痘疫</tspan><tspan class="cls-14" x="112.84" y="33">苗</tspan><tspan class="cls-8" x="135.2" y="33">，</tspan><tspan x="151.84" y="33">人乳头瘤病毒疫</tspan><tspan class="cls-12" x="333.84" y="33">苗</tspan><tspan class="cls-16" x="347.98" y="33">（</tspan><tspan x="8.28" y="66">HP</tspan><tspan class="cls-15" x="45.3" y="66">V</tspan><tspan class="cls-11" x="60.25" y="66">）</tspan><tspan x="74.4" y="66">疫</tspan><tspan class="cls-14" x="100.4" y="66">苗</tspan><tspan class="cls-8" x="122.76" y="66">，</tspan><tspan x="139.4" y="66">流脑疫</tspan><tspan class="cls-14" x="217.4" y="66">苗</tspan><tspan class="cls-8" x="239.76" y="66">，</tspan><tspan x="256.4" y="66">带状疱疹疫</tspan><tspan class="cls-14" x="2.34" y="99">苗</tspan><tspan class="cls-8" x="24.7" y="99">，</tspan><tspan x="41.34" y="99">戊肝疫</tspan><tspan class="cls-14" x="119.34" y="99">苗</tspan><tspan class="cls-8" x="141.7" y="99">，</tspan><tspan x="158.34" y="99">霍乱疫</tspan><tspan class="cls-14" x="236.34" y="99">苗</tspan><tspan class="cls-8" x="258.7" y="99">，</tspan><tspan x="275.34" y="99">乙脑疫</tspan><tspan class="cls-14" x="353.34" y="99">苗</tspan><tspan class="cls-8" x="375.7" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="665.03" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="665.03" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="665.03" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 678.31)"><tspan x="0" y="0">≥50岁</tspan></text>
+        <text class="cls-3" transform="translate(1520.65 659.78)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">流感疫</tspan><tspan class="cls-14" x="195" y="0">苗</tspan><tspan class="cls-8" x="217.36" y="0">，</tspan><tspan x="234" y="0">23价肺炎疫苗</tspan><tspan class="cls-8" x="5.2" y="33">，</tspan><tspan x="21.84" y="33">水痘疫</tspan><tspan class="cls-14" x="99.84" y="33">苗</tspan><tspan class="cls-8" x="122.2" y="33">，</tspan><tspan x="138.84" y="33">流脑疫</tspan><tspan class="cls-14" x="216.84" y="33">苗</tspan><tspan class="cls-8" x="239.2" y="33">，</tspan><tspan x="255.84" y="33">带状疱疹疫</tspan><tspan class="cls-14" x="2.34" y="66">苗</tspan><tspan class="cls-8" x="24.7" y="66">，</tspan><tspan x="41.34" y="66">戊肝疫</tspan><tspan class="cls-14" x="119.34" y="66">苗</tspan><tspan class="cls-8" x="141.7" y="66">，</tspan><tspan x="158.34" y="66">霍乱疫</tspan><tspan class="cls-14" x="236.34" y="66">苗</tspan><tspan class="cls-8" x="258.7" y="66">，</tspan><tspan x="275.34" y="66">乙脑疫</tspan><tspan class="cls-14" x="353.34" y="66">苗</tspan><tspan class="cls-8" x="375.7" y="66">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="1539.16" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="1539.16" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="1539.16" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 1552.44)"><tspan x="0" y="0">9岁</tspan></text>
+        <text class="cls-3" transform="translate(1520.65 1533.91)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">流感疫</tspan><tspan class="cls-14" x="195" y="0">苗</tspan><tspan class="cls-8" x="217.36" y="0">，</tspan><tspan x="234" y="0">23价肺炎疫苗</tspan><tspan class="cls-8" x="18.2" y="33">，</tspan><tspan x="34.84" y="33">水痘疫</tspan><tspan class="cls-14" x="112.84" y="33">苗</tspan><tspan class="cls-8" x="135.2" y="33">，</tspan><tspan x="151.84" y="33">人乳头瘤病毒疫</tspan><tspan class="cls-12" x="333.84" y="33">苗</tspan><tspan class="cls-16" x="347.98" y="33">（</tspan><tspan x="1.78" y="66">HP</tspan><tspan class="cls-15" x="38.8" y="66">V</tspan><tspan class="cls-11" x="53.75" y="66">）</tspan><tspan x="67.9" y="66">疫</tspan><tspan class="cls-14" x="93.9" y="66">苗</tspan><tspan class="cls-8" x="116.26" y="66">，</tspan><tspan x="132.9" y="66">流脑疫</tspan><tspan class="cls-14" x="210.9" y="66">苗</tspan><tspan class="cls-8" x="233.26" y="66">，</tspan><tspan x="249.9" y="66">霍乱疫</tspan><tspan class="cls-14" x="327.9" y="66">苗</tspan><tspan class="cls-8" x="350.26" y="66">，</tspan><tspan x="366.9" y="66">乙</tspan><tspan x="151.84" y="99">脑疫</tspan><tspan class="cls-14" x="203.84" y="99">苗</tspan><tspan class="cls-8" x="226.2" y="99">，</tspan></text>
+      </g>
+      <g>
+        <g>
+          <circle class="cls-5" cx="917.78" cy="1320.63" r="36.9"/>
+          <circle class="cls-4" cx="917.78" cy="1320.63" r="23.85"/>
+          <circle class="cls-6" cx="917.78" cy="1320.63" r="15.81"/>
+        </g>
+        <text class="cls-1" transform="translate(989.25 1333.91)"><tspan x="0" y="0">13岁</tspan></text>
+        <text class="cls-2" transform="translate(1188.17 1327.91)"><tspan x="0" y="0">二价HPV疫苗</tspan></text>
+        <text class="cls-3" transform="translate(1520.65 1315.38)"><tspan x="0" y="0">甲肝疫</tspan><tspan class="cls-14" x="78" y="0">苗</tspan><tspan class="cls-8" x="100.36" y="0">，</tspan><tspan x="117" y="0">流感疫</tspan><tspan class="cls-14" x="195" y="0">苗</tspan><tspan class="cls-8" x="217.36" y="0">，</tspan><tspan x="234" y="0">23价肺炎疫苗</tspan><tspan class="cls-8" x="18.2" y="33">，</tspan><tspan x="34.84" y="33">水痘疫</tspan><tspan class="cls-14" x="112.84" y="33">苗</tspan><tspan class="cls-8" x="135.2" y="33">，</tspan><tspan x="151.84" y="33">人乳头瘤病毒疫</tspan><tspan class="cls-12" x="333.84" y="33">苗</tspan><tspan class="cls-16" x="347.98" y="33">（</tspan><tspan x="1.78" y="66">HP</tspan><tspan class="cls-15" x="38.8" y="66">V</tspan><tspan class="cls-11" x="53.75" y="66">）</tspan><tspan x="67.9" y="66">疫</tspan><tspan class="cls-14" x="93.9" y="66">苗</tspan><tspan class="cls-8" x="116.26" y="66">，</tspan><tspan x="132.9" y="66">流脑疫</tspan><tspan class="cls-14" x="210.9" y="66">苗</tspan><tspan class="cls-8" x="233.26" y="66">，</tspan><tspan x="249.9" y="66">霍乱疫</tspan><tspan class="cls-14" x="327.9" y="66">苗</tspan><tspan class="cls-8" x="350.26" y="66">，</tspan><tspan x="366.9" y="66">乙</tspan><tspan x="151.84" y="99">脑疫</tspan><tspan class="cls-14" x="203.84" y="99">苗</tspan><tspan class="cls-8" x="226.2" y="99">，</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

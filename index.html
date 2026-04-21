@@ -8,23 +8,129 @@
   <body>
     <canvas id="webgl"></canvas>
     
+    <!-- Lottie 动画 - leaves 全局 -->
+    <div id="lottie-leaves" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9998;
+      pointer-events: none;
+    "></div>
+    
+
+    
     <div id="main-scene" class="scene active">
       <div class="bg-wrapper">
         <div class="bg-image"></div>
         <div class="svg-container">
-          <img src="/SVG/1.svg" class="svg-item" data-page="page1" data-alt-src="/SVG package/Asset 6.svg" alt="Item 1">
-          <img src="/SVG/2.svg" class="svg-item" data-page="page2" data-alt-src="/SVG package/Asset 7.svg" alt="Item 2">
-          <img src="/SVG/3.svg" class="svg-item" data-page="page3" data-alt-src="/SVG package/Asset 5.svg" alt="Item 3">
-          <img src="/SVG/4.svg" class="svg-item" data-page="page4" data-alt-src="/SVG package/Asset 8.svg" alt="Item 4">
+          <!-- Lottie 动画 - bubble ui 配套动画（使用原始尺寸 1080x1920） -->
+          <div id="lottie-bubble-baby" class="lottie-bubble" style="
+            position: absolute;
+            left: 56%;
+            top: 58%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-bubble-kid" class="lottie-bubble" style="
+            position: absolute;
+            left: 49%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-bubble-adult" class="lottie-bubble" style="
+            position: absolute;
+            left: 66%;
+            top: 33%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-bubble-old" class="lottie-bubble" style="
+            position: absolute;
+            left: 47%;
+            top: 27%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            pointer-events: none;
+          "></div>
+          
+          <!-- Lottie 动画容器 - 四个人物动画 -->
+          <div id="lottie-baby" class="lottie-character" style="
+            position: absolute;
+            left: 51%;
+            top: 63%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-kid" class="lottie-character" style="
+            position: absolute;
+            left: 41%;
+            top: 51%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-adult" class="lottie-character" style="
+            position: absolute;
+            left: 60%;
+            top: 39%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <div id="lottie-old" class="lottie-character" style="
+            position: absolute;
+            left: 40%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            pointer-events: none;
+          "></div>
+          <!-- 提示图标保留 -->
           <img src="/SVG package/Asset 6 copy.svg" class="svg-item hint-item" alt="Hint">
         </div>
       </div>
     </div>
     
+    <div class="bottom-bg"></div>
+    
     <div id="detail-scene" class="scene">
-      <div class="bg-wrapper">
-        <div class="bg-image"></div>
+      <div class="scroll-container">
+        <img src="/文字长图.svg" class="detail-image" alt="Detail">
       </div>
+    </div>
+    
+    <div class="mask-layer"></div>
+    
+    <div class="close-btn">
+      <img src="/叉.svg" alt="Close">
+    </div>
+    
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <div class="modal-close" id="modalClose">
+          <img src="/叉.svg" alt="Close">
+        </div>
+        <div class="modal-body" id="modalBody">
+        </div>
+      </div>
+    </div>
+    
+    <div class="fixed-title">
+      <img src="/固定标题.svg" alt="Title">
+    </div>
+    
+    <div class="fixed-images">
+      <img src="/P1.svg" class="fixed-img" data-scroll-start="6000" data-scroll-end="7560" alt="P1">
+      <img src="/P2.svg" class="fixed-img" data-scroll-start="4800" data-scroll-end="6000" alt="P2">
+      <img src="/P3.svg" class="fixed-img" data-scroll-start="4200" data-scroll-end="4800" alt="P3">
+      <img src="/P4.svg" class="fixed-img" data-scroll-start="2900" data-scroll-end="4200" alt="P4">
     </div>
     
     <script type="module" src="/src/main.js"></script>
