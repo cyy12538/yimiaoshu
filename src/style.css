@@ -108,13 +108,13 @@ body {
 
 /* Asset 12 最底层 */
 #bottom-bg-12 {
-  background-image: url('/public/植物/Asset 12.svg');
+  background-image: url('/植物/Asset 12.svg');
   z-index: 4;
 }
 
 /* Asset 11 上层 */
 #bottom-bg-11 {
-  background-image: url('/public/植物/Asset 11.svg');
+  background-image: url('/植物/Asset 11.svg');
   z-index: 5;
 }
 

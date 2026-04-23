@@ -121,16 +121,16 @@ function initPlantAnimations(displayWidth, displayHeight) {
     
     // 如果还没有加载，加载天空图片
     if (!skyContainer.innerHTML) {
-      skyContainer.innerHTML = `<img src="/public/植物/Asset 13.svg" style="width: 100%; height: 100%; object-fit: cover;">`;
+      skyContainer.innerHTML = `<img src="/植物/Asset 13.svg" style="width: 100%; height: 100%; object-fit: cover;">`;
     }
   }
   
   // 植物动画层配置
   const plantLayers = [
-    { id: 'bg', containerId: 'bg-layer', path: '/public/植物/背景3.json' },
-    { id: 'far', containerId: 'far-layer', path: '/public/植物/杩滄櫙妞嶇墿.json' },
-    { id: 'mid', containerId: 'mid-layer', path: '/public/植物/中景.json' },
-    { id: 'front', containerId: 'front-layer', path: '/public/植物/前景3.json' }
+    { id: 'bg', containerId: 'bg-layer', path: '/植物/背景3.json' },
+    { id: 'far', containerId: 'far-layer', path: '/植物/杩滄櫙妞嶇墿.json' },
+    { id: 'mid', containerId: 'mid-layer', path: '/植物/中景.json' },
+    { id: 'front', containerId: 'front-layer', path: '/植物/前景3.json' }
   ];
   
   plantLayers.forEach(layer => {
