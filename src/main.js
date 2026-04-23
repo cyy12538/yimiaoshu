@@ -86,20 +86,6 @@ const bubbleConfigs = [
 
 const bubbleAnimations = {};
 
-// Leaves 全局动画配置
-const leavesContainer = document.getElementById('lottie-leaves');
-if (leavesContainer) {
-  console.log('正在加载 leaves 全局动画');
-  const leavesAnimation = new LottieAnimation({
-    container: leavesContainer,
-    path: '/leaves鍏ㄥ眬.json',
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    speed: 1
-  });
-  window.leavesAnimation = leavesAnimation;
-}
 
 // 存储植物背景动画实例
 const plantAnimations = {};
@@ -144,7 +130,7 @@ function initPlantAnimations(displayWidth, displayHeight) {
         const animation = new LottieAnimation({
           container: container,
           path: layer.path,
-          renderer: 'canvas',
+          renderer: 'svg',
           loop: true,
           autoplay: true,
           speed: 1
@@ -218,11 +204,34 @@ function initAnimations() {
 
 const mainScene = document.getElementById('main-scene');
 const detailScene = document.getElementById('detail-scene');
-const maskLayer = document.querySelector('.mask-layer');
+const maskLayer = document.getElementById('mask-lottie');
+
+// 初始化二级页面前景 Lottie 动画
+let maskLottieAnimation = null;
+function initMaskLottie() {
+  if (maskLottieAnimation) return;
+  
+  // 设置 mask-layer 尺寸，与植物背景层保持一致的缩放逻辑
+  const { displayWidth, displayHeight } = getDisplaySize();
+  if (maskLayer) {
+    maskLayer.style.width = `${displayWidth}px`;
+    maskLayer.style.height = `${displayHeight}px`;
+  }
+  
+  maskLottieAnimation = new LottieAnimation({
+    container: maskLayer,
+    path: '/二级页面前景2.json',
+    loop: true,
+    autoplay: false,
+    renderer: 'svg'
+  });
+}
 const bottomBg12 = document.getElementById('bottom-bg-12');
 const bottomBg11 = document.getElementById('bottom-bg-11');
+const gradientTop = document.querySelector('.gradient-top');
+const gradientBottom = document.querySelector('.gradient-bottom');
 const fixedImgs = document.querySelectorAll('.fixed-img');
-const fixedTitle = document.querySelector('.fixed-title');
+
 const closeBtn = document.querySelector('.close-btn');
 const modalOverlay = document.getElementById('modalOverlay');
 const modalClose = document.getElementById('modalClose');
@@ -231,7 +240,7 @@ const detailImage = document.querySelector('.detail-image');
 
 // 原始设计稿中的滚动范围（基于原始 SVG viewBox 高度）
 const ORIGINAL_MIN_SCROLL = 3950;
-const ORIGINAL_MAX_SCROLL = 6600;
+const ORIGINAL_MAX_SCROLL = 7350;
 
 // 当前实际的滚动范围
 let MIN_SCROLL = 3000;
@@ -254,7 +263,8 @@ let isDetailPage = false;
 
 // 详情页滚动相关的常量
 // 文字长图的实际高度（viewBox 高度）
-const SVG_VIEWBOX_HEIGHT = 5940.25;
+// 列表(1).svg 实际高度: 6756px
+const SVG_VIEWBOX_HEIGHT = 6756;
 
 // 疫苗数据结构 - 区分免疫规划疫苗和非免疫规划疫苗
 const vaccineData = {
@@ -1876,31 +1886,32 @@ const vaccineData = {
   }
 };
 
+// 基于 列表(1).svg 实际坐标（从 SVG 中提取的 transform Y + 585 偏移）
 const svgNodes = [
-  { cy: 665.03, key: '50year' },
-  { cy: 883.56, key: '40year' },
-  { cy: 1102.1, key: '16year' },
-  { cy: 1320.63, key: '13year' },
-  { cy: 1539.16, key: '9year' },
-  { cy: 1757.69, key: '6year' },
-  { cy: 1976.22, key: '4year' },
-  { cy: 2194.75, key: '3year' },
-  { cy: 2413.29, key: '2year' },
-  { cy: 2633.45, key: '18month' },
-  { cy: 2934.65, key: '12month' },
-  { cy: 3153.18, key: '9month' },
-  { cy: 3371.72, key: '8month' },
-  { cy: 3590.25, key: '7month' },
-  { cy: 3808.78, key: '6month' },
-  { cy: 4027.31, key: '5month' },
-  { cy: 4245.84, key: '4month' },
-  { cy: 4497.37, key: '3.5month' },
-  { cy: 4682.91, key: '3month' },
-  { cy: 4922.44, key: '2.5month' },
-  { cy: 5119.97, key: '2month' },
-  { cy: 5338.5, key: '1.5month' },
-  { cy: 5557.03, key: '1month' },
-  { cy: 5775.56, key: 'birth' }
+  { cy: 650, key: '50year' },      // ≥50岁 (665+585)
+  { cy: 1069, key: '40year' },      // ≥40岁 (884+585)
+  { cy: 1187, key: '16year' },      // 16岁 (1102+585)
+  { cy: 1406, key: '13year' },      // 13岁 (1321+585)
+  { cy: 1694, key: '9year' },       // 9岁 (1539+585)
+  { cy: 1851, key: '6year' },       // 6岁 (1266+585)
+  { cy: 1979, key: '4year' },       // 4岁 (1994+585)
+  { cy: 2197, key: '3year' },       // 3岁 (2212+585)
+  { cy: 2717, key: '2year' },       // 2岁 (2432+585)
+  { cy: 3018, key: '18month' },     // 18月龄 (2633+585)
+  { cy: 3310, key: '12month' },     // 12月龄 (2925+585)
+  { cy: 3530, key: '9month' },      // 9月龄 (3145+585)
+  { cy: 3750, key: '8month' },      // 8月龄 (3365+585)
+  { cy: 3970, key: '7month' },      // 7月龄 (3585+585)
+  { cy: 4200, key: '6month' },      // 6月龄 (3805+585)
+  { cy: 4425, key: '5month' },      // 5月龄 (4025+585)
+  { cy: 4695, key: '4month' },      // 4月龄 (4245+585)
+  { cy: 4715, key: '3.5month' },    // 3.5月龄 (4515+585)
+  { cy: 4885, key: '3month' },      // 3月龄 (4685+585)
+  { cy: 5125, key: '2.5month' },    // 2.5月龄 (4925+585)
+  { cy: 5300, key: '2month' },      // 2月龄 (5125+585)
+  { cy: 5400, key: '1.5month' },    // 1.5月龄 (5355+585)
+  { cy: 5655, key: '1month' },      // 1月龄 (5655+585)
+  { cy: 5800, key: 'birth' }        // 出生时 (5875+585)
 ];
 
 // 计算点击范围（基于原始坐标）
@@ -1978,8 +1989,7 @@ function getClickType(e, rect) {
   const clickX = e.clientX - rect.left;
   const width = rect.width;
   // 左侧50%为免疫规划区域，右侧50%为非免疫规划区域
-  // 可以根据实际图片调整这个比例
-  return clickX < width * 0.64 ? 'planned' : 'unplanned';
+  return clickX < width * 0.5 ? 'planned' : 'unplanned';
 }
 
 // 详情页图片点击事件
@@ -2054,9 +2064,17 @@ characterClickConfig.forEach(config => {
       maskLayer.classList.add('visible');
       bottomBg12.classList.add('visible');
       bottomBg11.classList.add('visible');
-      fixedTitle.classList.add('visible');
+      gradientTop.classList.add('visible');
+      gradientBottom.classList.add('visible');
+
       closeBtn.classList.add('visible');
       isDetailPage = true;
+      
+      // 初始化并播放二级页面前景动画
+      initMaskLottie();
+      if (maskLottieAnimation && maskLottieAnimation.animation) {
+        maskLottieAnimation.animation.play();
+      }
       
       // 隐藏人物动画
       showCharacterAnimations(false);
@@ -2139,10 +2157,17 @@ function goBack() {
     maskLayer.classList.remove('visible');
     bottomBg12.classList.remove('visible');
     bottomBg11.classList.remove('visible');
-    fixedTitle.classList.remove('visible');
+    gradientTop.classList.remove('visible');
+    gradientBottom.classList.remove('visible');
+
     closeBtn.classList.remove('visible');
     fixedImgs.forEach(img => img.classList.remove('visible'));
     isDetailPage = false;
+    
+    // 停止二级页面前景动画
+    if (maskLottieAnimation && maskLottieAnimation.animation) {
+      maskLottieAnimation.animation.stop();
+    }
     
     // 显示人物动画
     showCharacterAnimations(true);
@@ -2256,34 +2281,28 @@ function adjustLayout() {
 
 // 调整详情页元素位置
 function adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRatio) {
+  // 调整二级页面前景动画层尺寸（与植物背景层保持一致的缩放逻辑）
+  if (maskLayer) {
+    maskLayer.style.width = `${displayWidth}px`;
+    maskLayer.style.height = `${displayHeight}px`;
+  }
+  
   // 文字长图：按原始比例缩放，宽度超过显示范围时裁切两边
   const detailImage = document.querySelector('.detail-image');
   if (detailImage) {
     // 文字长图原始尺寸: 2389.66 x 5940.25
     // 计算缩放比例：基于宽度从 2389.66 缩放到 displayWidth
-    const longImageScale = displayWidth / 2389.66;
-    const scaledHeight = 5940.25 * longImageScale;
+    const longImageScale = displayWidth / 2160;
+    const scaledHeight = 6756 * longImageScale;
     
     detailImage.style.width = `${displayWidth}px`;
     detailImage.style.height = `${scaledHeight}px`;
   }
   
-  // 调整固定标题位置和尺寸
-  // 原始设计稿: 位置 (0.66, 0.09), 原始宽度 747.97px
-  const fixedTitle = document.querySelector('.fixed-title');
-  if (fixedTitle) {
-    fixedTitle.style.left = `${offsetX + displayWidth * 0.62}px`;
-    fixedTitle.style.top = `${displayHeight * 0.09}px`;
-    const titleImg = fixedTitle.querySelector('img');
-    if (titleImg) {
-      titleImg.style.width = `${747.97 * scaleRatio}px`;
-    }
-  }
-  
   // 调整关闭按钮位置
   const closeBtn = document.querySelector('.close-btn');
   if (closeBtn) {
-    closeBtn.style.right = `${offsetX + displayWidth * 0.02}px`;
+    closeBtn.style.right = `${offsetX + displayWidth * 0.04}px`;
     closeBtn.style.top = `${displayHeight * 0.02}px`;
     const btnImg = closeBtn.querySelector('img');
     if (btnImg) {
@@ -2292,28 +2311,16 @@ function adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRat
   }
   
   // 调整固定图片位置和尺寸
-  // 原始设计稿配置：left(百分比), top(百分比), 原始宽度(px)
-  // 修改下面的数值来调整位置
-  const imgConfigs = [
-    { left: 0.2, top: 0.30, width: 472.08 },  // P1
-    { left: 0.2, top: 0.25, width: 383.56 },  // P2
-    { left: 0.2, top: 0.23, width: 428.23 },  // P3
-    { left: 0.2, top: 0.23, width: 584.37 }   // P4
-  ];
-  
-  fixedImgs.forEach((img, index) => {
-    if (imgConfigs[index]) {
-      const config = imgConfigs[index];
-      // 移除 max-width 限制
-      img.style.maxWidth = 'none';
-      // 设置位置（基于屏幕百分比 + 偏移量）
-      img.style.left = `${offsetX + displayWidth * config.left}px`;
-      img.style.top = `${displayHeight * config.top}px`;
-      // 设置尺寸（原始宽度 * 缩放比例）
-      img.style.width = `${config.width * scaleRatio}px`;
-      // 水平居中
-      img.style.transform = 'translateX(-50%)';
-    }
+  // 人物图片使用 2160x3840 设计稿，与背景层保持一致的缩放逻辑
+  fixedImgs.forEach((img) => {
+    // 设置与显示区域相同的尺寸（像背景层一样缩放）
+    img.style.width = `${displayWidth}px`;
+    img.style.height = `${displayHeight}px`;
+    img.style.left = `${offsetX}px`;
+    img.style.top = '0px';
+    img.style.objectFit = 'contain';
+    img.style.maxWidth = 'none';
+    img.style.transform = 'none';
   });
 }
 
