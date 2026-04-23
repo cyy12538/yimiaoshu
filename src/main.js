@@ -4,112 +4,87 @@ import { LottieAnimation } from './components/LottieAnimation.js';
 // 存储所有动画实例
 const animations = {};
 
-// 原始设计稿尺寸
-const DESIGN_WIDTH = 1080;
-const ORIGINAL_BG_WIDTH = 2994.23; // 主图原始宽度
+// 设计稿原始尺寸
+const ORIGINAL_WIDTH = 2160;
+const ORIGINAL_HEIGHT = 3840;
+const ASPECT_RATIO = ORIGINAL_WIDTH / ORIGINAL_HEIGHT;
 
-// 获取背景图的实际缩放比例
-function getBgScaleRatio() {
-  const bgWrapper = document.querySelector('.bg-wrapper');
-  if (!bgWrapper) return 1;
+// 获取显示尺寸（保持比例，填满屏幕）
+function getDisplaySize() {
+  // 使用 document.documentElement.clientWidth 获取更可靠的视口宽度
+  const screenWidth = document.documentElement.clientWidth;
+  const screenHeight = document.documentElement.clientHeight;
   
-  const wrapperWidth = bgWrapper.clientWidth;
-  const wrapperHeight = bgWrapper.clientHeight;
+  let displayWidth, displayHeight;
   
-  // 主图原始比例
-  const bgAspectRatio = ORIGINAL_BG_WIDTH / 4378.87;
-  
-  // 根据容器高度计算主图实际显示宽度
-  let actualBgWidth = wrapperHeight * bgAspectRatio;
-  
-  // 如果计算出的宽度超过容器宽度，则使用容器宽度
-  if (actualBgWidth > wrapperWidth) {
-    actualBgWidth = wrapperWidth;
+  if (screenWidth / screenHeight > ASPECT_RATIO) {
+    // 屏幕比设计稿更宽，以高度为基准
+    displayHeight = screenHeight;
+    displayWidth = displayHeight * ASPECT_RATIO;
+  } else {
+    // 屏幕比设计稿更窄，以宽度为基准
+    displayWidth = screenWidth;
+    displayHeight = displayWidth / ASPECT_RATIO;
   }
   
-  // 返回缩放比例
-  return actualBgWidth / ORIGINAL_BG_WIDTH;
+  return { displayWidth, displayHeight, screenWidth, screenHeight };
 }
 
-// 获取当前屏幕相对于设计稿的缩放比例（用于初始加载）
+// 获取缩放比例
 function getScaleRatio() {
-  const screenWidth = window.innerWidth;
-  return Math.min(screenWidth / DESIGN_WIDTH, 1);
+  const { displayWidth } = getDisplaySize();
+  return displayWidth / ORIGINAL_WIDTH;
 }
 
-// 将像素值转换为缩放后的值
-function scaleValue(pxValue, ratio = null) {
-  const scaleRatio = ratio || getScaleRatio();
-  return `${pxValue * scaleRatio}px`;
-}
-
-// 动画配置 - 使用原始尺寸
+// 动画配置 - 使用原始尺寸（相对于 2160x3840 设计稿）
 const animationConfigs = [
   {
     id: 'baby',
     containerId: 'lottie-baby',
     path: '人物/baby.json',
-    width: 283,  // 原始宽度（纯数字，便于缩放）
-    height: 306  // 原始高度
+    width: 283,
+    height: 306,
+    left: 0.51,
+    top: 0.63
   },
   {
     id: 'kid',
     containerId: 'lottie-kid',
     path: '人物/kid.json',
     width: 268,
-    height: 455
+    height: 455,
+    left: 0.41,
+    top: 0.51
   },
   {
     id: 'adult',
     containerId: 'lottie-adult',
     path: '人物/adult.json',
     width: 268,
-    height: 770
+    height: 770,
+    left: 0.60,
+    top: 0.39
   },
   {
     id: 'old',
     containerId: 'lottie-old',
     path: 'old(1).json',
     width: 256,
-    height: 575
+    height: 575,
+    left: 0.40,
+    top: 0.3
   }
 ];
 
-// Bubble UI 动画配置（四个人物配套的 bubble 动画）
+// Bubble UI 动画配置
 const bubbleConfigs = [
-  { id: 'baby', containerId: 'lottie-bubble-baby', width: 1080, height: 1920 },
-  { id: 'kid', containerId: 'lottie-bubble-kid', width: 1080, height: 1920 },
-  { id: 'adult', containerId: 'lottie-bubble-adult', width: 1080, height: 1920 },
-  { id: 'old', containerId: 'lottie-bubble-old', width: 1080, height: 1920 }
+  { id: 'baby', containerId: 'lottie-bubble-baby', width: 1080, height: 1920, left: 0.57, top: 0.57 },
+  { id: 'kid', containerId: 'lottie-bubble-kid', width: 1080, height: 1920, left: 0.5, top: 0.44 },
+  { id: 'adult', containerId: 'lottie-bubble-adult', width: 1080, height: 1920, left: 0.67, top: 0.31 },
+  { id: 'old', containerId: 'lottie-bubble-old', width: 1080, height: 1920, left: 0.47, top: 0.22 }
 ];
-
-// 先计算背景缩放比例
-const bgScaleRatio = getBgScaleRatio();
-console.log('背景缩放比例:', bgScaleRatio);
 
 const bubbleAnimations = {};
-
-bubbleConfigs.forEach(config => {
-  const container = document.getElementById(config.containerId);
-  if (container) {
-    // 设置缩放后的尺寸（根据背景图缩放比例）
-    container.style.width = scaleValue(config.width, bgScaleRatio);
-    container.style.height = scaleValue(config.height, bgScaleRatio);
-    
-    console.log(`正在加载 bubble ui 动画: ${config.id}, 尺寸:`, container.style.width, container.style.height);
-    const animation = new LottieAnimation({
-      container: container,
-      path: '/bubble ui.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      speed: 1
-    });
-    bubbleAnimations[config.id] = animation;
-  }
-});
-
-window.bubbleAnimations = bubbleAnimations;
 
 // Leaves 全局动画配置
 const leavesContainer = document.getElementById('lottie-leaves');
@@ -126,75 +101,126 @@ if (leavesContainer) {
   window.leavesAnimation = leavesAnimation;
 }
 
+// 存储植物背景动画实例
+const plantAnimations = {};
 
-
-// 初始化所有 Lottie 动画
-
-animationConfigs.forEach(config => {
-  const container = document.getElementById(config.containerId);
-  if (container) {
-    // 设置容器尺寸（根据背景图缩放比例）
-    container.style.width = scaleValue(config.width, bgScaleRatio);
-    container.style.height = scaleValue(config.height, bgScaleRatio);
+// 初始化多层植物背景动画
+function initPlantAnimations(displayWidth, displayHeight) {
+  // 天空层（静态 SVG）- Asset 13
+  const skyContainer = document.getElementById('sky-layer');
+  if (skyContainer) {
+    const skyOriginalWidth = 2159.08;
+    const skyOriginalHeight = 1006.93;
+    const skyAspectRatio = skyOriginalHeight / skyOriginalWidth;
     
-    // 调试：输出容器位置和尺寸信息
-    console.log(`动画 ${config.id}:`, {
-      originalWidth: config.width,
-      originalHeight: config.height,
-      scaledWidth: container.style.width,
-      scaledHeight: container.style.height,
-      bgScaleRatio: bgScaleRatio,
-      left: container.style.left,
-      top: container.style.top
-    });
+    const skyDisplayWidth = displayWidth;
+    const skyDisplayHeight = displayWidth * skyAspectRatio;
     
-    console.log(`正在加载动画: ${config.id}, 路径: ${config.path}`);
+    skyContainer.style.width = `${skyDisplayWidth}px`;
+    skyContainer.style.height = `${skyDisplayHeight}px`;
     
-    // 创建动画实例
-    const animation = new LottieAnimation({
-      container: container,
-      path: config.path,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      speed: 1
-    });
-    
-    // 监听加载事件
-    if (animation.animation) {
-      animation.animation.addEventListener('DOMLoaded', () => {
-        console.log(`动画加载成功: ${config.id}`);
-      });
-      animation.animation.addEventListener('data_failed', () => {
-        console.error(`动画加载失败: ${config.id}, 路径: ${config.path}`);
-      });
+    // 如果还没有加载，加载天空图片
+    if (!skyContainer.innerHTML) {
+      skyContainer.innerHTML = `<img src="/public/植物/Asset 13.svg" style="width: 100%; height: 100%; object-fit: cover;">`;
     }
-    
-    animations[config.id] = {
-      instance: animation,
-      container: container
-    };
-  } else {
-    console.error(`容器未找到: ${config.containerId}`);
   }
-});
-
-// 将动画实例挂载到 window 方便调试
-window.lottieAnimations = animations;
-
-// 检查所有动画状态
-setTimeout(() => {
-  console.log('动画加载状态检查:');
-  Object.keys(animations).forEach(id => {
-    const anim = animations[id].instance;
-    console.log(`  ${id}: isLoaded=${anim.isLoaded}`);
+  
+  // 植物动画层配置
+  const plantLayers = [
+    { id: 'bg', containerId: 'bg-layer', path: '/public/植物/背景3.json' },
+    { id: 'far', containerId: 'far-layer', path: '/public/植物/杩滄櫙妞嶇墿.json' },
+    { id: 'mid', containerId: 'mid-layer', path: '/public/植物/中景.json' },
+    { id: 'front', containerId: 'front-layer', path: '/public/植物/前景3.json' }
+  ];
+  
+  plantLayers.forEach(layer => {
+    const container = document.getElementById(layer.containerId);
+    if (container) {
+      container.style.width = `${displayWidth}px`;
+      container.style.height = `${displayHeight}px`;
+      
+      // 如果动画还没初始化，创建新动画
+      if (!plantAnimations[layer.id]) {
+        const animation = new LottieAnimation({
+          container: container,
+          path: layer.path,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          speed: 1
+        });
+        plantAnimations[layer.id] = animation;
+      }
+    }
   });
-}, 3000);
+}
+
+// 初始化所有动画
+function initAnimations() {
+  const { displayWidth, displayHeight, screenWidth } = getDisplaySize();
+  const scaleRatio = getScaleRatio();
+  const offsetX = (screenWidth - displayWidth) / 2;
+  
+  // 初始化多层植物背景动画
+  initPlantAnimations(displayWidth, displayHeight);
+  
+  // 初始化人物动画
+  animationConfigs.forEach(config => {
+    const container = document.getElementById(config.containerId);
+    if (container) {
+      container.style.width = `${config.width * scaleRatio}px`;
+      container.style.height = `${config.height * scaleRatio}px`;
+      container.style.left = `${offsetX + displayWidth * config.left}px`;
+      container.style.top = `${displayHeight * config.top}px`;
+      
+      if (!animations[config.id]) {
+        const animation = new LottieAnimation({
+          container: container,
+          path: config.path,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          speed: 1
+        });
+        animations[config.id] = { instance: animation, container };
+      }
+    }
+  });
+  
+  // 初始化 bubble 动画
+  bubbleConfigs.forEach(config => {
+    const container = document.getElementById(config.containerId);
+    if (container) {
+      container.style.width = `${config.width * scaleRatio}px`;
+      container.style.height = `${config.height * scaleRatio}px`;
+      container.style.left = `${offsetX + displayWidth * config.left}px`;
+      container.style.top = `${displayHeight * config.top}px`;
+      
+      if (!bubbleAnimations[config.id]) {
+        const animation = new LottieAnimation({
+          container: container,
+          path: '/bubble ui.json',
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          speed: 1
+        });
+        bubbleAnimations[config.id] = animation;
+      }
+    }
+  });
+  
+  window.bubbleAnimations = bubbleAnimations;
+  window.lottieAnimations = animations;
+  
+  console.log('动画初始化完成:', { displayWidth, displayHeight, scaleRatio, offsetX });
+}
 
 const mainScene = document.getElementById('main-scene');
 const detailScene = document.getElementById('detail-scene');
 const maskLayer = document.querySelector('.mask-layer');
-const bottomBg = document.querySelector('.bottom-bg');
+const bottomBg12 = document.getElementById('bottom-bg-12');
+const bottomBg11 = document.getElementById('bottom-bg-11');
 const fixedImgs = document.querySelectorAll('.fixed-img');
 const fixedTitle = document.querySelector('.fixed-title');
 const closeBtn = document.querySelector('.close-btn');
@@ -204,32 +230,19 @@ const modalBody = document.getElementById('modalBody');
 const detailImage = document.querySelector('.detail-image');
 
 // 原始设计稿中的滚动范围（基于原始 SVG viewBox 高度）
-const ORIGINAL_MIN_SCROLL = 4900;
-const ORIGINAL_MAX_SCROLL = 7500;
+const ORIGINAL_MIN_SCROLL = 3950;
+const ORIGINAL_MAX_SCROLL = 6600;
 
 // 当前实际的滚动范围
 let MIN_SCROLL = 3000;
 let MAX_SCROLL = 7290;
 
-// 根据文字长图实际高度计算滚动范围
+// 更新滚动范围
 function updateScrollRange() {
-  const detailImage = document.querySelector('.detail-image');
-  
-  if (detailImage) {
-    const imageHeight = detailImage.clientHeight;
-    
-    // 计算缩放比例（基于原始 viewBox 高度）
-    const scaleRatio = imageHeight / SVG_VIEWBOX_HEIGHT;
-    
-    // 根据缩放比例调整滚动范围，保持原始的相对位置
-    MIN_SCROLL = Math.round(ORIGINAL_MIN_SCROLL * scaleRatio);
-    MAX_SCROLL = Math.round(ORIGINAL_MAX_SCROLL * scaleRatio);
-    
-    // 更新 svgNodes 的缩放坐标
-    updateSvgNodesScale(scaleRatio);
-    
-    console.log('滚动范围更新:', { MIN_SCROLL, MAX_SCROLL, imageHeight, scaleRatio });
-  }
+  const scaleRatio = getScaleRatio();
+  MIN_SCROLL = Math.round(ORIGINAL_MIN_SCROLL * scaleRatio);
+  MAX_SCROLL = Math.round(ORIGINAL_MAX_SCROLL * scaleRatio);
+  console.log('滚动范围更新:', { MIN_SCROLL, MAX_SCROLL, scaleRatio });
 }
 
 let touchStartX = 0;
@@ -239,6 +252,8 @@ let touchEndY = 0;
 let scrollTimeout = null;
 let isDetailPage = false;
 
+// 详情页滚动相关的常量
+// 文字长图的实际高度（viewBox 高度）
 const SVG_VIEWBOX_HEIGHT = 5940.25;
 
 const vaccineData = {
@@ -367,16 +382,7 @@ const svgNodes = [
   { cy: 5775.56, key: 'birth' }
 ];
 
-// 根据缩放比例更新 svgNodes 的坐标
-function updateSvgNodesScale(scaleRatio) {
-  svgNodes.forEach(node => {
-    node.scaledCy = node.cy * scaleRatio;
-  });
-}
-
-// 初始化时设置缩放比例为 1
-updateSvgNodesScale(1);
-
+// 计算点击范围（基于原始坐标）
 const svgRanges = [];
 for (let i = 0; i < svgNodes.length; i++) {
   const current = svgNodes[i];
@@ -386,6 +392,9 @@ for (let i = 0; i < svgNodes.length; i++) {
   const max = next ? (current.cy + next.cy) / 2 : SVG_VIEWBOX_HEIGHT;
   svgRanges.push({ min, max, key: current.key });
 }
+
+// 打印范围用于调试
+console.log('SVG 点击范围:', svgRanges.map(r => ({ key: r.key, min: Math.round(r.min), max: Math.round(r.max) })));
 
 function showModal(key) {
   const data = vaccineData[key];
@@ -406,15 +415,22 @@ modalOverlay.addEventListener('click', (e) => {
   }
 });
 
+// 详情页图片点击事件
 if (detailImage) {
   detailImage.addEventListener('click', (e) => {
     if (!isDetailPage) return;
     
     const rect = detailImage.getBoundingClientRect();
-    const svgY = (e.clientY - rect.top) * (SVG_VIEWBOX_HEIGHT / rect.height);
+    // 计算点击位置相对于图片的百分比
+    const clickYPercent = (e.clientY - rect.top) / rect.height;
+    // 转换为 SVG 原始坐标系中的 Y 坐标
+    const svgY = clickYPercent * SVG_VIEWBOX_HEIGHT;
+    
+    console.log('点击位置:', { clickYPercent, svgY, ranges: svgRanges });
     
     for (const range of svgRanges) {
       if (svgY >= range.min && svgY < range.max) {
+        console.log('匹配到:', range.key);
         showModal(range.key);
         break;
       }
@@ -466,7 +482,8 @@ characterClickConfig.forEach(config => {
       mainScene.classList.add('exit');
       detailScene.classList.add('active');
       maskLayer.classList.add('visible');
-      bottomBg.classList.add('visible');
+      bottomBg12.classList.add('visible');
+      bottomBg11.classList.add('visible');
       fixedTitle.classList.add('visible');
       closeBtn.classList.add('visible');
       isDetailPage = true;
@@ -489,14 +506,10 @@ document.querySelectorAll('.svg-item.hint-item').forEach(item => {
   });
 });
 
-// 根据缩放比例调整滚动位置
+// 获取缩放后的滚动位置
 function getScaledScrollPosition(originalPosition) {
-  const detailImage = document.querySelector('.detail-image');
-  if (!detailImage) return originalPosition;
-  
-  const imageHeight = detailImage.clientHeight;
-  const scaleRatio = imageHeight / SVG_VIEWBOX_HEIGHT;
-  
+  const { displayHeight } = getDisplaySize();
+  const scaleRatio = displayHeight / ORIGINAL_HEIGHT;
   return Math.round(originalPosition * scaleRatio);
 }
 
@@ -554,7 +567,8 @@ function goBack() {
     mainScene.classList.remove('exit');
     mainScene.classList.add('active');
     maskLayer.classList.remove('visible');
-    bottomBg.classList.remove('visible');
+    bottomBg12.classList.remove('visible');
+    bottomBg11.classList.remove('visible');
     fixedTitle.classList.remove('visible');
     closeBtn.classList.remove('visible');
     fixedImgs.forEach(img => img.classList.remove('visible'));
@@ -629,221 +643,123 @@ function startAnimation() {
 startAnimation();
 
 // Asset 7.svg 的原始宽度
-const ASSET7_ORIGINAL_WIDTH = 2158.84;
-// 文字长图的原始宽度
-const TEXT_IMAGE_ORIGINAL_WIDTH = 2389.66;
-
-// 调整文字长图宽度，使其与 Asset 7.svg 的显示宽度一致
-// 同时调整 svg-container 高度，使其与背景图实际显示高度一致
-// 同时调整详情页中固定元素的位置和大小
+// 调整布局（简化版）
 function adjustLayout() {
-  const bgWrapper = document.querySelector('.bg-wrapper');
-  const bgImage = document.querySelector('.bg-image');
-  const detailImage = document.querySelector('.detail-image');
+  const { displayWidth, displayHeight, screenWidth } = getDisplaySize();
+  const scaleRatio = getScaleRatio();
+  const offsetX = (screenWidth - displayWidth) / 2;
+  
+  // 设置 svg-container 尺寸
   const svgContainer = document.querySelector('.svg-container');
-  
-  if (bgWrapper && bgImage) {
-    // 计算主图的实际显示尺寸
-    const wrapperWidth = bgWrapper.clientWidth;
-    const wrapperHeight = bgWrapper.clientHeight;
-    
-    // 主图原始比例: 2994.23 / 4378.87
-    const bgAspectRatio = 2994.23 / 4378.87;
-    
-    // 根据容器高度计算主图实际显示宽度
-    let actualBgWidth = wrapperHeight * bgAspectRatio;
-    
-    // 如果计算出的宽度超过容器宽度，则使用容器宽度
-    if (actualBgWidth > wrapperWidth) {
-      actualBgWidth = wrapperWidth;
-    }
-    
-    // 计算主图实际显示高度
-    const actualBgHeight = actualBgWidth / bgAspectRatio;
-    
-    // 计算相对于原始设计稿的缩放比例（基于 Asset 7 的宽度）
-    const scaleRatio = actualBgWidth / 2994.23;
-    
-    // 计算 Asset 7.svg 的实际显示宽度
-    const asset7ActualWidth = ASSET7_ORIGINAL_WIDTH * scaleRatio;
-    
-    // 设置文字长图的宽度与 Asset 7.svg 一致
-    if (detailImage) {
-      detailImage.style.width = `${asset7ActualWidth}px`;
-      detailImage.style.maxWidth = `${asset7ActualWidth}px`;
-      detailImage.style.flexShrink = '0';
-      console.log('文字长图宽度设置为:', asset7ActualWidth, 'px');
-    }
-    
-    // 设置 svg-container 的高度与背景图实际显示高度一致
-    if (svgContainer) {
-      svgContainer.style.height = `${actualBgHeight}px`;
-      console.log('svg-container 高度调整为:', actualBgHeight, 'px');
-    }
-    
-    // 调整主页人物动画的位置
-    adjustCharacterPositions(actualBgWidth, actualBgHeight, wrapperWidth, wrapperHeight);
-    
-    // 调整详情页中固定元素的位置和大小（使用 Asset 7 的实际宽度）
-    adjustDetailPageElements(scaleRatio, asset7ActualWidth);
-    
-    console.log('布局调整:', { actualBgWidth, actualBgHeight, asset7ActualWidth, scaleRatio });
-  }
-}
-
-// 调整主页人物动画的位置
-// 原始位置百分比（相对于背景图）
-const characterOriginalPositions = {
-  'lottie-baby': { left: 0.51, top: 0.63 },
-  'lottie-kid': { left: 0.41, top: 0.51 },
-  'lottie-adult': { left: 0.60, top: 0.39 },
-  'lottie-old': { left: 0.40, top: 0.35 }
-};
-
-// bubble 动画原始位置百分比
-const bubbleOriginalPositions = {
-  'lottie-bubble-baby': { left: 0.56, top: 0.58 },
-  'lottie-bubble-kid': { left: 0.49, top: 0.45 },
-  'lottie-bubble-adult': { left: 0.66, top: 0.33 },
-  'lottie-bubble-old': { left: 0.47, top: 0.27 }
-};
-
-function adjustCharacterPositions(actualBgWidth, actualBgHeight, wrapperWidth, wrapperHeight) {
-  // 计算背景图在容器中的水平偏移（居中）
-  const offsetX = (wrapperWidth - actualBgWidth) / 2;
-  const offsetY = (wrapperHeight - actualBgHeight) / 2;
-  
-  // 调整每个人物动画的位置
-  Object.keys(characterOriginalPositions).forEach(id => {
-    const container = document.getElementById(id);
-    if (container) {
-      const pos = characterOriginalPositions[id];
-      // 计算实际像素位置
-      const actualLeft = offsetX + actualBgWidth * pos.left;
-      const actualTop = offsetY + actualBgHeight * pos.top;
-      
-      // 设置位置（使用百分比相对于 wrapper）
-      container.style.left = `${(actualLeft / wrapperWidth) * 100}%`;
-      container.style.top = `${(actualTop / wrapperHeight) * 100}%`;
-    }
-  });
-  
-  // 调整每个 bubble 动画的位置
-  Object.keys(bubbleOriginalPositions).forEach(id => {
-    const container = document.getElementById(id);
-    if (container) {
-      const pos = bubbleOriginalPositions[id];
-      // 计算实际像素位置
-      const actualLeft = offsetX + actualBgWidth * pos.left;
-      const actualTop = offsetY + actualBgHeight * pos.top;
-      
-      // 设置位置（使用百分比相对于 wrapper）
-      container.style.left = `${(actualLeft / wrapperWidth) * 100}%`;
-      container.style.top = `${(actualTop / wrapperHeight) * 100}%`;
-    }
-  });
-  
-  console.log('人物和 bubble 位置调整:', { actualBgWidth, actualBgHeight, offsetX, offsetY });
-}
-
-// 调整详情页中固定元素的位置和大小
-function adjustDetailPageElements(scaleRatio, actualBgWidth) {
-  const detailScene = document.getElementById('detail-scene');
-  if (!detailScene) return;
-  
-  // 计算文字长图在屏幕中的水平偏移（居中）
-  const sceneWidth = detailScene.clientWidth;
-  const offsetX = (sceneWidth - actualBgWidth) / 2;
-  
-  // 调整 fixed-title 的位置
-  const fixedTitle = document.querySelector('.fixed-title');
-  if (fixedTitle) {
-    // 原始 left: 66%，现在根据实际宽度调整
-    fixedTitle.style.left = `${offsetX + actualBgWidth * 0.62}px`;
-    // 调整大小
-    const titleImg = fixedTitle.querySelector('img');
-    if (titleImg) {
-      titleImg.style.width = `${Math.min(747.97 * scaleRatio, 747.97)}px`;
-    }
+  if (svgContainer) {
+    svgContainer.style.width = `${displayWidth}px`;
+    svgContainer.style.height = `${displayHeight}px`;
   }
   
-  // 调整 close-btn 的位置和大小
-  const closeBtn = document.querySelector('.close-btn');
-  if (closeBtn) {
-    // 根据实际背景图宽度计算位置
-    // 原始设计：right 5%，现在根据实际宽度调整
-    const originalRightPercent = 0.01; // 5%
-    const originalTopPercent = 0.01;   // 5%
-    
-    // 计算实际的 right 和 top 位置
-    const sceneWidth = detailScene.clientWidth;
-    const rightPosition = (sceneWidth - actualBgWidth) / 2 + actualBgWidth * originalRightPercent;
-    const topPosition = window.innerHeight * originalTopPercent;
-    
-    closeBtn.style.right = `${rightPosition}px`;
-    closeBtn.style.top = `${topPosition}px`;
-    
-    // 调整大小
-    const btnImg = closeBtn.querySelector('img');
-    if (btnImg) {
-      btnImg.style.width = `${Math.min(123.89 * scaleRatio, 123.89)}px`;
-    }
-  }
-  
-  // 调整 fixed-img 的位置和大小
-  const fixedImgs = document.querySelectorAll('.fixed-img');
-  fixedImgs.forEach((img, index) => {
-    // 原始位置比例（根据 CSS 中的 left 值）
-    const originalLefts = [0.10, 0.13, 0.13, 0.07];
-    const originalTops = [0.30, 0.25, 0.23, 0.23];
-    const originalWidths = [472.08, 383.56, 428.23, 584.37];
-    
-    if (index < 4) {
-      // 调整位置为相对于文字长图
-      img.style.left = `${offsetX + actualBgWidth * originalLefts[index]}px`;
-      // 调整大小
-      img.style.width = `${originalWidths[index] * scaleRatio}px`;
-    }
-  });
-  
-  console.log('详情页元素调整:', { scaleRatio, offsetX, actualBgWidth });
-}
-
-// 等待图片加载完成后再调整
-window.addEventListener('load', () => {
-  adjustLayout();
-  // 更新滚动范围
-  updateScrollRange();
-});
-
-// 窗口大小变化时重新调整动画尺寸和文字长图
-window.addEventListener('resize', () => {
-  // 获取新的背景缩放比例
-  const newBgScaleRatio = getBgScaleRatio();
-  
-  // 更新人物动画尺寸
+  // 更新人物动画位置和尺寸
   animationConfigs.forEach(config => {
     const container = document.getElementById(config.containerId);
     if (container) {
-      container.style.width = scaleValue(config.width, newBgScaleRatio);
-      container.style.height = scaleValue(config.height, newBgScaleRatio);
+      container.style.width = `${config.width * scaleRatio}px`;
+      container.style.height = `${config.height * scaleRatio}px`;
+      container.style.left = `${offsetX + displayWidth * config.left}px`;
+      container.style.top = `${displayHeight * config.top}px`;
     }
   });
   
-  // 更新 bubble 动画尺寸
+  // 更新 bubble 动画位置和尺寸
   bubbleConfigs.forEach(config => {
     const container = document.getElementById(config.containerId);
     if (container) {
-      container.style.width = scaleValue(config.width, newBgScaleRatio);
-      container.style.height = scaleValue(config.height, newBgScaleRatio);
+      container.style.width = `${config.width * scaleRatio}px`;
+      container.style.height = `${config.height * scaleRatio}px`;
+      container.style.left = `${offsetX + displayWidth * config.left}px`;
+      container.style.top = `${displayHeight * config.top}px`;
     }
   });
   
-  // 调整布局
-  adjustLayout();
+  // 调整详情页元素
+  adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRatio);
   
-  // 更新滚动范围
+  console.log('布局调整完成:', { displayWidth, displayHeight, scaleRatio, offsetX });
+}
+
+// 调整详情页元素位置
+function adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRatio) {
+  // 文字长图：按原始比例缩放，宽度超过显示范围时裁切两边
+  const detailImage = document.querySelector('.detail-image');
+  if (detailImage) {
+    // 文字长图原始尺寸: 2389.66 x 5940.25
+    // 计算缩放比例：基于宽度从 2389.66 缩放到 displayWidth
+    const longImageScale = displayWidth / 2389.66;
+    const scaledHeight = 5940.25 * longImageScale;
+    
+    detailImage.style.width = `${displayWidth}px`;
+    detailImage.style.height = `${scaledHeight}px`;
+  }
+  
+  // 调整固定标题位置和尺寸
+  // 原始设计稿: 位置 (0.66, 0.09), 原始宽度 747.97px
+  const fixedTitle = document.querySelector('.fixed-title');
+  if (fixedTitle) {
+    fixedTitle.style.left = `${offsetX + displayWidth * 0.62}px`;
+    fixedTitle.style.top = `${displayHeight * 0.09}px`;
+    const titleImg = fixedTitle.querySelector('img');
+    if (titleImg) {
+      titleImg.style.width = `${747.97 * scaleRatio}px`;
+    }
+  }
+  
+  // 调整关闭按钮位置
+  const closeBtn = document.querySelector('.close-btn');
+  if (closeBtn) {
+    closeBtn.style.right = `${offsetX + displayWidth * 0.02}px`;
+    closeBtn.style.top = `${displayHeight * 0.02}px`;
+    const btnImg = closeBtn.querySelector('img');
+    if (btnImg) {
+      btnImg.style.width = `${123.89 * scaleRatio}px`;
+    }
+  }
+  
+  // 调整固定图片位置和尺寸
+  // 原始设计稿配置：left(百分比), top(百分比), 原始宽度(px)
+  // 修改下面的数值来调整位置
+  const imgConfigs = [
+    { left: 0.2, top: 0.30, width: 472.08 },  // P1
+    { left: 0.2, top: 0.25, width: 383.56 },  // P2
+    { left: 0.2, top: 0.23, width: 428.23 },  // P3
+    { left: 0.2, top: 0.23, width: 584.37 }   // P4
+  ];
+  
+  fixedImgs.forEach((img, index) => {
+    if (imgConfigs[index]) {
+      const config = imgConfigs[index];
+      // 移除 max-width 限制
+      img.style.maxWidth = 'none';
+      // 设置位置（基于屏幕百分比 + 偏移量）
+      img.style.left = `${offsetX + displayWidth * config.left}px`;
+      img.style.top = `${displayHeight * config.top}px`;
+      // 设置尺寸（原始宽度 * 缩放比例）
+      img.style.width = `${config.width * scaleRatio}px`;
+      // 水平居中
+      img.style.transform = 'translateX(-50%)';
+    }
+  });
+}
+
+// 页面加载完成后初始化
+window.addEventListener('load', () => {
+  initAnimations();
+  adjustLayout();
+  updateScrollRange();
+  console.log('页面初始化完成');
+});
+
+// 窗口大小变化时重新调整
+window.addEventListener('resize', () => {
+  initAnimations();
+  adjustLayout();
   updateScrollRange();
 });
 
-console.log('页面已加载完成');
+console.log('main.js 已加载');
