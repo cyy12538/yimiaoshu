@@ -262,299 +262,1489 @@ const vaccineData = {
     title: '≥50岁',
     planned: [], // 该年龄段无免疫规划疫苗
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '带状疱疹疫苗', desc: '预防带状疱疹' },
-      { name: '戊肝疫苗', desc: '预防戊型肝炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；≥3岁儿童及成人接种1剂次</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '带状疱疹疫苗',
+        content: `<div class="vaccine-section">
+          <h4>带状疱疹疫苗</h4>
+          <p class="vaccine-purpose">预防带状疱疹，降低带状疱疹引起的神经痛等并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '戊肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>戊肝疫苗</h4>
+          <p class="vaccine-purpose">预防戊型肝炎病毒感染引起的戊型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '40year': {
     title: '≥40岁',
     planned: [],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '带状疱疹疫苗', desc: '预防带状疱疹' },
-      { name: '戊肝疫苗', desc: '预防戊型肝炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；≥3岁儿童及成人接种1剂次</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: 'HPV疫苗',
+        content: `<div class="vaccine-section">
+          <h4>HPV疫苗</h4>
+          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '带状疱疹疫苗',
+        content: `<div class="vaccine-section">
+          <h4>带状疱疹疫苗</h4>
+          <p class="vaccine-purpose">预防带状疱疹，降低带状疱疹引起的神经痛等并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '戊肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>戊肝疫苗</h4>
+          <p class="vaccine-purpose">预防戊型肝炎病毒感染引起的戊型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '16year': {
     title: '16 岁',
     planned: [],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '戊肝疫苗', desc: '预防戊型肝炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；≥3岁儿童及成人接种1剂次</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: 'HPV疫苗',
+        content: `<div class="vaccine-section">
+          <h4>HPV疫苗</h4>
+          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '戊肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>戊肝疫苗</h4>
+          <p class="vaccine-purpose">预防戊型肝炎病毒感染引起的戊型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '13year': {
     title: '13 岁',
     planned: [
-      { name: '二价HPV疫苗', desc: '预防人乳头瘤病毒感染' }
+      {
+        name: '二价HPV疫苗',
+        content: `<div class="vaccine-section">
+          <h4>二价HPV疫苗</h4>
+          <p class="vaccine-purpose">预防人乳头瘤病毒16、18型感染，降低宫颈癌等疾病风险。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；≥3岁儿童及成人接种1剂次</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: 'HPV疫苗',
+        content: `<div class="vaccine-section">
+          <h4>HPV疫苗</h4>
+          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '9year': {
     title: '9 岁',
     planned: [],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；≥3岁儿童及成人接种1剂次</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: 'HPV疫苗',
+        content: `<div class="vaccine-section">
+          <h4>HPV疫苗</h4>
+          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '6year': {
     title: '6 岁',
     planned: [
-      { name: '百白破疫苗', desc: '第五剂，预防百日咳、白喉、破伤风' },
-      { name: 'A群C群流脑多糖疫苗', desc: '第二剂，预防A群和C群脑膜炎球菌' }
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">第五剂，预防百日咳、白喉、破伤风三种疾病。</p>
+        </div>`
+      },
+      {
+        name: 'A群C群流脑多糖疫苗',
+        content: `<div class="vaccine-section">
+          <h4>A群C群流脑多糖疫苗</h4>
+          <p class="vaccine-purpose">第二剂，预防A群和C群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '4year': {
     title: '4 岁',
     planned: [
-      { name: '脊灰减毒疫苗', desc: '第四剂，预防脊髓灰质炎（小儿麻痹症）' }
+      {
+        name: '脊髓灰质炎减毒活疫苗',
+        content: `<div class="vaccine-section">
+          <h4>脊髓灰质炎减毒活疫苗</h4>
+          <p class="vaccine-purpose">第四剂，预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险。</p>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '3year': {
     title: '3 岁',
     planned: [
-      { name: 'A群C群流脑多糖疫苗', desc: '预防A群和C群脑膜炎球菌引起的流脑' }
+      {
+        name: 'A群C群流脑多糖疫苗',
+        content: `<div class="vaccine-section">
+          <h4>A群C群流脑多糖疫苗</h4>
+          <p class="vaccine-purpose">预防A群和C群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+        </div>`
+      },
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险。</p>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '2year': {
     title: '2 岁',
     planned: [
-      { name: '乙脑减毒疫苗', desc: '第二剂，预防乙型脑炎' }
+      {
+        name: '乙脑减毒活疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑减毒活疫苗</h4>
+          <p class="vaccine-purpose">第二剂，预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+        </div>`
+      },
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险。</p>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '18month': {
     title: '18 月龄',
     planned: [
-      { name: '百白破疫苗', desc: '第四剂，预防百日咳、白喉、破伤风' },
-      { name: '麻腮风疫苗', desc: '第二剂，预防麻疹、腮腺炎、风疹' },
-      { name: '甲肝减毒疫苗', desc: '预防甲型肝炎' }
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">第四剂，预防百日咳、白喉、破伤风三种疾病。</p>
+        </div>`
+      },
+      {
+        name: '麻腮风疫苗',
+        content: `<div class="vaccine-section">
+          <h4>麻腮风疫苗</h4>
+          <p class="vaccine-purpose">第二剂，预防麻疹、腮腺炎、风疹三种传染病。</p>
+        </div>`
+      },
+      {
+        name: '甲肝减毒活疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝减毒活疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '甲肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>甲肝疫苗</h4>
+          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '23价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>23价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+        </div>`
+      },
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；可在18月龄加强接种1剂。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '12month': {
     title: '12 月龄',
     planned: [
-      { name: 'A群流脑多糖疫苗', desc: '预防A群脑膜炎球菌引起的流脑' }
+      {
+        name: 'A群流脑多糖疫苗',
+        content: `<div class="vaccine-section">
+          <h4>A群流脑多糖疫苗</h4>
+          <p class="vaccine-purpose">预防A群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '霍乱疫苗', desc: '预防霍乱' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '水痘疫苗',
+        content: `<div class="vaccine-section">
+          <h4>水痘疫苗</h4>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；可在12月龄加强接种1剂。</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；可在12月龄时加强注射1剂次。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '霍乱疫苗',
+        content: `<div class="vaccine-section">
+          <h4>霍乱疫苗</h4>
+          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ]
   },
   '9month': {
     title: '9 月龄',
     planned: [
-      { name: 'A群流脑多糖疫苗', desc: '预防A群脑膜炎球菌引起的流脑' }
+      {
+        name: 'A群流脑多糖疫苗',
+        content: `<div class="vaccine-section">
+          <h4>A群流脑多糖疫苗</h4>
+          <p class="vaccine-purpose">预防A群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' }
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；6-12月龄3剂次（每间隔1或2月接种1次，共2次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；3剂次（6~11月龄婴儿基础免疫2剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；2剂次（6~23月龄: 免疫2剂次,每剂次间隔1~3个月。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '8month': {
     title: '8 月龄',
     planned: [
-      { name: '麻腮风疫苗', desc: '预防麻疹、腮腺炎、风疹' },
-      { name: '乙脑减毒疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '麻腮风疫苗',
+        content: `<div class="vaccine-section">
+          <h4>麻腮风疫苗</h4>
+          <p class="vaccine-purpose">预防麻疹、腮腺炎、风疹三种传染病。</p>
+        </div>`
+      },
+      {
+        name: '乙脑减毒活疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑减毒活疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' }
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；6-12月龄3剂次（每间隔1或2月接种1次，共2次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；3剂次（6~11月龄婴儿基础免疫2剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；2剂次（6~23月龄: 免疫2剂次,每剂次间隔1~3个月。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '7month': {
     title: '7 月龄',
     planned: [
-      { name: '脊灰灭活疫苗', desc: '第三剂，预防脊髓灰质炎' },
-      { name: '百白破疫苗', desc: '第三剂，预防百日咳、白喉、破伤风' }
+      {
+        name: '乙肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙肝疫苗</h4>
+          <p class="vaccine-purpose">预防乙型肝炎病毒感染，从而降低肝硬化和肝癌风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组乙型肝炎疫苗（10微克）</strong>：适用于乙型肝炎易感者，尤其是(1)新生儿，特别是母亲为HBsAg、HBeAg阳性者；(2)从事医疗工作的医护人员及接触血液的实验人员。免疫程序为3剂次（分别在0、1、6月接种，新生儿在出生后24小时内注射第1针。）</p>
+          </div>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；6-12月龄3剂次（每间隔1或2月接种1次，共2次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；3剂次（6~11月龄婴儿基础免疫2剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；2剂次（6~23月龄: 免疫2剂次,每剂次间隔1~3个月。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '6month': {
     title: '6 月龄',
     planned: [
-      { name: '乙肝疫苗', desc: '第三剂，预防乙型肝炎' },
-      { name: 'A群流脑多糖疫苗', desc: '预防A群脑膜炎球菌引起的流脑' },
-      { name: '百白破疫苗', desc: '第三剂，预防百日咳、白喉、破伤风' }
+      {
+        name: '乙肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙肝疫苗</h4>
+          <p class="vaccine-purpose">预防乙型肝炎病毒感染，从而降低肝硬化和肝癌风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组乙型肝炎疫苗（10微克）</strong>：适用于乙型肝炎易感者，尤其是(1)新生儿，特别是母亲为HBsAg、HBeAg阳性者；(2)从事医疗工作的医护人员及接触血液的实验人员。免疫程序为3剂次（分别在0、1、6月接种，新生儿在出生后24小时内注射第1针。）</p>
+          </div>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '手足口疫苗', desc: '预防手足口病' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；6-12月龄3剂次（每间隔1或2月接种1次，共2次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流感疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流感疫苗</h4>
+          <p class="vaccine-purpose">预防甲型、乙型流感病毒感染，降低流感的发病率，减少因流感引发的肺炎、心肌炎等并发症。</p>
+          <div class="vaccine-detail">
+            <p><strong>三价、四价流感病毒裂解疫苗</strong>：≥6月龄人群；1或2剂次（6-35月龄儿童接种2剂次，间隔4周；≥3岁儿童及成人接种1剂次）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '肠道病毒71型灭活疫苗（手足口疫苗）',
+        content: `<div class="vaccine-section">
+          <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
+          <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；3剂次（6~11月龄婴儿基础免疫2剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；2剂次（6~23月龄: 免疫2剂次,每剂次间隔1~3个月。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '乙脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙脑疫苗</h4>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '5month': {
     title: '5 月龄',
     planned: [
-      { name: '百白破疫苗', desc: '第三剂，预防百日咳、白喉、破伤风' }
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：3月龄以上婴幼儿；4剂次（3、4、5月龄进行基础免疫，18~24月龄加强免疫。）</p>
+          </div>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '四联疫苗', desc: '预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；2-6月龄4剂次（从2或3月龄开始，每间隔1或2月接种1次，共3次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；4剂次（3~5月龄婴儿基础免疫3剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；4剂次（3~5月龄婴儿基础免疫3剂次,建议自3月龄开始,每剂次间隔1个月,可在12月龄时加强注射1剂次）。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '无细胞百白破b型流感嗜血杆菌联合疫苗（四联）',
+        content: `<div class="vaccine-section">
+          <h4>无细胞百白破b型流感嗜血杆菌联合疫苗（四联）</h4>
+          <p class="vaccine-purpose">可预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染（脑膜炎、肺炎等）四种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>无细胞百白破b型流感嗜血杆菌联合疫苗</strong>：3月龄以上婴幼儿；4剂次（3、4、5月龄进行基础免疫，18~24月龄加强免疫。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '4month': {
     title: '4 月龄',
     planned: [
-      { name: '脊灰减毒疫苗', desc: '预防脊髓灰质炎（小儿麻痹症）' },
-      { name: '百白破疫苗', desc: '第二剂，预防百日咳、白喉、破伤风' }
+      {
+        name: '脊髓灰质炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>脊髓灰质炎疫苗</h4>
+          <p class="vaccine-purpose">预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
+          <div class="vaccine-detail">
+            <p><strong>脊髓灰质炎灭活疫苗</strong>：≥2月龄婴幼儿、儿童和成人；4剂次（2、3、4月龄各1剂次，18月龄加强免疫1剂）。</p>
+          </div>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '五联疫苗', desc: '预防百日咳、白喉、破伤风、脊髓灰质炎、b型流感嗜血杆菌感染' },
-      { name: '四联疫苗', desc: '预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；2-6月龄4剂次（从2或3月龄开始，每间隔1或2月接种1次，共3次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；4剂次（3~5月龄婴儿基础免疫3剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；4剂次（3~5月龄婴儿基础免疫3剂次,建议自3月龄开始,每剂次间隔1个月,可在12月龄时加强注射1剂次）。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗（五联）',
+        content: `<div class="vaccine-section">
+          <h4>无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗（五联）</h4>
+          <p class="vaccine-purpose">同时预防五种疾病，包括百日咳、白喉、破伤风、脊髓灰质炎、b 型流感嗜血杆菌感染（Hib 感染）。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破脊髓灰质炎和b型流感嗜血杆菌联合疫苗</strong>：2月龄以上婴幼儿，4剂次（在2、3、4月龄或3、4、5月龄进行三剂基础免疫，在18月龄进行一剂加强免疫。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '无细胞百白破b型流感嗜血杆菌联合疫苗（四联）',
+        content: `<div class="vaccine-section">
+          <h4>无细胞百白破b型流感嗜血杆菌联合疫苗（四联）</h4>
+          <p class="vaccine-purpose">可预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染（脑膜炎、肺炎等）四种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>无细胞百白破b型流感嗜血杆菌联合疫苗</strong>：3月龄以上婴幼儿；4剂次（3、4、5月龄进行基础免疫，18~24月龄加强免疫。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '3.5month': {
     title: '3.5 月龄',
     planned: [],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；2-6月龄4剂次（从2或3月龄开始，每间隔1或2月接种1次，共3次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；4剂次（3~5月龄婴儿基础免疫3剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；4剂次（3~5月龄婴儿基础免疫3剂次,建议自3月龄开始,每剂次间隔1个月,可在12月龄时加强注射1剂次）。</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '3month': {
     title: '3 月龄',
     planned: [
-      { name: '脊灰灭活疫苗', desc: '第二剂，预防脊髓灰质炎' }
+      {
+        name: '脊髓灰质炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>脊髓灰质炎疫苗</h4>
+          <p class="vaccine-purpose">预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
+          <div class="vaccine-detail">
+            <p><strong>脊髓灰质炎灭活疫苗</strong>：≥2月龄婴幼儿、儿童和成人；4剂次（2、3、4月龄各1剂次，18月龄加强免疫1剂）。</p>
+          </div>
+        </div>`
+      }
     ],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
-      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
-      { name: '五联疫苗', desc: '预防百日咳、白喉、破伤风、脊髓灰质炎、b型流感嗜血杆菌感染' },
-      { name: '四联疫苗', desc: '预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；2-6月龄4剂次（从2或3月龄开始，每间隔1或2月接种1次，共3次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '流脑疫苗',
+        content: `<div class="vaccine-section">
+          <h4>流脑疫苗</h4>
+          <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>A群C群脑膜炎球菌多糖结合疫苗</strong>：3月龄（出生满90天）~23月龄（2周岁生日前）婴幼儿；4剂次（3~5月龄婴儿基础免疫3剂次，每剂间隔至少1个月，可在18月龄加强接种1剂。）</p>
+            <p>②<strong>ACYW135群脑膜炎球菌多糖结合疫苗</strong>：3月龄~3周岁（47月龄）儿童；4剂次（3~5月龄基础免疫3剂次,建议自3月龄开始,每剂次间隔1个月,可在12月龄时加强注射1剂次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗（五联）',
+        content: `<div class="vaccine-section">
+          <h4>无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗（五联）</h4>
+          <p class="vaccine-purpose">同时预防五种疾病，包括百日咳、白喉、破伤风、脊髓灰质炎、b 型流感嗜血杆菌感染（Hib 感染）。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破脊髓灰质炎和b型流感嗜血杆菌联合疫苗</strong>：2月龄以上婴幼儿，4剂次（在2、3、4月龄或3、4、5月龄进行三剂基础免疫，在18月龄进行一剂加强免疫。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '无细胞百白破b型流感嗜血杆菌联合疫苗（四联）',
+        content: `<div class="vaccine-section">
+          <h4>无细胞百白破b型流感嗜血杆菌联合疫苗（四联）</h4>
+          <p class="vaccine-purpose">可预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染（脑膜炎、肺炎等）四种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>无细胞百白破b型流感嗜血杆菌联合疫苗</strong>：3月龄以上婴幼儿；4剂次（3、4、5月龄进行基础免疫，18~24月龄加强免疫。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '2.5month': {
     title: '2.5 月龄',
     planned: [],
     unplanned: [
-      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
-      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
-      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' }
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；2-6月龄4剂次（从2或3月龄开始，每间隔1或2月接种1次，共3次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      }
     ]
   },
   '2month': {
