@@ -144,7 +144,7 @@ function initPlantAnimations(displayWidth, displayHeight) {
         const animation = new LottieAnimation({
           container: container,
           path: layer.path,
-          renderer: 'svg',
+          renderer: 'canvas',
           loop: true,
           autoplay: true,
           speed: 1
@@ -1979,7 +1979,7 @@ function getClickType(e, rect) {
   const width = rect.width;
   // 左侧50%为免疫规划区域，右侧50%为非免疫规划区域
   // 可以根据实际图片调整这个比例
-  return clickX < width * 0.5 ? 'planned' : 'unplanned';
+  return clickX < width * 0.64 ? 'planned' : 'unplanned';
 }
 
 // 详情页图片点击事件
