@@ -256,102 +256,433 @@ let isDetailPage = false;
 // 文字长图的实际高度（viewBox 高度）
 const SVG_VIEWBOX_HEIGHT = 5940.25;
 
+// 疫苗数据结构 - 区分免疫规划疫苗和非免疫规划疫苗
 const vaccineData = {
   '50year': {
     title: '≥50岁',
-    content: '<p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、流脑疫苗、带状疱疹疫苗、戊肝疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [], // 该年龄段无免疫规划疫苗
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '带状疱疹疫苗', desc: '预防带状疱疹' },
+      { name: '戊肝疫苗', desc: '预防戊型肝炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '40year': {
     title: '≥40岁',
-    content: '<p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、HPV疫苗、流脑疫苗、带状疱疹疫苗、戊肝疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '带状疱疹疫苗', desc: '预防带状疱疹' },
+      { name: '戊肝疫苗', desc: '预防戊型肝炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '16year': {
     title: '16 岁',
-    content: '<p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、HPV疫苗、流脑疫苗、戊肝疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '戊肝疫苗', desc: '预防戊型肝炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '13year': {
     title: '13 岁',
-    content: '<p><strong>二价HPV疫苗</strong>：预防人乳头瘤病毒感染</p><p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、HPV疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '二价HPV疫苗', desc: '预防人乳头瘤病毒感染' }
+    ],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '9year': {
     title: '9 岁',
-    content: '<p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、HPV疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: 'HPV疫苗', desc: '预防人乳头瘤病毒感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '6year': {
     title: '6 岁',
-    content: '<p><strong>百白破疫苗</strong>：第五剂</p><p><strong>A群C群流脑多糖疫苗</strong>：第二剂</p><p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '百白破疫苗', desc: '第五剂，预防百日咳、白喉、破伤风' },
+      { name: 'A群C群流脑多糖疫苗', desc: '第二剂，预防A群和C群脑膜炎球菌' }
+    ],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '4year': {
     title: '4 岁',
-    content: '<p><strong>脊灰减毒疫苗</strong>：第四剂</p><p><strong>可选疫苗</strong>：甲肝疫苗、b型流感嗜血杆菌疫苗、流感疫苗、13价肺炎疫苗、23价肺炎疫苗、水痘疫苗、手足口疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '脊灰减毒疫苗', desc: '第四剂，预防脊髓灰质炎（小儿麻痹症）' }
+    ],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '3year': {
     title: '3 岁',
-    content: '<p><strong>A群C群流脑多糖疫苗</strong>：预防A群和C群脑膜炎球菌</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、甲肝疫苗、b型流感嗜血杆菌疫苗、流感疫苗、13价肺炎疫苗、23价肺炎疫苗、水痘疫苗、手足口疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: 'A群C群流脑多糖疫苗', desc: '预防A群和C群脑膜炎球菌引起的流脑' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '2year': {
     title: '2 岁',
-    content: '<p><strong>乙脑减毒疫苗</strong>：第二剂</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、甲肝疫苗、b型流感嗜血杆菌疫苗、流感疫苗、13价肺炎疫苗、23价肺炎疫苗、水痘疫苗、手足口疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '乙脑减毒疫苗', desc: '第二剂，预防乙型脑炎' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '18month': {
     title: '18 月龄',
-    content: '<p><strong>百白破疫苗</strong>：第四剂</p><p><strong>麻腮风疫苗</strong>：第二剂</p><p><strong>甲肝减毒疫苗</strong>：预防甲型肝炎</p><p><strong>可选疫苗</strong>：甲肝疫苗、流感疫苗、23价肺炎疫苗、水痘疫苗、手足口疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '百白破疫苗', desc: '第四剂，预防百日咳、白喉、破伤风' },
+      { name: '麻腮风疫苗', desc: '第二剂，预防麻疹、腮腺炎、风疹' },
+      { name: '甲肝减毒疫苗', desc: '预防甲型肝炎' }
+    ],
+    unplanned: [
+      { name: '甲肝疫苗', desc: '预防甲型肝炎' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '23价肺炎疫苗', desc: '预防23种血清型肺炎球菌感染' },
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '12month': {
     title: '12 月龄',
-    content: '<p><strong>A群流脑多糖疫苗</strong>：预防A群脑膜炎球菌</p><p><strong>可选疫苗</strong>：水痘疫苗、流感疫苗、手足口疫苗、流脑疫苗、霍乱疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: 'A群流脑多糖疫苗', desc: '预防A群脑膜炎球菌引起的流脑' }
+    ],
+    unplanned: [
+      { name: '水痘疫苗', desc: '预防水痘-带状疱疹病毒感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '霍乱疫苗', desc: '预防霍乱' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '9month': {
     title: '9 月龄',
-    content: '<p><strong>A群流脑多糖疫苗</strong>：预防A群脑膜炎球菌</p><p><strong>可选疫苗</strong>：b型流感嗜血杆菌疫苗、流感疫苗、手足口疫苗、流脑疫苗</p>'
+    planned: [
+      { name: 'A群流脑多糖疫苗', desc: '预防A群脑膜炎球菌引起的流脑' }
+    ],
+    unplanned: [
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' }
+    ]
   },
   '8month': {
     title: '8 月龄',
-    content: '<p><strong>麻腮风疫苗</strong>：预防麻疹、腮腺炎、风疹</p><p><strong>乙脑减毒疫苗</strong>：预防乙型脑炎</p><p><strong>可选疫苗</strong>：b型流感嗜血杆菌疫苗、流感疫苗、手足口疫苗、流脑疫苗</p>'
+    planned: [
+      { name: '麻腮风疫苗', desc: '预防麻疹、腮腺炎、风疹' },
+      { name: '乙脑减毒疫苗', desc: '预防乙型脑炎' }
+    ],
+    unplanned: [
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' }
+    ]
   },
   '7month': {
     title: '7 月龄',
-    content: '<p><strong>脊灰灭活疫苗</strong>：第三剂</p><p><strong>百白破疫苗</strong>：第三剂</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、流感疫苗、13价肺炎疫苗、手足口疫苗、流脑疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '脊灰灭活疫苗', desc: '第三剂，预防脊髓灰质炎' },
+      { name: '百白破疫苗', desc: '第三剂，预防百日咳、白喉、破伤风' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '6month': {
     title: '6 月龄',
-    content: '<p><strong>乙肝疫苗</strong>：第三剂</p><p><strong>A群流脑多糖疫苗</strong>：预防A群脑膜炎球菌</p><p><strong>百白破疫苗</strong>：第三剂</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、流感疫苗、13价肺炎疫苗、手足口疫苗、流脑疫苗、乙脑疫苗</p>'
+    planned: [
+      { name: '乙肝疫苗', desc: '第三剂，预防乙型肝炎' },
+      { name: 'A群流脑多糖疫苗', desc: '预防A群脑膜炎球菌引起的流脑' },
+      { name: '百白破疫苗', desc: '第三剂，预防百日咳、白喉、破伤风' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '流感疫苗', desc: '预防甲型、乙型流感病毒感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '手足口疫苗', desc: '预防手足口病' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '乙脑疫苗', desc: '预防乙型脑炎' }
+    ]
   },
   '5month': {
     title: '5 月龄',
-    content: '<p><strong>百白破疫苗</strong>：第三剂</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、13价肺炎疫苗、流脑疫苗、四联疫苗</p>'
+    planned: [
+      { name: '百白破疫苗', desc: '第三剂，预防百日咳、白喉、破伤风' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '四联疫苗', desc: '预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染' }
+    ]
   },
   '4month': {
     title: '4 月龄',
-    content: '<p><strong>脊灰减毒疫苗</strong>：预防脊髓灰质炎</p><p><strong>百白破疫苗</strong>：第二剂</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、13价肺炎疫苗、流脑疫苗、五联疫苗、四联疫苗</p>'
+    planned: [
+      { name: '脊灰减毒疫苗', desc: '预防脊髓灰质炎（小儿麻痹症）' },
+      { name: '百白破疫苗', desc: '第二剂，预防百日咳、白喉、破伤风' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '五联疫苗', desc: '预防百日咳、白喉、破伤风、脊髓灰质炎、b型流感嗜血杆菌感染' },
+      { name: '四联疫苗', desc: '预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染' }
+    ]
   },
   '3.5month': {
     title: '3.5 月龄',
-    content: '<p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、13价肺炎疫苗、流脑疫苗</p>'
+    planned: [],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' }
+    ]
   },
   '3month': {
     title: '3 月龄',
-    content: '<p><strong>脊灰灭活疫苗</strong>：第二剂</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、13价肺炎疫苗、流脑疫苗、五联疫苗、四联疫苗</p>'
+    planned: [
+      { name: '脊灰灭活疫苗', desc: '第二剂，预防脊髓灰质炎' }
+    ],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' },
+      { name: '流脑疫苗', desc: '预防流行性脑脊髓膜炎' },
+      { name: '五联疫苗', desc: '预防百日咳、白喉、破伤风、脊髓灰质炎、b型流感嗜血杆菌感染' },
+      { name: '四联疫苗', desc: '预防百日咳、白喉、破伤风、b型流感嗜血杆菌感染' }
+    ]
   },
   '2.5month': {
     title: '2.5 月龄',
-    content: '<p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、13价肺炎疫苗</p>'
+    planned: [],
+    unplanned: [
+      { name: '轮状病毒疫苗', desc: '预防轮状病毒引起的婴幼儿腹泻' },
+      { name: 'b型流感嗜血杆菌疫苗', desc: '预防b型流感嗜血杆菌感染' },
+      { name: '13价肺炎疫苗', desc: '预防13种血清型肺炎球菌感染' }
+    ]
   },
   '2month': {
     title: '2 月龄',
-    content: '<p><strong>脊灰灭活疫苗</strong>：预防脊髓灰质炎</p><p><strong>百白破疫苗</strong>：预防百日咳、白喉、破伤风</p><p><strong>可选疫苗</strong>：轮状病毒疫苗、b型流感嗜血杆菌疫苗、13价肺炎疫苗、五联疫苗</p>'
+    planned: [
+      {
+        name: '脊髓灰质炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>脊髓灰质炎疫苗</h4>
+          <p class="vaccine-purpose">预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
+          <div class="vaccine-detail">
+            <p><strong>脊髓灰质炎灭活疫苗</strong>：≥2月龄婴幼儿、儿童和成人；4剂次（2、3、4月龄各1剂次，18月龄加强免疫1剂）。</p>
+          </div>
+        </div>`
+      }
+    ],
+    unplanned: [
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+            <p><strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p><strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: 'b型流感嗜血杆菌疫苗',
+        content: `<div class="vaccine-section">
+          <h4>b型流感嗜血杆菌疫苗</h4>
+          <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；2-6月龄4剂次（从2或3月龄开始，每间隔1或2月接种1次，共3次；在18月龄时进行加强接种1次。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童。（2-6月龄婴儿：共接种4剂。推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗（五联）',
+        content: `<div class="vaccine-section">
+          <h4>无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗（五联）</h4>
+          <p class="vaccine-purpose">同时预防五种疾病，包括百日咳、白喉、破伤风、脊髓灰质炎、b 型流感嗜血杆菌感染（Hib 感染）。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破脊髓灰质炎和b型流感嗜血杆菌联合疫苗</strong>：2月龄以上婴幼儿，4剂次（在2、3、4月龄或3、4、5月龄进行三剂基础免疫，在18月龄进行一剂加强免疫。）</p>
+          </div>
+        </div>`
+      }
+    ]
   },
   '1.5month': {
     title: '1.5 月龄',
-    content: '<p><strong>可选疫苗</strong>：轮状病毒疫苗、13价肺炎疫苗</p>'
+    planned: [],
+    unplanned: [
+      {
+        name: '轮状病毒疫苗',
+        content: `<div class="vaccine-section">
+          <h4>轮状病毒疫苗</h4>
+          <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p>①<strong>口服三价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-13周龄开始口服第一剂，每剂间隔1月，第3剂接种不应晚于32周龄。）</p>
+            <p>②<strong>口服五价重配轮状病毒减毒活疫苗</strong>：6-32周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔4-10周，第3剂接种不应晚于32周龄。）</p>
+            <p>③<strong>口服六价重配轮状病毒减毒活疫苗</strong>：6-36周龄，3剂次（6-12周龄开始口服第一剂，每剂间隔至少4周，第3剂接种不应晚于36周龄。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '13价肺炎疫苗',
+        content: `<div class="vaccine-section">
+          <h4>13价肺炎疫苗</h4>
+          <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童，4剂次（2-6月龄婴儿：推荐首剂在2月龄(最小满6周龄)接种，基础免疫接种3剂，每剂接种间隔2个月；于12-15月龄加强接种1剂。）</p>
+          </div>
+        </div>`
+      }
+    ]
   },
   '1month': {
     title: '1 月龄',
-    content: '<p><strong>乙肝疫苗</strong>：第二剂，预防乙型肝炎</p>'
+    planned: [
+      {
+        name: '乙肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙肝疫苗</h4>
+          <p class="vaccine-purpose">预防乙型肝炎病毒感染，从而降低肝硬化和肝癌风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组乙型肝炎疫苗（10微克）</strong>：适用于乙型肝炎易感者，尤其是(1)新生儿，特别是母亲为HBsAg、HBeAg阳性者；(2)从事医疗工作的医护人员及接触血液的实验人员。免疫程序为3剂次（分别在0、1、6月接种，新生儿在出生后24小时内注射第1针。）</p>
+          </div>
+        </div>`
+      }
+    ],
+    unplanned: []
   },
   'birth': {
     title: '出生时',
-    content: '<p><strong>乙肝疫苗</strong>：预防乙型肝炎</p><p><strong>卡介苗</strong>：预防结核病</p>'
+    planned: [
+      {
+        name: '乙肝疫苗',
+        content: `<div class="vaccine-section">
+          <h4>乙肝疫苗</h4>
+          <p class="vaccine-purpose">预防乙型肝炎病毒感染，从而降低肝硬化和肝癌风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组乙型肝炎疫苗（10微克）</strong>：适用于乙型肝炎易感者，尤其是(1)新生儿，特别是母亲为HBsAg、HBeAg阳性者；(2)从事医疗工作的医护人员及接触血液的实验人员。免疫程序为3剂次（分别在0、1、6月接种，新生儿在出生后24小时内注射第1针。）</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '卡介苗',
+        content: `<div class="vaccine-section">
+          <h4>卡介苗</h4>
+          <p class="vaccine-purpose">预防结核病</p>
+        </div>`
+      }
+    ],
+    unplanned: []
   }
 };
 
@@ -396,12 +727,48 @@ for (let i = 0; i < svgNodes.length; i++) {
 // 打印范围用于调试
 console.log('SVG 点击范围:', svgRanges.map(r => ({ key: r.key, min: Math.round(r.min), max: Math.round(r.max) })));
 
-function showModal(key) {
-  const data = vaccineData[key];
-  if (data) {
-    modalBody.innerHTML = `<h3>${data.title}</h3>${data.content}`;
-    modalOverlay.classList.add('active');
+// 渲染免疫规划疫苗内容
+function renderPlannedVaccines(vaccines) {
+  if (!vaccines || vaccines.length === 0) {
+    return '<p class="no-vaccine">该年龄段无免疫规划疫苗</p>';
   }
+  return vaccines.map(v => v.content || `
+    <div class="vaccine-section">
+      <h4>${v.name}</h4>
+      <p class="vaccine-purpose">${v.desc}</p>
+    </div>
+  `).join('');
+}
+
+// 渲染非免疫规划疫苗内容
+function renderUnplannedVaccines(vaccines) {
+  if (!vaccines || vaccines.length === 0) {
+    return '<p class="no-vaccine">该年龄段无非免疫规划疫苗</p>';
+  }
+  return vaccines.map(v => v.content || `
+    <div class="vaccine-section">
+      <h4>${v.name}</h4>
+      <p class="vaccine-purpose">${v.desc}</p>
+    </div>
+  `).join('');
+}
+
+// 显示弹窗 - type: 'planned' | 'unplanned'
+function showModal(key, type) {
+  const data = vaccineData[key];
+  if (!data) return;
+  
+  const isPlanned = type === 'planned';
+  const title = isPlanned ? '免疫规划疫苗' : '非免疫规划疫苗';
+  const vaccines = isPlanned ? data.planned : data.unplanned;
+  
+  modalBody.innerHTML = `
+    <h3>${data.title} - ${title}</h3>
+    <div class="vaccine-list">
+      ${isPlanned ? renderPlannedVaccines(vaccines) : renderUnplannedVaccines(vaccines)}
+    </div>
+  `;
+  modalOverlay.classList.add('active');
 }
 
 function hideModal() {
@@ -415,6 +782,16 @@ modalOverlay.addEventListener('click', (e) => {
   }
 });
 
+// 判断点击区域是免疫规划还是非免疫规划
+// 根据文字长图的布局，左侧是免疫规划，右侧是非免疫规划
+function getClickType(e, rect) {
+  const clickX = e.clientX - rect.left;
+  const width = rect.width;
+  // 左侧50%为免疫规划区域，右侧50%为非免疫规划区域
+  // 可以根据实际图片调整这个比例
+  return clickX < width * 0.5 ? 'planned' : 'unplanned';
+}
+
 // 详情页图片点击事件
 if (detailImage) {
   detailImage.addEventListener('click', (e) => {
@@ -426,12 +803,15 @@ if (detailImage) {
     // 转换为 SVG 原始坐标系中的 Y 坐标
     const svgY = clickYPercent * SVG_VIEWBOX_HEIGHT;
     
-    console.log('点击位置:', { clickYPercent, svgY, ranges: svgRanges });
+    // 判断点击类型（免疫规划/非免疫规划）
+    const clickType = getClickType(e, rect);
+    
+    console.log('点击位置:', { clickYPercent, svgY, clickType, ranges: svgRanges });
     
     for (const range of svgRanges) {
       if (svgY >= range.min && svgY < range.max) {
-        console.log('匹配到:', range.key);
-        showModal(range.key);
+        console.log('匹配到:', range.key, '类型:', clickType);
+        showModal(range.key, clickType);
         break;
       }
     }

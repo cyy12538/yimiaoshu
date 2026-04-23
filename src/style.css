@@ -408,6 +408,26 @@ body {
   font-family: 'Source Han Sans SC VF', 'Arial', sans-serif;
   overflow-y: auto;
   max-height: calc(80vh - 8vw);
+  padding-right: 10px;
+}
+
+/* 自定义滚动条样式 */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #2b5843;
+  border-radius: 3px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #1e3d2f;
 }
 
 .modal-body h3 {
@@ -415,8 +435,69 @@ body {
   font-size: clamp(20px, 5vw, 32px);
   margin-bottom: 20px;
   font-weight: 700;
+  position: sticky;
+  top: 0;
+  background: #f7eae2;
+  padding: 10px 0;
+  z-index: 1;
 }
 
 .modal-body p {
   margin-bottom: 15px;
+}
+
+/* 疫苗列表样式 */
+.vaccine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 疫苗区块样式 */
+.vaccine-section {
+  background: rgba(43, 88, 67, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid #2b5843;
+}
+
+.vaccine-section h4 {
+  color: #2b5843;
+  font-size: clamp(18px, 3.5vw, 24px);
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.vaccine-purpose {
+  color: #192e35;
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.vaccine-detail {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.vaccine-detail p {
+  color: #4a6b5f;
+  font-size: clamp(13px, 2.2vw, 16px);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.vaccine-detail p:last-child {
+  margin-bottom: 0;
+}
+
+.no-vaccine {
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  font-style: italic;
 }
