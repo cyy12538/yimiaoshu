@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2160px" height="6756px" viewBox="0 0 2160 6756" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>列表</title>
+    <defs>
+        <path d="M0,0 L2160,0 L2160,6756 L0,6756 L0,0 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="100.246834%" x2="50%" y2="0.0289996075%" id="linearGradient-2">
+            <stop stop-color="color(display-p3 0.612 0.659 0.255)" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="color(display-p3 0.580 0.667 0.341)" stop-opacity="0.7" offset="52%"></stop>
+            <stop stop-color="color(display-p3 0.580 0.667 0.341)" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="列表" stroke="none" fill="none" xlink:href="#path-1" fill-rule="evenodd" stroke-width="1">
+        <g id="_图层_2" transform="translate(493, 585)">
+            <line x1="569.53" y1="0" x2="569.53" y2="5426.97" id="路径" stroke="url(#linearGradient-2)" stroke-width="3"></line>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="153.4" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="377.97" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="610.04" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="820.14" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="1024.46" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="1216.09" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="1428.84" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="1673.65" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="1942.18" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="2224.78" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="2491.57" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="2710.67" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="2927.92" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="3148.78" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="3364.53" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="3585.73" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="3803.51" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="4004.94" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="4221.5" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="4421.54" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="4605.5" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="4805.26" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="5021.19" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <rect id="矩形" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" x="467.41" y="5242.13" width="204.23" height="74.74" rx="23.9099998"></rect>
+            <g id="编组" transform="translate(528.37, 1993.64)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="2-岁">
+                    <tspan x="0" y="0">2 </tspan>
+                    <tspan x="35.7445703" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.09, 1993)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="乙脑减毒疫苗">
+                    <tspan x="0" y="3">乙脑减毒疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 1924.23)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，甲肝疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，甲肝疫苗</tspan>
+                </text>
+                <text id="b型流感嗜血杆菌疫苗，流感疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">b</tspan>
+                    <tspan x="14.4599609" y="33" font-family="PingFangSC-Regular, PingFang SC">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，23价肺炎疫苗，水痘疫苗" font-family="Helvetica">
+                    <tspan x="0" y="66">13</tspan>
+                    <tspan x="28.9199219" y="66" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，</tspan>
+                    <tspan x="184.919922" y="66">23</tspan>
+                    <tspan x="213.839844" y="66" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，水痘疫苗</tspan>
+                </text>
+                <text id="肠道病毒71型灭活疫苗，流脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="102">肠道病毒</tspan>
+                    <tspan x="104" y="102" font-family="Helvetica">71</tspan>
+                    <tspan x="132.919922" y="102">型灭活疫苗，流脑疫苗</tspan>
+                </text>
+                <text id="霍乱疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="135">霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(528.37, 1726.11)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="3-岁">
+                    <tspan x="0" y="0">3 </tspan>
+                    <tspan x="35.7445703" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(23, 1721.11)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="Helvetica" font-size="34" font-weight="normal">
+                <text id="A群C群流脑多糖疫苗">
+                    <tspan x="0" y="0">A</tspan>
+                    <tspan x="22.6777344" y="0" font-family="PingFangSC-Regular, PingFang SC">群</tspan>
+                    <tspan x="56.6777344" y="0">C</tspan>
+                    <tspan x="81.2314453" y="0" font-family="PingFangSC-Regular, PingFang SC">群流脑多糖疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 1653.69)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，甲肝疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，甲肝疫苗</tspan>
+                </text>
+                <text id="b型流感嗜血杆菌疫苗，流感疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">b</tspan>
+                    <tspan x="14.4599609" y="33" font-family="PingFangSC-Regular, PingFang SC">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，23价肺炎疫苗，水痘疫苗" font-family="Helvetica">
+                    <tspan x="0" y="66">13</tspan>
+                    <tspan x="28.9199219" y="66" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，</tspan>
+                    <tspan x="184.919922" y="66">23</tspan>
+                    <tspan x="213.839844" y="66" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，水痘疫苗</tspan>
+                </text>
+                <text id="肠道病毒71型灭活疫苗，流脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="102">肠道病毒</tspan>
+                    <tspan x="104" y="102" font-family="Helvetica">71</tspan>
+                    <tspan x="132.919922" y="102">型灭活疫苗，流脑疫苗</tspan>
+                </text>
+                <text id="霍乱疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="135">霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(528.37, 1479.51)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="4-岁">
+                    <tspan x="0" y="0">4 </tspan>
+                    <tspan x="35.7445703" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.09, 1478.51)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="脊灰减毒疫苗">
+                    <tspan x="0" y="3">脊灰减毒疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 1427.16)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="甲肝疫苗，b型流感嗜血杆菌疫苗，流感疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">甲肝疫苗，</tspan>
+                    <tspan x="130" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="144.459961" y="3">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，23价肺炎疫苗，水痘疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，</tspan>
+                    <tspan x="184.919922" y="33">23</tspan>
+                    <tspan x="213.839844" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，水痘疫苗</tspan>
+                </text>
+                <text id="肠道病毒71型灭活疫苗，流脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">肠道病毒</tspan>
+                    <tspan x="104" y="69" font-family="Helvetica">71</tspan>
+                    <tspan x="132.919922" y="69">型灭活疫苗，流脑疫苗</tspan>
+                </text>
+                <text id="霍乱疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="102">霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(528.37, 1265.98)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="6-岁">
+                    <tspan x="0" y="0">6 </tspan>
+                    <tspan x="35.7445703" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(172.09, 1243.98)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-size="34" font-weight="normal">
+                <text id="百白破疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">百白破疫苗</tspan>
+                </text>
+                <text id="A群C群流脑多糖疫苗" font-family="Helvetica">
+                    <tspan x="-149.09" y="40.8">A</tspan>
+                    <tspan x="-126.412266" y="40.8" font-family="PingFangSC-Regular, PingFang SC">群</tspan>
+                    <tspan x="-92.4122656" y="40.8">C</tspan>
+                    <tspan x="-67.8585547" y="40.8" font-family="PingFangSC-Regular, PingFang SC">群流脑多糖疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 1248.63)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="26" font-weight="normal">
+                <text id="甲肝疫苗，流感疫苗，23价肺炎疫苗">
+                    <tspan x="0" y="3">甲肝疫苗，流感疫苗，</tspan>
+                    <tspan x="260" y="3" font-family="Helvetica">23</tspan>
+                    <tspan x="288.919922" y="3">价肺炎疫苗</tspan>
+                </text>
+                <text id="水痘疫苗，流脑疫苗，霍乱疫苗，乙脑疫苗">
+                    <tspan x="0" y="36">水痘疫苗，流脑疫苗，霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(505.51, 5292.85)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="42.86" font-weight="normal">
+                <text id="出生时">
+                    <tspan x="0" y="3">出生时</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(206.09, 5268.85)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="乙肝疫苗">
+                    <tspan x="0" y="3">乙肝疫苗</tspan>
+                </text>
+                <text id="卡介苗">
+                    <tspan x="34" y="43.8">卡介苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(511.21, 5072.32)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="1月龄">
+                    <tspan x="0" y="0">1</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(206.09, 5071.32)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="乙肝疫苗">
+                    <tspan x="0" y="3">乙肝疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(499.83, 4854.79)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="1.5月龄">
+                    <tspan x="0" y="0">1.5</tspan>
+                    <tspan x="59.5812598" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 4849.44)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，13价肺炎疫苗">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">13</tspan>
+                    <tspan x="210.919922" y="3">价肺炎疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(519.94, 4656.09)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="2月龄">
+                    <tspan x="0" y="0">2</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.09, 4637.26)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="脊灰灭活疫苗">
+                    <tspan x="0" y="3">脊灰灭活疫苗</tspan>
+                </text>
+                <text id="百白破疫苗">
+                    <tspan x="34" y="43.8">百白破疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 4620.91)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-weight="normal">
+                <g font-size="26" id="轮状病毒疫苗，b型流感嗜血杆菌疫苗">
+                    <text>
+                        <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                        <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                        <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                    </text>
+                </g>
+                <g font-size="26" id="脊髓灰质炎疫苗，13价肺炎疫苗">
+                    <text>
+                        <tspan x="0" y="36">脊髓灰质炎疫苗，</tspan>
+                        <tspan x="208" y="36" font-family="Helvetica">13</tspan>
+                        <tspan x="236.919922" y="36">价肺炎疫苗</tspan>
+                    </text>
+                </g>
+                <g font-size="22" id="无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗(五联)">
+                    <text>
+                        <tspan x="0" y="68">无细胞百白破灭活脊髓灰质炎和</tspan>
+                        <tspan x="308" y="68" font-family="Helvetica">b</tspan>
+                        <tspan x="320.235352" y="68">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="562.235352" y="68" font-family="Helvetica">(</tspan>
+                        <tspan x="569.561523" y="68">五联</tspan>
+                        <tspan x="613.561523" y="68" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="编组" transform="translate(495.56, 4471.73)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="2.5月龄">
+                    <tspan x="0" y="0">2.5</tspan>
+                    <tspan x="59.5812598" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 4453.38)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，b型流感嗜血杆菌疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(506.94, 4271.19)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="3月龄">
+                    <tspan x="13" y="0">3</tspan>
+                    <tspan x="36.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.09, 4272.19)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="脊灰灭活疫苗">
+                    <tspan x="0" y="3">脊灰灭活疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 4213.84)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-weight="normal">
+                <g font-size="26" id="轮状病毒疫苗，b型流感嗜血杆菌疫苗">
+                    <text>
+                        <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                        <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                        <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                    </text>
+                </g>
+                <g font-size="26" id="脊髓灰质炎疫苗，13价肺炎疫苗，流脑疫苗">
+                    <text>
+                        <tspan x="0" y="36">脊髓灰质炎疫苗，</tspan>
+                        <tspan x="208" y="36" font-family="Helvetica">13</tspan>
+                        <tspan x="236.919922" y="36">价肺炎疫苗，流脑疫苗</tspan>
+                    </text>
+                </g>
+                <g font-size="22" id="无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗(五联)">
+                    <text>
+                        <tspan x="0" y="68">无细胞百白破灭活脊髓灰质炎和</tspan>
+                        <tspan x="308" y="68" font-family="Helvetica">b</tspan>
+                        <tspan x="320.235352" y="68">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="562.235352" y="68" font-family="Helvetica">(</tspan>
+                        <tspan x="569.561523" y="68">五联</tspan>
+                        <tspan x="613.561523" y="68" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+                <g font-size="22" id="无细胞百白破b型流感嗜血杆菌联合疫苗(四联)">
+                    <text>
+                        <tspan x="0" y="101">无细胞百白破</tspan>
+                        <tspan x="132" y="101" font-family="Helvetica">b</tspan>
+                        <tspan x="144.235352" y="101">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="386.235352" y="101" font-family="Helvetica">(</tspan>
+                        <tspan x="393.561523" y="101">四联</tspan>
+                        <tspan x="437.561523" y="101" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="编组" transform="translate(495.56, 4055.66)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="3.5月龄">
+                    <tspan x="0" y="0">3.5</tspan>
+                    <tspan x="59.5812598" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 4038.31)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，b型流感嗜血杆菌疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，流脑疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，流脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(506.94, 3853.13)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="4月龄">
+                    <tspan x="0" y="0">4</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.09, 3831.13)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="脊灰减毒疫苗">
+                    <tspan x="0" y="3">脊灰减毒疫苗</tspan>
+                </text>
+                <text id="百白破疫苗">
+                    <tspan x="34" y="43.8">百白破疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 3796.78)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-weight="normal">
+                <g font-size="26" id="轮状病毒疫苗，b型流感嗜血杆菌疫苗">
+                    <text>
+                        <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                        <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                        <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                    </text>
+                </g>
+                <g font-size="26" id="脊髓灰质炎疫苗，13价肺炎疫苗，流脑疫苗">
+                    <text>
+                        <tspan x="0" y="36">脊髓灰质炎疫苗，</tspan>
+                        <tspan x="208" y="36" font-family="Helvetica">13</tspan>
+                        <tspan x="236.919922" y="36">价肺炎疫苗，流脑疫苗</tspan>
+                    </text>
+                </g>
+                <g font-size="22" id="无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗(五联)">
+                    <text>
+                        <tspan x="0" y="68">无细胞百白破灭活脊髓灰质炎和</tspan>
+                        <tspan x="308" y="68" font-family="Helvetica">b</tspan>
+                        <tspan x="320.235352" y="68">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="562.235352" y="68" font-family="Helvetica">(</tspan>
+                        <tspan x="569.561523" y="68">五联</tspan>
+                        <tspan x="613.561523" y="68" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+                <g font-size="22" id="无细胞百白破b型流感嗜血杆菌联合疫苗(四联)">
+                    <text>
+                        <tspan x="0" y="101">无细胞百白破</tspan>
+                        <tspan x="132" y="101" font-family="Helvetica">b</tspan>
+                        <tspan x="144.235352" y="101">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="386.235352" y="101" font-family="Helvetica">(</tspan>
+                        <tspan x="393.561523" y="101">四联</tspan>
+                        <tspan x="437.561523" y="101" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="编组" transform="translate(519.94, 3635.6)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="5月龄">
+                    <tspan x="0" y="0">5</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 3598.25)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-weight="normal">
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="26" id="轮状病毒疫苗，b型流感嗜血杆菌疫苗">
+                    <text>
+                        <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                        <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                        <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                    </text>
+                </g>
+                <g font-family="Helvetica" font-size="26" id="13价肺炎疫苗，流脑疫苗">
+                    <text>
+                        <tspan x="0" y="33">13</tspan>
+                        <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，流脑疫苗</tspan>
+                    </text>
+                </g>
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="22" id="无细胞百白破b型流感嗜血杆菌联合疫苗(四联)">
+                    <text>
+                        <tspan x="0" y="68">无细胞百白破</tspan>
+                        <tspan x="132" y="68" font-family="Helvetica">b</tspan>
+                        <tspan x="144.235352" y="68">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="386.235352" y="68" font-family="Helvetica">(</tspan>
+                        <tspan x="393.561523" y="68">四联</tspan>
+                        <tspan x="437.561523" y="68" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="编组" transform="translate(519.94, 3414.07)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="6月龄">
+                    <tspan x="0" y="0">6</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(206.09, 3374.07)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-size="34" font-weight="normal">
+                <text id="乙肝疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">乙肝疫苗</tspan>
+                </text>
+                <text id="A群流脑多糖疫苗" font-family="Helvetica">
+                    <tspan x="-124.34" y="40.8">A</tspan>
+                    <tspan x="-101.662266" y="40.8" font-family="PingFangSC-Regular, PingFang SC">群流脑多糖疫苗</tspan>
+                </text>
+                <text id="百白破疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="-34" y="84.6">百白破疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 3379.72)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，b型流感嗜血杆菌疫苗，流感疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，肠道病毒71型灭活疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，肠道病毒</tspan>
+                    <tspan x="288.919922" y="33">71</tspan>
+                    <tspan x="317.839844" y="33" font-family="PingFangSC-Regular, PingFang SC">型灭活疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">流脑疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(515.21, 3200.18)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="7月龄">
+                    <tspan x="0" y="0">7</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.09, 3175.54)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="脊灰灭活疫苗">
+                    <tspan x="0" y="3">脊灰灭活疫苗</tspan>
+                </text>
+                <text id="百白破疫苗">
+                    <tspan x="34" y="43.8">百白破疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 3161.19)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，b型流感嗜血杆菌疫苗，流感疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，肠道病毒71型灭活疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，肠道病毒</tspan>
+                    <tspan x="288.919922" y="33">71</tspan>
+                    <tspan x="317.839844" y="33" font-family="PingFangSC-Regular, PingFang SC">型灭活疫苗</tspan>
+                </text>
+                <text id="流脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">流脑疫苗</tspan>
+                </text>
+                <text id="，" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="104" y="69">，</tspan>
+                </text>
+                <text id="乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="130" y="69">乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(514.08, 2979.01)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="8月龄">
+                    <tspan x="0" y="0">8</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(172.09, 2957.01)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="麻腮风疫苗">
+                    <tspan x="0" y="3">麻腮风疫苗</tspan>
+                </text>
+                <text id="乙脑减毒疫苗">
+                    <tspan x="-34" y="43.8">乙脑减毒疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 2942.66)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，b型流感嗜血杆菌疫苗，流感疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，肠道病毒71型灭活疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，肠道病毒</tspan>
+                    <tspan x="288.919922" y="33">71</tspan>
+                    <tspan x="317.839844" y="33" font-family="PingFangSC-Regular, PingFang SC">型灭活疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">流脑疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(514.08, 2761.47)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="9月龄">
+                    <tspan x="0" y="0">9</tspan>
+                    <tspan x="23.8366895" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(81.75, 2758.47)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="Helvetica" font-size="34" font-weight="normal">
+                <text id="A群流脑多糖疫苗">
+                    <tspan x="0" y="0">A</tspan>
+                    <tspan x="22.6777344" y="0" font-family="PingFangSC-Regular, PingFang SC">群流脑多糖疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 2724.12)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，b型流感嗜血杆菌疫苗，流感疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">轮状病毒疫苗，</tspan>
+                    <tspan x="182" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="196.459961" y="3">型流感嗜血杆菌疫苗，流感疫苗</tspan>
+                </text>
+                <text id="13价肺炎疫苗，肠道病毒71型灭活疫苗" font-family="Helvetica">
+                    <tspan x="0" y="33">13</tspan>
+                    <tspan x="28.9199219" y="33" font-family="PingFangSC-Regular, PingFang SC">价肺炎疫苗，肠道病毒</tspan>
+                    <tspan x="288.919922" y="33">71</tspan>
+                    <tspan x="317.839844" y="33" font-family="PingFangSC-Regular, PingFang SC">型灭活疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">流脑疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(505.49, 2542.94)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="12月龄">
+                    <tspan x="0" y="0">12</tspan>
+                    <tspan x="47.6733789" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 2505.59)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="26" font-weight="normal">
+                <text id="轮状病毒疫苗，甲肝疫苗，b型流感嗜血杆菌疫苗">
+                    <tspan x="0" y="3">轮状病毒疫苗，甲肝疫苗，</tspan>
+                    <tspan x="312" y="3" font-family="Helvetica">b</tspan>
+                    <tspan x="326.459961" y="3">型流感嗜血杆菌疫苗</tspan>
+                </text>
+                <text id="流感疫苗，13价肺炎疫苗，水痘疫苗">
+                    <tspan x="0" y="36">流感疫苗，</tspan>
+                    <tspan x="130" y="36" font-family="Helvetica">13</tspan>
+                    <tspan x="158.919922" y="36">价肺炎疫苗，水痘疫苗</tspan>
+                </text>
+                <text id="肠道病毒71型灭活疫苗，流脑疫苗，乙脑疫苗">
+                    <tspan x="0" y="69">肠道病毒</tspan>
+                    <tspan x="104" y="69" font-family="Helvetica">71</tspan>
+                    <tspan x="132.919922" y="69">型灭活疫苗，流脑疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(505.49, 2276.15)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="18月龄">
+                    <tspan x="0" y="0">18</tspan>
+                    <tspan x="47.6733789" y="0" font-family="PingFangSC-Regular, PingFang SC">月龄</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(172.09, 2234.17)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="百白破疫苗">
+                    <tspan x="0" y="3">百白破疫苗</tspan>
+                </text>
+                <text id="麻腮风疫苗">
+                    <tspan x="0" y="43.8">麻腮风疫苗</tspan>
+                </text>
+                <text id="甲肝减毒疫苗">
+                    <tspan x="-34" y="84.6">甲肝减毒疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 2194.39)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-weight="normal">
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="26" id="轮状病毒疫苗，甲肝疫苗">
+                    <text>
+                        <tspan x="0" y="3">轮状病毒疫苗，甲肝疫苗</tspan>
+                    </text>
+                </g>
+                <g font-family="Helvetica" font-size="26" id="b型流感嗜血杆菌疫苗，脊髓灰质炎疫苗">
+                    <text>
+                        <tspan x="0" y="33">b</tspan>
+                        <tspan x="14.4599609" y="33" font-family="PingFangSC-Regular, PingFang SC">型流感嗜血杆菌疫苗，脊髓灰质炎疫苗</tspan>
+                    </text>
+                </g>
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="26" id="流感疫苗，13价肺炎疫苗，水痘疫苗">
+                    <text>
+                        <tspan x="0" y="69">流感疫苗，</tspan>
+                        <tspan x="130" y="69" font-family="Helvetica">13</tspan>
+                        <tspan x="158.919922" y="69">价肺炎疫苗，水痘疫苗</tspan>
+                    </text>
+                </g>
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="26">
+                    <text id="肠道病毒71型灭活疫苗，流脑疫苗">
+                        <tspan x="0" y="102">肠道病毒</tspan>
+                        <tspan x="104" y="102" font-family="Helvetica">71</tspan>
+                        <tspan x="132.919922" y="102">型灭活疫苗，流脑疫苗</tspan>
+                    </text>
+                    <text id="，乙脑疫苗">
+                        <tspan x="388.65" y="102">，乙脑疫苗</tspan>
+                    </text>
+                </g>
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="22" id="无细胞百白破灭活脊髓灰质炎和b型流感嗜血杆菌联合疫苗(五联)">
+                    <text>
+                        <tspan x="0" y="134">无细胞百白破灭活脊髓灰质炎和</tspan>
+                        <tspan x="308" y="134" font-family="Helvetica">b</tspan>
+                        <tspan x="320.235352" y="134">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="562.235352" y="134" font-family="Helvetica">(</tspan>
+                        <tspan x="569.561523" y="134">五联</tspan>
+                        <tspan x="613.561523" y="134" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+                <g font-family="PingFangSC-Regular, PingFang SC" font-size="22" id="无细胞百白破b型流感嗜血杆菌联合疫苗(四联)">
+                    <text>
+                        <tspan x="0" y="167">无细胞百白破</tspan>
+                        <tspan x="132" y="167" font-family="Helvetica">b</tspan>
+                        <tspan x="144.235352" y="167">型流感嗜血杆菌联合疫苗</tspan>
+                        <tspan x="386.235352" y="167" font-family="Helvetica">(</tspan>
+                        <tspan x="393.561523" y="167">四联</tspan>
+                        <tspan x="437.561523" y="167" font-family="Helvetica">)</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="编组" transform="translate(519.78, 660.51)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="16-岁">
+                    <tspan x="0" y="0">16 </tspan>
+                    <tspan x="59.5812598" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 613.04)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="26" font-weight="normal">
+                <text id="甲肝疫苗，流感疫苗，23价肺炎疫苗">
+                    <tspan x="0" y="3">甲肝疫苗，流感疫苗，</tspan>
+                    <tspan x="260" y="3" font-family="Helvetica">23</tspan>
+                    <tspan x="288.919922" y="3">价肺炎疫苗</tspan>
+                </text>
+                <text id="水痘疫苗，人乳头瘤病毒疫苗（HPV）疫苗">
+                    <tspan x="0" y="36">水痘疫苗，人乳头瘤病毒疫苗（</tspan>
+                    <tspan x="364" y="36" font-family="Helvetica">HPV</tspan>
+                    <tspan x="417.459961" y="36">）疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，戊肝疫苗，霍乱疫苗，乙脑疫苗">
+                    <tspan x="0" y="69">流脑疫苗，戊肝疫苗，霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(515.76, 428.85)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="≥40岁">
+                    <tspan x="0" y="0">≥40</tspan>
+                    <tspan x="71.1961523" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 374.51)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="甲肝疫苗，流感疫苗，23价肺炎疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">甲肝疫苗，流感疫苗，</tspan>
+                    <tspan x="260" y="3" font-family="Helvetica">23</tspan>
+                    <tspan x="288.919922" y="3">价肺炎疫苗</tspan>
+                </text>
+                <text id="，" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="421.2" y="3">，</tspan>
+                </text>
+                <text id="水痘疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="447.2" y="3">水痘疫苗</tspan>
+                </text>
+                <text id="人乳头瘤病毒疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="36">人乳头瘤病毒疫苗</tspan>
+                </text>
+                <text id="(" font-family="Helvetica">
+                    <tspan x="208" y="33">(</tspan>
+                </text>
+                <text id="HPV" font-family="Helvetica">
+                    <tspan x="216.66" y="33">HPV</tspan>
+                </text>
+                <text id=")" font-family="Helvetica">
+                    <tspan x="268.68" y="33">)</tspan>
+                </text>
+                <text id="疫苗，流脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="277.34" y="36">疫苗，流脑疫苗</tspan>
+                </text>
+                <text id="带状疱疹疫苗，戊肝疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">带状疱疹疫苗，戊肝疫苗</tspan>
+                </text>
+                <text id="霍乱疫苗，乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="102">霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(513.76, 203.32)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-family="Helvetica" font-size="42.86" font-weight="normal">
+                <text id="≥50岁">
+                    <tspan x="0" y="0">≥50</tspan>
+                    <tspan x="71.1961523" y="0" font-family="PingFangSC-Regular, PingFang SC">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 165.97)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-size="26" font-weight="normal">
+                <text id="甲肝疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="3">甲肝疫苗</tspan>
+                </text>
+                <text id="," font-family="Helvetica">
+                    <tspan x="104" y="0">,</tspan>
+                </text>
+                <text id="流感疫苗，23价肺炎疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="110.86" y="3">流感疫苗，</tspan>
+                    <tspan x="240.86" y="3" font-family="Helvetica">23</tspan>
+                    <tspan x="269.779922" y="3">价肺炎疫苗</tspan>
+                </text>
+                <text id="，" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="402.06" y="3">，</tspan>
+                </text>
+                <text id="水痘疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="428.06" y="3">水痘疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，带状疱疹疫苗戊肝疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="36">流脑疫苗，带状疱疹疫苗戊肝疫苗</tspan>
+                </text>
+                <text id="霍乱疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="0" y="69">霍乱疫苗</tspan>
+                </text>
+                <text id="，" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="104" y="69">，</tspan>
+                </text>
+                <text id="乙脑疫苗" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="130" y="69">乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(528.37, 1076.45)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-size="42.86" font-weight="normal">
+                <text id="9" font-family="Helvetica">
+                    <tspan x="0" y="0">9</tspan>
+                </text>
+                <text id="岁" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="39.99" y="3">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 1040.1)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="26" font-weight="normal">
+                <text id="甲肝疫苗，流感疫苗，23价肺炎疫苗">
+                    <tspan x="0" y="3">甲肝疫苗，流感疫苗，</tspan>
+                    <tspan x="260" y="3" font-family="Helvetica">23</tspan>
+                    <tspan x="288.919922" y="3">价肺炎疫苗</tspan>
+                </text>
+                <text id="水痘疫苗，人乳头瘤病毒疫苗（HPV）疫苗">
+                    <tspan x="0" y="36">水痘疫苗，人乳头瘤病毒疫苗（</tspan>
+                    <tspan x="364" y="36" font-family="Helvetica">HPV</tspan>
+                    <tspan x="417.459961" y="36">）疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，霍乱疫苗，乙脑疫苗">
+                    <tspan x="0" y="69">流脑疫苗，霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(519.78, 870.92)" fill="color(display-p3 1.000 1.000 1.000)" fill-rule="nonzero" font-size="42.86" font-weight="normal">
+                <text id="13" font-family="Helvetica">
+                    <tspan x="0" y="0">13</tspan>
+                </text>
+                <text id="岁" font-family="PingFangSC-Regular, PingFang SC">
+                    <tspan x="57.17" y="3">岁</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(138.06, 873.92)" fill="color(display-p3 0.169 0.345 0.263)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="34" font-weight="normal">
+                <text id="二价HPV疫苗">
+                    <tspan x="0" y="3">二价</tspan>
+                    <tspan x="68" y="3" font-family="Helvetica">HPV</tspan>
+                    <tspan x="137.90918" y="3">疫苗</tspan>
+                </text>
+            </g>
+            <g id="编组" transform="translate(799.34, 831.57)" fill="color(display-p3 0.376 0.478 0.333)" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="26" font-weight="normal">
+                <g id="甲肝疫苗，流感疫苗，23价肺炎疫苗">
+                    <text>
+                        <tspan x="0" y="3">甲肝疫苗，流感疫苗，</tspan>
+                        <tspan x="260" y="3" font-family="Helvetica">23</tspan>
+                        <tspan x="288.919922" y="3">价肺炎疫苗</tspan>
+                    </text>
+                </g>
+                <text id="水痘疫苗，">
+                    <tspan x="0" y="36">水痘疫苗，</tspan>
+                </text>
+                <text id="人乳头瘤病毒疫苗（HPV）疫苗">
+                    <tspan x="129.87" y="36">人乳头瘤病毒疫苗（</tspan>
+                    <tspan x="363.87" y="36" font-family="Helvetica">HPV</tspan>
+                    <tspan x="417.329961" y="36">）疫苗</tspan>
+                </text>
+                <text id="流脑疫苗，霍乱疫苗，乙脑疫苗">
+                    <tspan x="0" y="69">流脑疫苗，霍乱疫苗，乙脑疫苗</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
