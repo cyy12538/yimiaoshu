@@ -23,7 +23,14 @@
     
     <div id="main-scene" class="scene active">
       <div class="bg-wrapper">
-        <div class="bg-image"></div>
+        <!-- 多层植物动画背景 -->
+        <div class="animation-wrapper">
+          <div id="sky-layer" class="animation-layer"></div>
+          <div id="bg-layer" class="animation-layer"></div>
+          <div id="far-layer" class="animation-layer"></div>
+          <div id="mid-layer" class="animation-layer"></div>
+          <div id="front-layer" class="animation-layer"></div>
+        </div>
         <div class="svg-container">
           <!-- Lottie 动画 - bubble ui 配套动画（位置由 JavaScript 动态计算） -->
           <div id="lottie-bubble-baby" class="lottie-bubble" style="
@@ -81,9 +88,14 @@
       </div>
     </div>
     
-    <div class="bottom-bg"></div>
+    <!-- 底页背景层 - Asset 12 最底层 -->
+    <div class="bottom-bg" id="bottom-bg-12"></div>
+    <!-- 底页背景层 - Asset 11 上层 -->
+    <div class="bottom-bg" id="bottom-bg-11"></div>
     
     <div id="detail-scene" class="scene">
+      <!-- 底部遮罩层 - 文字长图滚动到这里时不显示 -->
+      <div class="text-mask-bottom"></div>
       <div class="scroll-container">
         <img src="/文字长图.svg" class="detail-image" alt="Detail">
       </div>
