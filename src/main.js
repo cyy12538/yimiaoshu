@@ -1954,22 +1954,84 @@ function renderUnplannedVaccines(vaccines) {
   `).join('');
 }
 
-// 显示弹窗 - type: 'planned' | 'unplanned'
-function showModal(key, type) {
+// 显示疫苗选择弹窗（同时显示免疫规划和非免疫规划疫苗名字）
+function showModal(key) {
   const data = vaccineData[key];
   if (!data) return;
   
-  const isPlanned = type === 'planned';
-  const title = isPlanned ? '免疫规划疫苗' : '非免疫规划疫苗';
-  const vaccines = isPlanned ? data.planned : data.unplanned;
+  const plannedVaccines = data.planned || [];
+  const unplannedVaccines = data.unplanned || [];
   
   modalBody.innerHTML = `
-    <h3>${data.title} - ${title}</h3>
-    <div class="vaccine-list">
-      ${isPlanned ? renderPlannedVaccines(vaccines) : renderUnplannedVaccines(vaccines)}
+    <h3 class="vaccine-selector-title">${data.title}</h3>
+    <div class="vaccine-selector-container">
+      <div class="vaccine-column">
+        <div class="column-title">免疫规划疫苗</div>
+        <div class="vaccine-bubbles">
+          ${plannedVaccines.length > 0 ? plannedVaccines.map((v, i) => `
+            <div class="vaccine-bubble planned" data-key="${key}" data-type="planned" data-index="${i}">
+              ${v.name}
+            </div>
+          `).join('') : '<div class="no-vaccine-hint">暂无</div>'}
+        </div>
+      </div>
+      <div class="vaccine-column">
+        <div class="column-title">非免疫规划疫苗</div>
+        <div class="vaccine-bubbles">
+          ${unplannedVaccines.map((v, i) => `
+            <div class="vaccine-bubble unplanned" data-key="${key}" data-type="unplanned" data-index="${i}">
+              ${v.name}
+            </div>
+          `).join('')}
+        </div>
+      </div>
     </div>
   `;
+  
+  // 添加疫苗气泡点击事件
+  modalBody.querySelectorAll('.vaccine-bubble').forEach(bubble => {
+    bubble.addEventListener('click', () => {
+      const key = bubble.dataset.key;
+      const type = bubble.dataset.type;
+      const index = parseInt(bubble.dataset.index);
+      showVaccineDetail(key, type, index);
+    });
+  });
+  
   modalOverlay.classList.add('active');
+}
+
+// 显示疫苗详情弹窗
+function showVaccineDetail(key, type, index) {
+  const data = vaccineData[key];
+  if (!data) return;
+  
+  const vaccines = type === 'planned' ? data.planned : data.unplanned;
+  const vaccine = vaccines[index];
+  if (!vaccine) return;
+  
+  const typeTitle = type === 'planned' ? '免疫规划疫苗' : '非免疫规划疫苗';
+  
+  modalBody.innerHTML = `
+    <div class="vaccine-detail-header">
+      <div class="back-btn" id="backToVaccines">← 返回</div>
+      <div class="vaccine-type-title ${type}">${typeTitle}</div>
+    </div>
+    ${vaccine.content || `
+      <div class="vaccine-section">
+        <h4>${vaccine.name}</h4>
+        <p class="vaccine-purpose">${vaccine.desc || ''}</p>
+      </div>
+    `}
+  `;
+  
+  // 添加返回按钮事件
+  const backBtn = modalBody.querySelector('#backToVaccines');
+  if (backBtn) {
+    backBtn.addEventListener('click', () => {
+      showModal(key);
+    });
+  }
 }
 
 function hideModal() {
@@ -1992,26 +2054,47 @@ function getClickType(e, rect) {
   return clickX < width * 0.5 ? 'planned' : 'unplanned';
 }
 
+// 遮罩镂空区域配置（相对于遮罩层高度的百分比）
+// 上方15%和下方30%被遮罩遮住，中间55%是镂空的
+const MASK_CUTOUT_CONFIG = {
+  topMargin: 0.15,    // 上方遮罩高度占遮罩层的比例
+  bottomMargin: 0.30  // 下方遮罩高度占遮罩层的比例
+};
+
 // 详情页图片点击事件
 if (detailImage) {
   detailImage.addEventListener('click', (e) => {
     if (!isDetailPage) return;
     
+    // 获取遮罩层的位置和尺寸
+    const maskRect = maskLayer.getBoundingClientRect();
+    
+    // 计算点击位置相对于遮罩层的百分比
+    const clickYRelativeToMask = e.clientY - maskRect.top;
+    const clickYPercent = clickYRelativeToMask / maskRect.height;
+    
+    // 检查点击位置是否在遮罩镂空区域内（相对于遮罩层）
+    const validTop = MASK_CUTOUT_CONFIG.topMargin;
+    const validBottom = 1 - MASK_CUTOUT_CONFIG.bottomMargin;
+    
+    // 如果点击位置在遮罩遮住的区域，不触发弹窗
+    if (clickYPercent < validTop || clickYPercent > validBottom) {
+      console.log('点击位置被遮罩遮住，忽略点击', { clickYPercent, validTop, validBottom, maskRect });
+      return;
+    }
+    
     const rect = detailImage.getBoundingClientRect();
     // 计算点击位置相对于图片的百分比
-    const clickYPercent = (e.clientY - rect.top) / rect.height;
+    const clickYPercentOnImage = (e.clientY - rect.top) / rect.height;
     // 转换为 SVG 原始坐标系中的 Y 坐标
-    const svgY = clickYPercent * SVG_VIEWBOX_HEIGHT;
+    const svgY = clickYPercentOnImage * SVG_VIEWBOX_HEIGHT;
     
-    // 判断点击类型（免疫规划/非免疫规划）
-    const clickType = getClickType(e, rect);
-    
-    console.log('点击位置:', { clickYPercent, svgY, clickType, ranges: svgRanges });
+    console.log('点击位置:', { clickYPercentOnImage, svgY, ranges: svgRanges });
     
     for (const range of svgRanges) {
       if (svgY >= range.min && svgY < range.max) {
-        console.log('匹配到:', range.key, '类型:', clickType);
-        showModal(range.key, clickType);
+        console.log('匹配到:', range.key);
+        showModal(range.key);
         break;
       }
     }
@@ -2069,6 +2152,12 @@ characterClickConfig.forEach(config => {
 
       closeBtn.classList.add('visible');
       isDetailPage = true;
+      
+      // 切换标题显示
+      const mainTitle = document.getElementById('main-title');
+      const detailTitle = document.getElementById('detail-title');
+      if (mainTitle) mainTitle.classList.remove('visible');
+      if (detailTitle) detailTitle.classList.add('visible');
       
       // 初始化并播放二级页面前景动画
       initMaskLottie();
@@ -2163,6 +2252,12 @@ function goBack() {
     closeBtn.classList.remove('visible');
     fixedImgs.forEach(img => img.classList.remove('visible'));
     isDetailPage = false;
+    
+    // 切换标题显示
+    const mainTitle = document.getElementById('main-title');
+    const detailTitle = document.getElementById('detail-title');
+    if (mainTitle) mainTitle.classList.add('visible');
+    if (detailTitle) detailTitle.classList.remove('visible');
     
     // 停止二级页面前景动画
     if (maskLottieAnimation && maskLottieAnimation.animation) {
@@ -2289,6 +2384,7 @@ function adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRat
   
   // 文字长图：按原始比例缩放，宽度超过显示范围时裁切两边
   const detailImage = document.querySelector('.detail-image');
+  const lineOverlay = document.querySelector('.line-overlay');
   if (detailImage) {
     // 文字长图原始尺寸: 2389.66 x 5940.25
     // 计算缩放比例：基于宽度从 2389.66 缩放到 displayWidth
@@ -2297,6 +2393,12 @@ function adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRat
     
     detailImage.style.width = `${displayWidth}px`;
     detailImage.style.height = `${scaledHeight}px`;
+    
+    // 线条跟随列表图片缩放
+    if (lineOverlay) {
+      lineOverlay.style.width = `${displayWidth}px`;
+      lineOverlay.style.height = `${scaledHeight}px`;
+    }
   }
   
   // 调整关闭按钮位置
@@ -2322,6 +2424,29 @@ function adjustDetailPageElements(displayWidth, displayHeight, offsetX, scaleRat
     img.style.maxWidth = 'none';
     img.style.transform = 'none';
   });
+  
+  // 调整页面底部标题尺寸
+  const mainTitle = document.getElementById('main-title');
+  const detailTitle = document.getElementById('detail-title');
+  
+  // 标题原始尺寸: 1228.27 x 165.66
+  const titleOriginalWidth = 1228.27;
+  const titleOriginalHeight = 165.66;
+  const titleScaledWidth = titleOriginalWidth * scaleRatio;
+  
+  if (mainTitle) {
+    const titleImg = mainTitle.querySelector('img');
+    if (titleImg) {
+      titleImg.style.width = `${titleScaledWidth}px`;
+    }
+  }
+  
+  if (detailTitle) {
+    const titleImg = detailTitle.querySelector('img');
+    if (titleImg) {
+      titleImg.style.width = `${titleScaledWidth}px`;
+    }
+  }
 }
 
 // 页面加载完成后初始化
@@ -2329,6 +2454,11 @@ window.addEventListener('load', () => {
   initAnimations();
   adjustLayout();
   updateScrollRange();
+  
+  // 初始化主页面标题显示
+  const mainTitle = document.getElementById('main-title');
+  if (mainTitle) mainTitle.classList.add('visible');
+  
   console.log('页面初始化完成');
 });
 
