@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1228.27 165.66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a9b14a;
+        opacity: .67;
+      }
+
+      .cls-2 {
+        fill: #303030;
+        font-family: SourceHanSansCN-Medium-GBpc-EUC-H, 'Source Han Sans CN';
+        font-size: 60px;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        letter-spacing: -.46em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_8" data-name="Layer 8">
+    <g>
+      <rect class="cls-1" x="128.73" width="955.23" height="161.1" rx="42.28" ry="42.28"/>
+      <text class="cls-2" transform="translate(164.13 102.84)"><tspan x="0" y="0">河南省疾病预防控制中</tspan><tspan class="cls-3" x="600" y="0">心</tspan><tspan class="cls-4" x="632.16" y="0">（</tspan><tspan x="690" y="0">试行</tspan><tspan class="cls-4" x="810" y="0">版</tspan><tspan class="cls-3" x="867.84" y="0">）</tspan></text>
+    </g>
+  </g>
+</svg>
