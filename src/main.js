@@ -276,7 +276,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -293,14 +298,20 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；13岁及以上人群基础免疫接种2剂，间隔4-8周。</p>
+          </div>
         </div>`
       },
       {
@@ -308,6 +319,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
@@ -315,6 +329,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>带状疱疹疫苗</h4>
           <p class="vaccine-purpose">预防带状疱疹，降低带状疱疹引起的神经痛等并发症风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组带状疱疹疫苗（CHO细胞）</strong>：50岁及以上成人；2剂次（间隔2个月接种，第2剂在第1剂后2-6个月之间接种）。</p>
+          </div>
         </div>`
       },
       {
@@ -322,13 +339,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>戊肝疫苗</h4>
           <p class="vaccine-purpose">预防戊型肝炎病毒感染引起的戊型肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组戊型肝炎疫苗</strong>：16岁及以上易感人群；3剂次（按照0、1、6月接种方案进行接种）。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -336,6 +359,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -348,7 +374,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -365,21 +396,31 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；13岁及以上人群基础免疫接种2剂，间隔4-8周。</p>
+          </div>
         </div>`
       },
       {
         name: 'HPV疫苗',
         content: `<div class="vaccine-section">
           <h4>HPV疫苗</h4>
-          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+          <p class="vaccine-purpose">HPV疫苗能够预防高危型HPV的持续感染，有效降低宫颈癌、肛门癌、生殖器疣等相关疾病的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>双价人乳头瘤病毒疫苗</strong>：9-45岁女性，3剂次（于0、1和6月分别接种1剂次。）</p>
+            <p><strong>九价人乳头瘤病毒疫苗（酿酒酵母）</strong>：9-45岁女性和16-26岁男性，2或3剂次。（9-45岁女性及16-26岁男性：于0、2、6月分别接种1剂，共3剂。第2剂与首剂间隔至少1个月，第3剂与第2剂间隔至少3个月，所有3剂需在1年内完成。9-14岁女性：可选择2剂程序，于0月和6-12月各接种1剂。若第2剂与首剂间隔少于5个月，需补接种第3剂。）</p>
+          </div>
         </div>`
       },
       {
@@ -387,6 +428,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
@@ -394,6 +438,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>带状疱疹疫苗</h4>
           <p class="vaccine-purpose">预防带状疱疹，降低带状疱疹引起的神经痛等并发症风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组带状疱疹疫苗（CHO细胞）</strong>：50岁及以上成人；2剂次（间隔2个月接种，第2剂在第1剂后2-6个月之间接种）。</p>
+          </div>
         </div>`
       },
       {
@@ -401,13 +448,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>戊肝疫苗</h4>
           <p class="vaccine-purpose">预防戊型肝炎病毒感染引起的戊型肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组戊型肝炎疫苗</strong>：16岁及以上易感人群；3剂次（按照0、1、6月接种方案进行接种）。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -415,6 +468,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -427,7 +483,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -444,21 +505,31 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；13岁及以上人群基础免疫接种2剂，间隔4-8周。</p>
+          </div>
         </div>`
       },
       {
         name: 'HPV疫苗',
         content: `<div class="vaccine-section">
           <h4>HPV疫苗</h4>
-          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+          <p class="vaccine-purpose">HPV疫苗能够预防高危型HPV的持续感染，有效降低宫颈癌、肛门癌、生殖器疣等相关疾病的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>双价人乳头瘤病毒疫苗</strong>：9-45岁女性，3剂次（于0、1和6月分别接种1剂次。）</p>
+            <p><strong>九价人乳头瘤病毒疫苗（酿酒酵母）</strong>：9-45岁女性和16-26岁男性，2或3剂次。（9-45岁女性及16-26岁男性：于0、2、6月分别接种1剂，共3剂。第2剂与首剂间隔至少1个月，第3剂与第2剂间隔至少3个月，所有3剂需在1年内完成。9-14岁女性：可选择2剂程序，于0月和6-12月各接种1剂。若第2剂与首剂间隔少于5个月，需补接种第3剂。）</p>
+          </div>
         </div>`
       },
       {
@@ -466,6 +537,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
@@ -473,13 +547,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>戊肝疫苗</h4>
           <p class="vaccine-purpose">预防戊型肝炎病毒感染引起的戊型肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组戊型肝炎疫苗</strong>：16岁及以上易感人群；3剂次（按照0、1、6月接种方案进行接种）。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -487,6 +567,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -507,7 +590,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -524,21 +612,31 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；13岁及以上人群基础免疫接种2剂，间隔4-8周。</p>
+          </div>
         </div>`
       },
       {
         name: 'HPV疫苗',
         content: `<div class="vaccine-section">
           <h4>HPV疫苗</h4>
-          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+          <p class="vaccine-purpose">HPV疫苗能够预防高危型HPV的持续感染，有效降低宫颈癌、肛门癌、生殖器疣等相关疾病的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>双价人乳头瘤病毒疫苗</strong>：9-45岁女性，3剂次。（于0、1和6月分别接种1剂次）</p>
+            <p><strong>九价人乳头瘤病毒疫苗（酿酒酵母）</strong>：9-45岁女性和16-26岁男性，2或3剂次。（9-45岁女性及16-26岁男性：于0、2、6月分别接种1剂，共3剂。第2剂与首剂间隔至少1个月，第3剂与第2剂间隔至少3个月，所有3剂需在1年内完成。9-14岁女性：可选择2剂程序，于0月和6-12月各接种1剂。若第2剂与首剂间隔少于5个月，需补接种第3剂。）</p>
+          </div>
         </div>`
       },
       {
@@ -546,13 +644,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -560,6 +664,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -572,7 +679,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -589,21 +701,31 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
         name: 'HPV疫苗',
         content: `<div class="vaccine-section">
           <h4>HPV疫苗</h4>
-          <p class="vaccine-purpose">预防人乳头瘤病毒感染，降低宫颈癌等疾病风险。</p>
+          <p class="vaccine-purpose">HPV疫苗能够预防高危型HPV的持续感染，有效降低宫颈癌、肛门癌、生殖器疣等相关疾病的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>双价人乳头瘤病毒疫苗</strong>：9-45岁女性，3剂次（于0、1和6月分别接种1剂次。）</p>
+            <p><strong>九价人乳头瘤病毒疫苗（酿酒酵母）</strong>：9-45岁女性和16-26岁男性，2或3剂次。（9-45岁女性及16-26岁男性：于0、2、6月分别接种1剂，共3剂。第2剂与首剂间隔至少1个月，第3剂与第2剂间隔至少3个月，所有3剂需在1年内完成。9-14岁女性：可选择2剂程序，于0月和6-12月各接种1剂。若第2剂与首剂间隔少于5个月，需补接种第3剂。）</p>
+          </div>
         </div>`
       },
       {
@@ -611,13 +733,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -625,6 +753,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -652,7 +783,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -669,14 +805,20 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
@@ -684,13 +826,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -698,6 +846,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -718,7 +869,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -726,6 +882,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>b型流感嗜血杆菌疫苗</h4>
           <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；1-5岁接种1剂次。</p>
+          </div>
         </div>`
       },
       {
@@ -743,20 +902,29 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>13价肺炎疫苗</h4>
           <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童（24月龄-5岁儿童：接种1剂。）</p>
+          </div>
         </div>`
       },
       {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
@@ -764,6 +932,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
           <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
         </div>`
       },
       {
@@ -771,13 +942,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -785,6 +962,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -806,13 +986,21 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>轮状病毒疫苗</h4>
           <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+          </div>
         </div>`
       },
       {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -820,6 +1008,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>b型流感嗜血杆菌疫苗</h4>
           <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；1-5岁接种1剂次。</p>
+          </div>
         </div>`
       },
       {
@@ -837,20 +1028,29 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>13价肺炎疫苗</h4>
           <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童（24月龄-5岁儿童：接种1剂。）</p>
+          </div>
         </div>`
       },
       {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
@@ -858,6 +1058,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
           <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
         </div>`
       },
       {
@@ -865,13 +1068,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -879,6 +1088,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -900,13 +1112,21 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>轮状病毒疫苗</h4>
           <p class="vaccine-purpose">预防轮状病毒引起的婴幼儿腹泻（俗称 "秋季腹泻"），可显著降低重症腹泻发生率，减少因腹泻导致的脱水、住院等风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>口服轮状病毒活疫苗</strong>：2月龄-3岁，1剂次</p>
+          </div>
         </div>`
       },
       {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -914,6 +1134,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>b型流感嗜血杆菌疫苗</h4>
           <p class="vaccine-purpose">预防 b 型流感嗜血杆菌感染引起的严重疾病，包括脑膜炎、肺炎、败血症、会厌炎、蜂窝织炎等，尤其保护婴幼儿免受重症侵袭。</p>
+          <div class="vaccine-detail">
+            <p><strong>b型流感嗜血杆菌结合疫苗</strong>：适用于2月龄-5周岁；1-5岁接种1剂次。</p>
+          </div>
         </div>`
       },
       {
@@ -931,20 +1154,29 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>13价肺炎疫苗</h4>
           <p class="vaccine-purpose">预防 13 种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症、中耳炎等，尤其降低婴幼儿重症感染风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>13价肺炎球菌多糖结合疫苗</strong>：适用于6周龄至5岁（6周岁生日前）婴幼儿和儿童（24月龄-5岁儿童：接种1剂。）</p>
+          </div>
         </div>`
       },
       {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
@@ -952,6 +1184,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>肠道病毒71型灭活疫苗（手足口疫苗）</h4>
           <p class="vaccine-purpose">预防由肠道病毒 71 型引起的手足口病（重点降低重症风险，如脑炎、肺水肿）。</p>
+          <div class="vaccine-detail">
+            <p><strong>肠道病毒71型灭活疫苗</strong>：6月龄至71月龄易感者；基础免疫程序为2剂次，间隔1个月。</p>
+          </div>
         </div>`
       },
       {
@@ -959,13 +1194,19 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>流脑疫苗</h4>
           <p class="vaccine-purpose">预防脑膜炎奈瑟菌引起的流行性脑脊髓膜炎（流脑），减轻高热、头痛、皮肤瘀斑、脑膜刺激征等症状，降低重症死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>ACYW135群脑膜炎球菌多糖疫苗</strong>：2周岁以上的儿童及成人；初次接种1剂次；再次接种（国外推荐）：传染地区的高危个体，特别是第一次接种小于4岁的儿童，如果持续处于高危状态，应考虑初次免疫2~3年后再次接种；如果疫苗接种2~3年后抗体水平快速下降，则应考虑初次免疫3~5年内进行再次接种。</p>
+          </div>
         </div>`
       },
       {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -973,6 +1214,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -998,7 +1242,10 @@ const vaccineData = {
         name: '甲肝减毒活疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝减毒活疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+          </div>
         </div>`
       }
     ],
@@ -1007,7 +1254,12 @@ const vaccineData = {
         name: '甲肝疫苗',
         content: `<div class="vaccine-section">
           <h4>甲肝疫苗</h4>
-          <p class="vaccine-purpose">预防甲型肝炎病毒感染引起的甲型肝炎。</p>
+          <p class="vaccine-purpose">预防甲型病毒性肝炎。</p>
+          <div class="vaccine-detail">
+            <p><strong>冻干甲型肝炎减毒活疫苗</strong>：1岁以上甲型肝炎易感者；1剂次</p>
+            <p><strong>甲型肝炎灭活疫苗</strong>：1岁以上甲型肝炎易感者；2剂次，间隔6个月</p>
+            <p><strong>甲型乙型肝炎联合疫苗</strong>：儿童剂型适用于1-15岁婴幼儿和少年，成人剂型适用于16岁及以上青少年和成人；基础免疫3剂次（于0、1、6月各接种1剂次。）</p>
+          </div>
         </div>`
       },
       {
@@ -1024,14 +1276,20 @@ const vaccineData = {
         name: '23价肺炎疫苗',
         content: `<div class="vaccine-section">
           <h4>23价肺炎疫苗</h4>
-          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的感染性疾病，包括肺炎、脑膜炎、败血症等。</p>
+          <p class="vaccine-purpose">预防23种血清型肺炎球菌引起的肺炎、脑膜炎、败血症等感染性疾病，尤其保护老年人和高危人群。</p>
+          <div class="vaccine-detail">
+            <p><strong>23价肺炎球菌多糖疫苗</strong>：2岁以上易感人群，1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
@@ -1086,7 +1344,10 @@ const vaccineData = {
         name: '水痘疫苗',
         content: `<div class="vaccine-section">
           <h4>水痘疫苗</h4>
-          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，避免水痘引起的发热、皮疹、瘙痒等症状，降低并发症风险。</p>
+          <p class="vaccine-purpose">预防水痘-带状疱疹病毒感染，减少水痘发病及并发症（如皮肤感染、脑炎），同时降低成年后带状疱疹发病风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>水痘减毒活疫苗</strong>：12月龄以上的易感者；1-12岁儿童基础免疫接种1剂。</p>
+          </div>
         </div>`
       },
       {
@@ -1124,7 +1385,10 @@ const vaccineData = {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -1132,6 +1396,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
@@ -1879,6 +2146,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>卡介苗</h4>
           <p class="vaccine-purpose">预防结核病</p>
+          <div class="vaccine-detail">
+            <p><strong>皮内注射用卡介苗</strong>：出生3个月以内的婴儿或用5IU结核菌素试验(PPD试验)阴性的儿童(PPD试验后48-72小时局部硬结在5mm以下者为阴性)；1剂次</p>
+          </div>
         </div>`
       }
     ],
