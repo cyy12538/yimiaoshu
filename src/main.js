@@ -581,7 +581,10 @@ const vaccineData = {
         name: '二价HPV疫苗',
         content: `<div class="vaccine-section">
           <h4>二价HPV疫苗</h4>
-          <p class="vaccine-purpose">预防人乳头瘤病毒16、18型感染，降低宫颈癌等疾病风险。</p>
+          <p class="vaccine-purpose">预防高危型人乳头瘤病毒（HPV16型和18型）引起的宫颈癌、阴道癌等癌症及癌前病变。</p>
+          <div class="vaccine-detail">
+            <p><strong>双价人乳头瘤病毒疫苗</strong>：根据国家免疫规划程序，建议满13周岁女孩接种2剂次，间隔6个月。</p>
+          </div>
         </div>`
       }
     ],
@@ -767,14 +770,20 @@ const vaccineData = {
         name: '百白破疫苗',
         content: `<div class="vaccine-section">
           <h4>百白破疫苗</h4>
-          <p class="vaccine-purpose">第五剂，预防百日咳、白喉、破伤风三种疾病。</p>
+          <p class="vaccine-purpose">可同时预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：根据国家免疫规划程序，建议2、4、6月龄各接种1剂次，18月龄和6岁各加强1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: 'A群C群流脑多糖疫苗',
         content: `<div class="vaccine-section">
           <h4>A群C群流脑多糖疫苗</h4>
-          <p class="vaccine-purpose">第二剂，预防A群和C群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+          <p class="vaccine-purpose">预防A群、C群脑膜炎球菌引起的流行性脑脊髓膜炎，降低出现听力损伤等严重后遗症的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>A群C群脑膜炎球菌多糖疫苗</strong>：2周岁以上儿童及成人。根据国家免疫规划程序，建议3岁、6岁各接种1剂次。</p>
+          </div>
         </div>`
       }
     ],
@@ -860,7 +869,10 @@ const vaccineData = {
         name: '脊髓灰质炎减毒活疫苗',
         content: `<div class="vaccine-section">
           <h4>脊髓灰质炎减毒活疫苗</h4>
-          <p class="vaccine-purpose">第四剂，预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
+          <p class="vaccine-purpose">预防脊髓灰质炎病毒感染，避免罹患小儿麻痹症，防止肢体瘫痪、呼吸肌麻痹等严重后遗症。</p>
+          <div class="vaccine-detail">
+            <p><strong>I型III型脊髓灰质炎减毒活疫苗糖丸(人二倍体细胞)</strong>：主要用于2月龄及以上的婴幼儿。本品为口服疫苗，用于与脊髓灰质炎灭活疫苗(IPV)序贯接种；根据国家免疫规划程序，建议4月龄、4岁各口服1剂次。</p>
+          </div>
         </div>`
       }
     ],
@@ -976,7 +988,10 @@ const vaccineData = {
         name: 'A群C群流脑多糖疫苗',
         content: `<div class="vaccine-section">
           <h4>A群C群流脑多糖疫苗</h4>
-          <p class="vaccine-purpose">预防A群和C群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+          <p class="vaccine-purpose">预防A群、C群脑膜炎球菌引起的流行性脑脊髓膜炎，降低出现听力损伤等严重后遗症的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>A群C群脑膜炎球菌多糖疫苗</strong>：2周岁以上儿童及成人。根据国家免疫规划程序，建议3岁、6岁各接种1剂次。</p>
+          </div>
         </div>`
       }
     ],
@@ -1102,7 +1117,10 @@ const vaccineData = {
         name: '乙脑减毒活疫苗',
         content: `<div class="vaccine-section">
           <h4>乙脑减毒活疫苗</h4>
-          <p class="vaccine-purpose">第二剂，预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎减毒活疫苗</strong>：8月龄以上健康儿童及由非疫区进入疫区的儿童和成人。8月龄儿童首次注射1次;于2岁再注射1次。</p>
+          </div>
         </div>`
       }
     ],
@@ -1228,14 +1246,20 @@ const vaccineData = {
         name: '百白破疫苗',
         content: `<div class="vaccine-section">
           <h4>百白破疫苗</h4>
-          <p class="vaccine-purpose">第四剂，预防百日咳、白喉、破伤风三种疾病。</p>
+          <p class="vaccine-purpose">可同时预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：根据国家免疫规划程序，建议2、4、6月龄各接种1剂次，18月龄和6岁各加强1剂次。</p>
+          </div>
         </div>`
       },
       {
         name: '麻腮风疫苗',
         content: `<div class="vaccine-section">
           <h4>麻腮风疫苗</h4>
-          <p class="vaccine-purpose">第二剂，预防麻疹、腮腺炎、风疹三种传染病。</p>
+          <p class="vaccine-purpose">可预防麻疹、流行性腮腺炎和风疹三种病毒感染，降低患病及重症风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>麻腮风联合减毒活疫苗</strong>：8月龄以上的麻疹、腮腺炎和风疹易感者。根据国家免疫规划程序，建议8、18月龄各接种1剂次。</p>
+          </div>
         </div>`
       },
       {
@@ -1316,7 +1340,10 @@ const vaccineData = {
         name: '霍乱疫苗',
         content: `<div class="vaccine-section">
           <h4>霍乱疫苗</h4>
-          <p class="vaccine-purpose">预防霍乱弧菌引起的霍乱，避免严重的腹泻和脱水。</p>
+          <p class="vaccine-purpose">预防由霍乱弧菌引起的霍乱，减少剧烈呕吐、腹泻等症状及传播风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>重组B亚单位/菌体霍乱疫苗（肠溶胶囊）</strong>：2岁或2岁以上的儿童，青少年和有接触或传播危险的成人，3剂次。（初次免疫者须服用本制剂三次，分别于0、7、28天口服，每次一粒；接受过本品免疫的人员，可视疫情于流行季节前加强一次，方法、剂量同上。）</p>
+          </div>
         </div>`
       },
       {
@@ -1324,21 +1351,16 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎灭活疫苗（Vero细胞）</strong>：6个月至10周岁儿童和由非疫区有可能进入疫区的儿童和成人；3剂次（基础免疫应注射两针，初次免疫后第7天注射第2针，基础免疫后1个月至1年内加强免疫1次。可根据当地流行情况在基础免疫后的3~4年再加强1次，每次注射1剂。）</p>
+          </div>
         </div>`
       }
     ]
   },
   '12month': {
     title: '12 月龄',
-    planned: [
-      {
-        name: 'A群流脑多糖疫苗',
-        content: `<div class="vaccine-section">
-          <h4>A群流脑多糖疫苗</h4>
-          <p class="vaccine-purpose">预防A群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
-        </div>`
-      }
-    ],
+    planned: [],
     unplanned: [
       {
         name: '水痘疫苗',
@@ -1410,7 +1432,10 @@ const vaccineData = {
         name: 'A群流脑多糖疫苗',
         content: `<div class="vaccine-section">
           <h4>A群流脑多糖疫苗</h4>
-          <p class="vaccine-purpose">预防A群脑膜炎球菌引起的流行性脑脊髓膜炎（流脑）。</p>
+          <p class="vaccine-purpose">预防A群脑膜炎球菌引起的流行性脑脊髓膜炎，降低出现听力损伤等严重后遗症的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>A群脑膜炎球菌多糖疫苗</strong>：6个月～15周岁少年儿童。基础免疫注射2针，从6月龄开始，每针间隔3个月；根据国家免疫规划程序，建议6月龄、9月龄各接种1剂次。</p>
+          </div>
         </div>`
       }
     ],
@@ -1465,7 +1490,10 @@ const vaccineData = {
         name: '麻腮风疫苗',
         content: `<div class="vaccine-section">
           <h4>麻腮风疫苗</h4>
-          <p class="vaccine-purpose">预防麻疹、腮腺炎、风疹三种传染病。</p>
+          <p class="vaccine-purpose">可预防麻疹、流行性腮腺炎和风疹三种病毒感染，降低患病及重症风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>麻腮风联合减毒活疫苗</strong>：8月龄以上的麻疹、腮腺炎和风疹易感者。根据国家免疫规划程序，建议8、18月龄各接种1剂次。</p>
+          </div>
         </div>`
       },
       {
@@ -1473,6 +1501,9 @@ const vaccineData = {
         content: `<div class="vaccine-section">
           <h4>乙脑减毒活疫苗</h4>
           <p class="vaccine-purpose">预防乙型脑炎病毒感染引起的乙型脑炎（乙脑），避免病毒侵犯中枢神经系统导致高热、抽搐、昏迷，降低致残率和死亡率。</p>
+          <div class="vaccine-detail">
+            <p><strong>乙型脑炎减毒活疫苗</strong>：8月龄以上健康儿童及由非疫区进入疫区的儿童和成人。8月龄儿童首次注射1次;于2岁再注射1次。</p>
+          </div>
         </div>`
       }
     ],
@@ -1524,12 +1555,22 @@ const vaccineData = {
     title: '7 月龄',
     planned: [
       {
-        name: '乙肝疫苗',
+        name: '脊灰灭活疫苗',
         content: `<div class="vaccine-section">
-          <h4>乙肝疫苗</h4>
-          <p class="vaccine-purpose">预防乙型肝炎病毒感染，从而降低肝硬化和肝癌风险。</p>
+          <h4>脊灰灭活疫苗</h4>
+          <p class="vaccine-purpose">预防脊髓灰质炎病毒感染，避免罹患小儿麻痹症，防止肢体瘫痪、呼吸肌麻痹等严重后遗症。</p>
           <div class="vaccine-detail">
-            <p><strong>重组乙型肝炎疫苗（10微克）</strong>：适用于乙型肝炎易感者，尤其是(1)新生儿，特别是母亲为HBsAg、HBeAg阳性者；(2)从事医疗工作的医护人员及接触血液的实验人员。免疫程序为3剂次（分别在0、1、6月接种，新生儿在出生后24小时内注射第1针。）</p>
+            <p><strong>Sabin株脊髓灰质炎灭活疫苗(Vero细胞)</strong>：主要用于2月龄(含2月龄)以上的婴幼儿。根据国家免疫规划程序，建议2月龄、3月龄各接种1剂次。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">可同时预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：根据国家免疫规划程序，建议2、4、6月龄各接种1剂次，18月龄和6岁各加强1剂次。</p>
           </div>
         </div>`
       }
@@ -1623,6 +1664,26 @@ const vaccineData = {
             <p><strong>重组乙型肝炎疫苗（10微克）</strong>：适用于乙型肝炎易感者，尤其是(1)新生儿，特别是母亲为HBsAg、HBeAg阳性者；(2)从事医疗工作的医护人员及接触血液的实验人员。免疫程序为3剂次（分别在0、1、6月接种，新生儿在出生后24小时内注射第1针。）</p>
           </div>
         </div>`
+      },
+      {
+        name: 'A群流脑多糖疫苗',
+        content: `<div class="vaccine-section">
+          <h4>A群流脑多糖疫苗</h4>
+          <p class="vaccine-purpose">预防A群脑膜炎球菌引起的流行性脑脊髓膜炎，降低出现听力损伤等严重后遗症的风险。</p>
+          <div class="vaccine-detail">
+            <p><strong>A群脑膜炎球菌多糖疫苗</strong>：6个月～15周岁少年儿童。基础免疫注射2针，从6月龄开始，每针间隔3个月。根据国家免疫规划程序，建议6月龄、9月龄各接种1剂次。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">可同时预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：根据国家免疫规划程序，建议2、4、6月龄各接种1剂次，18月龄和6岁各加强1剂次。</p>
+          </div>
+        </div>`
       }
     ],
     unplanned: [
@@ -1704,18 +1765,7 @@ const vaccineData = {
   },
   '5month': {
     title: '5 月龄',
-    planned: [
-      {
-        name: '百白破疫苗',
-        content: `<div class="vaccine-section">
-          <h4>百白破疫苗</h4>
-          <p class="vaccine-purpose">预防百日咳、白喉、破伤风三种疾病。</p>
-          <div class="vaccine-detail">
-            <p><strong>吸附无细胞百白破联合疫苗</strong>：3月龄以上婴幼儿；4剂次（3、4、5月龄进行基础免疫，18~24月龄加强免疫。）</p>
-          </div>
-        </div>`
-      }
-    ],
+    planned: [],
     unplanned: [
       {
         name: '轮状病毒疫苗',
@@ -1783,6 +1833,16 @@ const vaccineData = {
           <p class="vaccine-purpose">预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
           <div class="vaccine-detail">
             <p><strong>脊髓灰质炎灭活疫苗</strong>：≥2月龄婴幼儿、儿童和成人；4剂次（2、3、4月龄各1剂次，18月龄加强免疫1剂）。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">可同时预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：根据国家免疫规划程序，建议2、4、6月龄各接种1剂次，18月龄和6岁各加强1剂次。</p>
           </div>
         </div>`
       }
@@ -2034,6 +2094,16 @@ const vaccineData = {
           <p class="vaccine-purpose">预防脊髓灰质炎（俗称 "小儿麻痹症"），避免病毒侵犯神经系统导致肢体瘫痪。</p>
           <div class="vaccine-detail">
             <p><strong>脊髓灰质炎灭活疫苗</strong>：≥2月龄婴幼儿、儿童和成人；4剂次（2、3、4月龄各1剂次，18月龄加强免疫1剂）。</p>
+          </div>
+        </div>`
+      },
+      {
+        name: '百白破疫苗',
+        content: `<div class="vaccine-section">
+          <h4>百白破疫苗</h4>
+          <p class="vaccine-purpose">可同时预防百日咳、白喉、破伤风三种疾病。</p>
+          <div class="vaccine-detail">
+            <p><strong>吸附无细胞百白破联合疫苗</strong>：根据国家免疫规划程序，建议2、4、6月龄各接种1剂次，18月龄和6岁各加强1剂次。</p>
           </div>
         </div>`
       }
