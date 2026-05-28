@@ -754,7 +754,14 @@ function getUrlParam(param) {
     return urlParams.get(param);
 }
 
+function setRootFontSize() {
+    const width = window.innerWidth;
+    document.documentElement.style.fontSize = (width / 375) + 'px';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    setRootFontSize();
+    
     document.body.addEventListener('touchmove', function(e) {
         if (e.target.closest('.timeline-body') || e.target.closest('.modal-body')) {
             return;
@@ -808,6 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isIOS || widthChanged) {
                 cachedViewportHeight = null;
             }
+            setRootFontSize();
             updateScale();
             updateMaskLottieScale();
         }, 150);
