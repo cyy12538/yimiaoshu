@@ -791,27 +791,24 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let resizeTimeout;
     let lastScreenWidth = window.innerWidth;
-    let lastScreenHeight = window.innerHeight;
     
     window.addEventListener('resize', () => {
         const currentScreenWidth = window.innerWidth;
-        const currentScreenHeight = window.innerHeight;
         
+        // iOS 工具栏显隐只会改变高度，不会改变宽度
+        // 只有宽度变化超过阈值才重新布局（如横竖屏切换）
         const widthChanged = Math.abs(currentScreenWidth - lastScreenWidth) > 10;
-        const heightChanged = Math.abs(currentScreenHeight - lastScreenHeight) > 50;
         
-        if (!widthChanged && !heightChanged) {
+        if (!widthChanged) {
             return;
         }
         
         lastScreenWidth = currentScreenWidth;
-        lastScreenHeight = currentScreenHeight;
         
+        // 防抖处理
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            if (!isIOS || widthChanged) {
-                cachedViewportHeight = null;
-            }
+            cachedViewportHeight = null;
             setRootFontSize();
             updateScale();
             updateMaskLottieScale();

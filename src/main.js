@@ -377,9 +377,28 @@ window.addEventListener('load', () => {
 });
 
 // 窗口大小变化时重新调整
+let resizeTimeout;
+let lastScreenWidth = window.innerWidth;
+
 window.addEventListener('resize', () => {
-  initAnimations();
-  adjustLayout();
+  const currentScreenWidth = window.innerWidth;
+  
+  // iOS 工具栏显隐只会改变高度，不会改变宽度
+  // 只有宽度变化超过阈值才重新布局（如横竖屏切换）
+  const widthChanged = Math.abs(currentScreenWidth - lastScreenWidth) > 10;
+  
+  if (!widthChanged) {
+    return;
+  }
+  
+  lastScreenWidth = currentScreenWidth;
+  
+  // 防抖处理
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    initAnimations();
+    adjustLayout();
+  }, 150);
 });
 
 console.log('main.js 已加载');
