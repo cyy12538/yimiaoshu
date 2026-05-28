@@ -541,8 +541,18 @@ function updateVisibleCharacter() {
     const scrollHeight = timelineBody.scrollHeight;
     const clientHeight = timelineBody.clientHeight;
     
+    // 计算可滚动范围，避免除零错误
+    const scrollRange = scrollHeight - clientHeight;
+    
+    // 如果没有可滚动范围，直接返回，避免 iOS Safari 异常
+    if (scrollRange <= 0) {
+        // 默认显示第一个人人物（老人）
+        characterImgs[3]?.classList.add('visible');
+        return;
+    }
+    
     // 计算滚动百分比 (0-1)，0是在顶部（老人），1是在底部（婴儿）
-    const scrollPercent = scrollTop / (scrollHeight - clientHeight);
+    const scrollPercent = Math.max(0, Math.min(1, scrollTop / scrollRange));
     
     // 定义每个人物显示的滚动范围（无重叠）
     // 时间线是从下往上：婴儿(出生时)在最下面，老人(≥50岁)在最上面
@@ -555,10 +565,12 @@ function updateVisibleCharacter() {
     ];
     
     ranges.forEach(({ img, min, max }) => {
-        if (scrollPercent >= min && scrollPercent < max) {
-            img.classList.add('visible');
-        } else {
-            img.classList.remove('visible');
+        if (img) {
+            if (scrollPercent >= min && scrollPercent < max) {
+                img.classList.add('visible');
+            } else {
+                img.classList.remove('visible');
+            }
         }
     });
 }
@@ -726,6 +738,8 @@ function updateMaskLottieScale() {
 // 滚动到指定年龄
 function scrollToAge(targetAge) {
     const timelineBody = document.getElementById('timelineBody');
+    if (!timelineBody) return;
+    
     const ageElements = timelineBody.querySelectorAll('.timeline-age');
     
     for (const ageEl of ageElements) {
@@ -736,9 +750,13 @@ function scrollToAge(targetAge) {
                 const containerHeight = timelineBody.clientHeight;
                 const scrollPosition = itemTop - containerHeight / 3;
                 
+                // 确保滚动位置在有效范围内
+                const maxScroll = timelineBody.scrollHeight - timelineBody.clientHeight;
+                const safeScrollPosition = Math.max(0, Math.min(maxScroll, scrollPosition));
+                
                 // iOS Safari 不支持 scrollTo 的 behavior: 'smooth'
                 // 使用立即滚动避免无限循环
-                timelineBody.scrollTop = Math.max(0, scrollPosition);
+                timelineBody.scrollTop = safeScrollPosition;
             }
             break;
         }
