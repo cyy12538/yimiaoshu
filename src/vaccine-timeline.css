@@ -6,14 +6,25 @@
 
 html {
     font-size: calc(100vw / 375);
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 body {
     font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
     background: transparent;
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
 }
 
 .pink-bg {
@@ -175,6 +186,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     padding: 400px 100px 1500px;
 }
 
@@ -431,6 +443,8 @@ body {
     padding: 50px;
     max-height: calc(70vh - 160px);
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     color: #192e35;
     font-size: 32px;
     line-height: 1.8;

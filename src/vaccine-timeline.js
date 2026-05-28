@@ -755,6 +755,13 @@ function getUrlParam(param) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('touchmove', function(e) {
+        if (e.target.closest('.timeline-body') || e.target.closest('.modal-body')) {
+            return;
+        }
+        e.preventDefault();
+    }, { passive: false });
+    
     renderTimeline();
     updateScale();
     
