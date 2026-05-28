@@ -759,13 +759,6 @@ function setRootFontSize() {
 document.addEventListener('DOMContentLoaded', () => {
     setRootFontSize();
     
-    document.body.addEventListener('touchmove', function(e) {
-        if (e.target.closest('.timeline-body') || e.target.closest('.modal-body')) {
-            return;
-        }
-        e.preventDefault();
-    }, { passive: false });
-    
     renderTimeline();
     updateScale();
     

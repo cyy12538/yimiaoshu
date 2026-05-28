@@ -25,6 +25,7 @@ body {
     height: 100%;
     overscroll-behavior: none;
     -webkit-overflow-scrolling: auto;
+    touch-action: none;
 }
 
 .pink-bg {
@@ -187,6 +188,7 @@ body {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
+    touch-action: pan-y;
     padding: 400px 100px 1500px;
 }
 
@@ -444,6 +446,7 @@ body {
     overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
     color: #192e35;
     font-size: 32px;
     line-height: 1.8;
