@@ -255,15 +255,19 @@ body {
 .fixed-img {
   position: absolute;
   height: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease, visibility 1s ease;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  display: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
   /* 位置、宽度、transform 由 JavaScript 动态设置 */
 }
 
 .fixed-img.visible {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block;
+  pointer-events: none;
 }
 
 .scroll-container {
