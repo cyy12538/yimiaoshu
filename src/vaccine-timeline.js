@@ -422,9 +422,22 @@ const ORIGINAL_WIDTH = 2160;
 const ORIGINAL_HEIGHT = 3840;
 const ASPECT_RATIO = ORIGINAL_WIDTH / ORIGINAL_HEIGHT;
 
+let cachedViewportHeight = null;
+let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
 function getDisplaySize() {
     const screenWidth = document.documentElement.clientWidth;
-    const screenHeight = document.documentElement.clientHeight;
+    let screenHeight;
+    
+    if (isIOS) {
+        if (!cachedViewportHeight) {
+            cachedViewportHeight = window.innerHeight;
+        }
+        screenHeight = cachedViewportHeight;
+    } else {
+        screenHeight = document.documentElement.clientHeight;
+    }
     
     let displayWidth, displayHeight;
     
@@ -765,10 +778,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     }
     
+    let resizeTimeout;
+    let lastScreenWidth = window.innerWidth;
+    let lastScreenHeight = window.innerHeight;
+    
     window.addEventListener('resize', () => {
-        updateScale();
-        // 调整前景层缩放
-        updateMaskLottieScale();
+        const currentScreenWidth = window.innerWidth;
+        const currentScreenHeight = window.innerHeight;
+        
+        const widthChanged = Math.abs(currentScreenWidth - lastScreenWidth) > 10;
+        const heightChanged = Math.abs(currentScreenHeight - lastScreenHeight) > 50;
+        
+        if (!widthChanged && !heightChanged) {
+            return;
+        }
+        
+        lastScreenWidth = currentScreenWidth;
+        lastScreenHeight = currentScreenHeight;
+        
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            if (!isIOS || widthChanged) {
+                cachedViewportHeight = null;
+            }
+            updateScale();
+            updateMaskLottieScale();
+        }, 150);
     });
     
     const modalClose = document.getElementById('modalClose');
