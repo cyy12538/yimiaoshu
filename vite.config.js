@@ -1,7 +1,14 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
-export default defineConfig({ // 替换为你的 Gitee 仓库名
+export default defineConfig({
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        timeline: resolve(__dirname, 'vaccine-timeline.html')
+      }
+    }
   }
 })
