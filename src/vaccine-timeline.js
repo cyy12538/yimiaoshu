@@ -730,18 +730,15 @@ function scrollToAge(targetAge) {
     
     for (const ageEl of ageElements) {
         if (ageEl.textContent.trim() === targetAge) {
-            // 找到对应的timeline-item
             const timelineItem = ageEl.closest('.timeline-item');
             if (timelineItem) {
-                // 计算滚动位置，使目标年龄显示在可视区域中间偏上的位置
                 const itemTop = timelineItem.offsetTop;
                 const containerHeight = timelineBody.clientHeight;
                 const scrollPosition = itemTop - containerHeight / 3;
                 
-                timelineBody.scrollTo({
-                    top: Math.max(0, scrollPosition),
-                    behavior: 'smooth'
-                });
+                // iOS Safari 不支持 scrollTo 的 behavior: 'smooth'
+                // 使用立即滚动避免无限循环
+                timelineBody.scrollTop = Math.max(0, scrollPosition);
             }
             break;
         }
@@ -836,9 +833,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 监听滚动事件，更新显示的人物
     if (timelineBody) {
+        let scrollTicking = false;
         timelineBody.addEventListener('scroll', () => {
-            updateVisibleCharacter();
-        });
+            if (!scrollTicking) {
+                requestAnimationFrame(() => {
+                    updateVisibleCharacter();
+                    scrollTicking = false;
+                });
+                scrollTicking = true;
+            }
+        }, { passive: true });
         // 初始化显示
         updateVisibleCharacter();
     }
