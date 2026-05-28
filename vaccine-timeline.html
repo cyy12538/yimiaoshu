@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>疫苗接种时间轴</title>
+    <link rel="stylesheet" href="/src/vaccine-timeline.css">
+</head>
+<body>
+    <div class="pink-bg"></div>
+    <div class="pink-top"></div>
+    <div class="pink-bottom"></div>
+    <div id="mask-lottie" class="mask-lottie"></div>
+    
+    <!-- 人物SVG (2160x3840) -->
+    <div class="character-images" id="characterImages">
+      <img src="/人物/婴儿.svg" class="character-img" data-age="出生时" alt="婴儿">
+      <img src="/人物/小孩.svg" class="character-img" data-age="4岁" alt="小孩">
+      <img src="/人物/大人.svg" class="character-img" data-age="18岁" alt="大人">
+      <img src="/人物/老人.svg" class="character-img" data-age="≥50岁" alt="老人">
+    </div>
+    
+    <!-- 页面底部标题 -->
+    <div class="page-title" id="page-title">
+      <img src="/标题/Asset 7.svg" alt="河南省疾病预防控制中心（试行版）">
+    </div>
+    
+    <div class="timeline-container" id="timelineContainer">
+        <div class="timeline-body" id="timelineBody">
+        </div>
+        
+        <div class="timeline-legend">
+            <div class="legend-item">
+                <span class="legend-dot planned"></span>
+                <span>免疫规划疫苗</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot unplanned"></span>
+                <span>非免疫规划疫苗</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="vaccine-modal" id="vaccineModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">疫苗详情</h2>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/src/vaccine-timeline.js"></script>
+</body>
+</html>
