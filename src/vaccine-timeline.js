@@ -715,7 +715,7 @@ function initMaskLottie() {
             path: '/二级页面前景2.json',
             loop: true,
             autoplay: false,
-            renderer: 'svg'
+            renderer: 'canvas'
         });
         
         // 显示并播放动画
@@ -803,27 +803,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let resizeTimeout;
     let lastScreenWidth = window.innerWidth;
     
-    window.addEventListener('resize', () => {
-        const currentScreenWidth = window.innerWidth;
-        
-        // iOS 工具栏显隐只会改变高度，不会改变宽度
-        // 只有宽度变化超过阈值才重新布局（如横竖屏切换）
-        const widthChanged = Math.abs(currentScreenWidth - lastScreenWidth) > 10;
-        
-        if (!widthChanged) {
-            return;
-        }
-        
-        lastScreenWidth = currentScreenWidth;
-        
-        // 防抖处理
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
-            cachedViewportHeight = null;
+// 彻底抛弃引发死循环的 resize，改用 orientationchange (仅横竖屏切换时触发)
+    window.addEventListener('orientationchange', () => {
+    // 延迟 300ms 等待 iOS 完成屏幕旋转的动画
+        setTimeout(() => {
+            cachedViewportHeight = null; // 清除高度缓存
             setRootFontSize();
             updateScale();
             updateMaskLottieScale();
-        }, 150);
+        }, 300);
     });
     
     const modalClose = document.getElementById('modalClose');
